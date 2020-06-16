@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners",
+					"raw": "{{base_path}}/api/index.php/v1/banners",
 					"host": [
 						"{{base_path}}"
 					],
@@ -32,7 +32,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/{banner_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -54,7 +54,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/{banner_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -85,7 +85,7 @@
 					"raw": "{'catid': 3,'clicks': 0,'custombannercode': '','description': 'Text','metakey': '','name': 'Name','params': {'alt': '','height': '','imageurl': '','width': ''}}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners",
+					"raw": "{{base_path}}/api/index.php/v1/banners",
 					"host": [
 						"{{base_path}}"
 					],
@@ -115,7 +115,7 @@
 					"raw": "{'alias': 'name','catid': 3,'description': 'New Text','name': 'New Name'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/{banner_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -137,7 +137,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/clients",
+					"raw": "{{base_path}}/api/index.php/v1/banners/clients",
 					"host": [
 						"{{base_path}}"
 					],
@@ -159,7 +159,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/clients/{client_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -182,7 +182,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/clients/{client_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -214,7 +214,7 @@
 					"raw": "{'contact': 'Name','email': 'email@mail.com','extrainfo': '','metakey': '','name': 'Clients','state': 1}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/clients",
+					"raw": "{{base_path}}/api/index.php/v1/banners/clients",
 					"host": [
 						"{{base_path}}"
 					],
@@ -245,7 +245,7 @@
 					"raw": "{'contact': 'new Name','email': 'newemail@mail.com','name': 'Clients'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/clients/{client_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -268,7 +268,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/categories",
+					"raw": "{{base_path}}/api/index.php/v1/banners/categories",
 					"host": [
 						"{{base_path}}"
 					],
@@ -290,7 +290,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/categories/{category_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -313,7 +313,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/categories/{category_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -345,7 +345,7 @@
 					"raw": "{'access': 1,'alias': 'cat','extension': 'com_banners','language': '*','note': '','parent_id': 1,'published': 1,'title': 'Title','params': {'workflow_id': 1}}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/categories",
+					"raw": "{{base_path}}/api/index.php/v1/banners/categories",
 					"host": [
 						"{{base_path}}"
 					],
@@ -376,7 +376,7 @@
 					"raw": "{'alias': 'cat','note': 'Some Text','parent_id': 1,'title': 'New Title'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/categories/{category_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -399,7 +399,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/contenthistory/{banner_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{banner_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -427,7 +427,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/contenthistory/keep/{contenthistory_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{contenthistory_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -451,7 +451,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/banners/contenthistory/{contenthistory_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{contenthistory_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -474,7 +474,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/config/application",
+					"raw": "{{base_path}}/api/index.php/v1/config/application",
 					"host": [
 						"{{base_path}}"
 					],
@@ -505,7 +505,7 @@
 					"raw": "{'debug': true,'sitename': '123'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/config/application",
+					"raw": "{{base_path}}/api/index.php/v1/config/application",
 					"host": [
 						"{{base_path}}"
 					],
@@ -527,7 +527,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/config/{component_name}",
+					"raw": "{{base_path}}/api/index.php/v1/config/{component_name}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -558,7 +558,7 @@
 					"raw": "{'link_titles': 1}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/config/application",
+					"raw": "{{base_path}}/api/index.php/v1/config/application",
 					"host": [
 						"{{base_path}}"
 					],
@@ -580,7 +580,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/contact",
+					"raw": "{{base_path}}/api/index.php/v1/contact",
 					"host": [
 						"{{base_path}}"
 					],
@@ -601,7 +601,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/contact/{contact_id}",
+					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -623,7 +623,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/contact/{contact_id}",
+					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -654,7 +654,7 @@
 					"raw": "{'alias': 'contact','catid': 4,'language': '*','name': 'Contact'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/contact",
+					"raw": "{{base_path}}/api/index.php/v1/contact",
 					"host": [
 						"{{base_path}}"
 					],
@@ -684,7 +684,7 @@
 					"raw": "{'alias': 'contact','catid': 4,'name': 'New Contact'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/contact/{contact_id}",
+					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -715,7 +715,7 @@
 					"raw": "{'contact_email': 'email@mail.com','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/contact/form/{contact_id}",
+					"raw": "{{base_path}}/api/index.php/v1/contact/form/{contact_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -738,7 +738,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/contact/contact",
+					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact",
 					"host": [
 						"{{base_path}}"
 					],
@@ -761,7 +761,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -785,7 +785,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -818,7 +818,7 @@
 					"raw": "{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/contact/contact",
+					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact",
 					"host": [
 						"{{base_path}}"
 					],
@@ -850,7 +850,7 @@
 					"raw": "{'title': 'new contact field','name': 'contact-field','label': 'contact field','default_value': '','type': 'text','note': '','description': 'Some New Text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -874,7 +874,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/groups/contact/contact",
+					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact",
 					"host": [
 						"{{base_path}}"
 					],
@@ -898,7 +898,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -923,7 +923,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -957,7 +957,7 @@
 					"raw": "{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field3','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/groups/contact/contact",
+					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact",
 					"host": [
 						"{{base_path}}"
 					],
@@ -990,7 +990,7 @@
 					"raw": "{'title': 'new contact group','note': '','description': 'new description'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1015,7 +1015,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/content/article",
+					"raw": "{{base_path}}/api/index.php/v1/content/article",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1037,7 +1037,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/content/article/{article_id}",
+					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1060,7 +1060,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/content/article/{article_id}",
+					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1092,7 +1092,7 @@
 					"raw": "{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here's an article'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/content/article",
+					"raw": "{{base_path}}/api/index.php/v1/content/article",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1123,7 +1123,7 @@
 					"raw": "{'catid': 64,'title': 'Updated article'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/content/article/{article_id}",
+					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1146,7 +1146,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages",
+					"raw": "{{base_path}}/api/index.php/v1/languages",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1176,7 +1176,7 @@
 					"raw": "{'package': 'pkg_fr-FR'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages",
+					"raw": "{{base_path}}/api/index.php/v1/languages",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1197,7 +1197,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/content",
+					"raw": "{{base_path}}/api/index.php/v1/languages/content",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1219,7 +1219,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/v1/languages/content/{language_id}",
+					"raw": "{{base_path}}/api/index.php/v1/v1/languages/content/{language_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1243,7 +1243,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/content/{language_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/content/{language_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1275,7 +1275,7 @@
 					"raw": "{'access': 1,'description': '','image': 'fr_FR','lang_code': 'fr-FR','metadesc': '','metakey': '','ordering': 1,'published': 0,'sef': 'fk','sitename': '','title': 'French (FR)','title_native': 'Français (France)'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/content",
+					"raw": "{{base_path}}/api/index.php/v1/languages/content",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1306,7 +1306,7 @@
 					"raw": "{'description': '','lang_code': 'en-GB','metadesc': '','metakey': '','sitename': '','title': 'English (en-GB)','title_native': 'English (United Kingdom)'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/content/{language_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/content/{language_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1329,7 +1329,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1353,7 +1353,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1378,7 +1378,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1412,7 +1412,7 @@
 					"raw": "{'key':'new_key','override': 'text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1445,7 +1445,7 @@
 					"raw": "{'key':'new_key','override': 'new text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1479,7 +1479,7 @@
 					"raw": "{'searchstring': 'JLIB_APPLICATION_ERROR_SAVE_FAILED','searchtype': 'constant'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/overrides/search",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/search",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1507,7 +1507,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/languages/overrides/search/cache/refresh",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/search/cache/refresh",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1532,7 +1532,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1554,7 +1554,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/{menu_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1577,7 +1577,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/{menu_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1609,7 +1609,7 @@
 					"raw": "{'client_id': 0,'description': 'The menu for the site','menutype': 'menu','title': 'Menu'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1640,7 +1640,7 @@
 					"raw": "{'menutype': 'menu','title': 'New Menu'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/{menu_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1663,7 +1663,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/items/types",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/types",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1687,7 +1687,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/items",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1710,7 +1710,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1734,7 +1734,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1767,7 +1767,7 @@
 					"raw": "{'access': '1','alias': '','associations': {'en-GB': '','fr-FR': ''},'browserNav': '0','component_id': '20','home': '0','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','params': {'cancel_redirect_menuitem': '','catid': '','custom_cancel_redirect': '0','enable_category': '0','menu-anchor_css': '','menu-anchor_title': '','menu-meta_description': '','menu-meta_keywords': '','menu_image': '','menu_image_css': '','menu_show': '1','menu_text': '1','page_heading': '','page_title': '','pageclass_sfx': '','redirect_menuitem': '','robots': '','show_page_heading': ''},'parent_id': '1','publish_down': '','publish_up': '','published': '1','template_style_id': '0','title': 'title','toggle_modules_assigned': '1','toggle_modules_published': '1','type': 'component'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/items",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1799,7 +1799,7 @@
 					"raw": "{'component_id': '20','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','title': 'new title','type': 'component'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1823,7 +1823,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/messages",
+					"raw": "{{base_path}}/api/index.php/v1/messages",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1844,7 +1844,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/messages/{message_id}",
+					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1866,7 +1866,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/messages/{message_id}",
+					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1897,7 +1897,7 @@
 					"raw": "{'message': '<p>text</p>','state': 0,'subject': 'text','user_id_from': 773,'user_id_to': 772}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/messages",
+					"raw": "{{base_path}}/api/index.php/v1/messages",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1927,7 +1927,7 @@
 					"raw": "{'message': '<p>new text</p>','subject': 'new text','user_id_from': 773,'user_id_to': 772}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/messages/{message_id}",
+					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1949,7 +1949,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/modules/types/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/types/{app}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1972,7 +1972,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/modules/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{app}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1994,7 +1994,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/modules/{app}/{module_id}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2017,7 +2017,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/modules/{app}/{module_id}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2049,7 +2049,7 @@
 					"raw": "{'access': '1','assigned': ['101','105'],'assignment': '0','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','params': {'bootstrap_size': '0','cache': '1','cache_time': '900','cachemode': 'static','count': '10','header_class': '','header_tag': 'h3','layout': '_:default','module_tag': 'div','moduleclass_sfx': '','style': '0'},'position': '','publish_down': '','publish_up': '','published': '1','showtitle': '1','title': 'Title'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/modules/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{app}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2080,7 +2080,7 @@
 					"raw": "{'access': '1','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','title': 'New Title'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/modules/{app}/{module_id}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2103,7 +2103,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/newsfeeds/feeds",
+					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2125,7 +2125,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}",
+					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2148,7 +2148,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}",
+					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2180,7 +2180,7 @@
 					"raw": "{'access': 1,'alias': 'alias','catid': 5,'description': '','images': {'float_first': '','float_second': '','image_first': '','image_first_alt': '','image_first_caption': '','image_second': '','image_second_alt': '','image_second_caption': ''},'language': '*','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadata': {'hits': '','rights': '','robots': '','tags': {'tags': '','typeAlias': null}},'metadesc': '','metakey': '','name': 'Name','ordering': 1,'params': {'feed_character_count': '','feed_display_order': '','newsfeed_layout': '','show_feed_description': '','show_feed_image': '','show_item_description': ''},'published': 1}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/newsfeeds/feeds",
+					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2211,7 +2211,7 @@
 					"raw": "{'access': 1,'alias': 'test2','catid': 5,'description': '','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadesc': '','metakey': '','name': 'Test'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}",
+					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2234,7 +2234,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/privacy/request",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/request",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2256,7 +2256,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/privacy/request/{request_id}",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/request/{request_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2279,7 +2279,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/privacy/request/export/{request_id}",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/request/export/{request_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2312,7 +2312,7 @@
 					"raw": "{'email':'somenewemail@com.ua','request_type':'export'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/privacy/request",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/request",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2334,7 +2334,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/privacy/consent",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/consent",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2356,7 +2356,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/privacy/consent/{consent_id}",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/consent/{consent_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2379,7 +2379,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/privacy/consent/{consent_id}",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/consent/{consent_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2402,7 +2402,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/redirect",
+					"raw": "{{base_path}}/api/index.php/v1/redirect",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2423,7 +2423,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/redirect/{redirect_id}",
+					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2445,7 +2445,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/redirect/{redirect_id}",
+					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2476,7 +2476,7 @@
 					"raw": "{'comment': '','header': 301,'hits': 0,'new_url': '/content/art/99','old_url': '/content/art/12','published': 1,'referer': ''}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/redirect",
+					"raw": "{{base_path}}/api/index.php/v1/redirect",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2506,7 +2506,7 @@
 					"raw": "{'new_url': '/content/art/4','old_url': '/content/art/132'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/redirect/{redirect_id}",
+					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2528,7 +2528,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/tags",
+					"raw": "{{base_path}}/api/index.php/v1/tags",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2549,7 +2549,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/tags/{tag_id}",
+					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2571,7 +2571,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/tags/{tag_id}",
+					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2602,7 +2602,7 @@
 					"raw": "{'access': 1,'access_title': 'Public','alias': 'test','description': '','language': '*','note': '','parent_id': 1,'path': 'test','published': 1,'title': 'test'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/tags",
+					"raw": "{{base_path}}/api/index.php/v1/tags",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2632,7 +2632,7 @@
 					"raw": "{'alias': 'test','title': 'new title'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/tags/{tag_id}",
+					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2654,7 +2654,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/templates/styles/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2677,7 +2677,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2701,7 +2701,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2734,7 +2734,7 @@
 					"raw": "{'home': '0','params': {'fluidContainer': '0','logoFile': '','sidebarLeftWidth': '3','sidebarRightWidth': '3'},'template': 'cassiopeia','title': 'cassiopeia - Some Text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/templates/styles/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2766,7 +2766,7 @@
 					"raw": "{'template': 'cassiopeia','title': 'new cassiopeia - Default'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2790,7 +2790,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/users",
+					"raw": "{{base_path}}/api/index.php/v1/users",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2811,7 +2811,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/users/{user_id}",
+					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2833,7 +2833,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/users/{user_id}",
+					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2864,7 +2864,7 @@
 					"raw": "{'block': '0','email': 'test@mail.com','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/users",
+					"raw": "{{base_path}}/api/index.php/v1/users",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2894,7 +2894,7 @@
 					"raw": "{'email': 'new@mail.com','groups': ['2'],'name': 'name','username': 'username'}"
 				},
 				"url": {
-					"raw": "{{base_path}}api/index.php/v1/users/{user_id}",
+					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
 					"host": [
 						"{{base_path}}"
 					],
