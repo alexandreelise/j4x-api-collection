@@ -12,7 +12,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -34,7 +33,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -57,7 +55,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -89,7 +86,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -120,7 +116,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -143,7 +138,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/clients",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -166,7 +160,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -190,7 +183,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -223,7 +215,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/clients",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -255,7 +246,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -279,7 +269,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/categories",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -302,7 +291,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -326,7 +314,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -359,7 +346,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/categories",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -391,7 +377,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -415,7 +400,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{banner_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -444,7 +428,6 @@
 				],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{contenthistory_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -469,7 +452,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{contenthistory_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -493,7 +475,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/config/application",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -525,7 +506,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/config/application",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -548,7 +528,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/config/{component_name}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -580,7 +559,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/config/application",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -603,7 +581,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/contact",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -625,7 +602,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -648,7 +624,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -680,7 +655,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/contact",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -711,7 +685,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -743,7 +716,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/contact/form/{contact_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -767,7 +739,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -791,7 +762,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -816,7 +786,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -850,7 +819,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -883,7 +851,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -908,7 +875,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -933,7 +899,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -959,7 +924,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -994,7 +958,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1028,7 +991,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1054,7 +1016,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/content/article",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1077,7 +1038,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1101,7 +1061,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1134,7 +1093,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/content/article",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1166,7 +1124,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1190,7 +1147,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1221,7 +1177,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1243,7 +1198,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/content",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1266,7 +1220,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/v1/languages/content/{language_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1291,7 +1244,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/content/{language_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1324,7 +1276,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/content",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1356,7 +1307,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/content/{language_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1380,7 +1330,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1405,7 +1354,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1431,7 +1379,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1466,7 +1413,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1500,7 +1446,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1535,7 +1480,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/search",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1564,7 +1508,6 @@
 				],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/search/cache/refresh",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1590,7 +1533,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1613,7 +1555,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1637,7 +1578,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1670,7 +1610,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1702,7 +1641,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1726,7 +1664,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/types",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1751,7 +1688,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1775,7 +1711,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1800,7 +1735,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1834,7 +1768,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1867,7 +1800,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1892,7 +1824,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/messages",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1914,7 +1845,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1937,7 +1867,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1969,7 +1898,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/messages",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2000,7 +1928,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2023,7 +1950,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/modules/types/{app}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2047,7 +1973,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/modules/{app}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2070,7 +1995,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2094,7 +2018,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2127,7 +2050,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/modules/{app}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2159,7 +2081,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2183,7 +2104,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2206,7 +2126,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2230,7 +2149,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2263,7 +2181,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2295,7 +2212,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2319,7 +2235,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/privacy/request",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2342,7 +2257,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/privacy/request/{request_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2366,7 +2280,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/privacy/request/export/{request_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2400,7 +2313,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/privacy/request",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2423,7 +2335,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/privacy/consent",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2446,7 +2357,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/privacy/consent/{consent_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2470,7 +2380,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/privacy/consent/{consent_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2494,7 +2403,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/redirect",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2516,7 +2424,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2539,7 +2446,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2571,7 +2477,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/redirect",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2602,7 +2507,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2625,7 +2529,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/tags",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2647,7 +2550,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2670,7 +2572,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2702,7 +2603,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/tags",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2733,7 +2633,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2756,7 +2655,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2780,7 +2678,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2805,7 +2702,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2839,7 +2735,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2872,7 +2767,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2897,7 +2791,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/users",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2919,7 +2812,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2942,7 +2834,6 @@
 				"header": [],
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2974,7 +2865,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/users",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
@@ -3005,7 +2895,6 @@
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
-					"protocol": "https",
 					"host": [
 						"{{base_path}}"
 					],
