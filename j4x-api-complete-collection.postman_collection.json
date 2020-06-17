@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "{{base_path}}api/index.php/v1/banners",
+			"name": "{{base_path}}/api/index.php/v1/banners",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -22,17 +22,17 @@
 						"banners"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/banners'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/{banner_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -44,17 +44,17 @@
 						"{banner_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/banners/{banner_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/{{banner_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/{banner_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -66,12 +66,12 @@
 						"{banner_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/banners/{banner_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/banners/{{banner_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners",
+			"name": "{{base_path}}/api/index.php/v1/banners",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -96,12 +96,12 @@
 						"banners"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/banners' -d \\\"{'catid': 3,'clicks': 0,'custombannercode': '','description': 'Text','metakey': '','name': 'Name','params': {'alt': '','height': '','imageurl': '','width': ''}}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners' -d \\\"{'catid': 3,'clicks': 0,'custombannercode': '','description': 'Text','metakey': '','name': 'Name','params': {'alt': '','height': '','imageurl': '','width': ''}}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/{banner_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -115,7 +115,7 @@
 					"raw": "{'alias': 'name','catid': 3,'description': 'New Text','name': 'New Name'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/{banner_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -127,12 +127,12 @@
 						"{banner_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/banners/{banner_id}' -d \\\"{'alias': 'name','catid': 3,'description': 'New Text','name': 'New Name'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/{{banner_id}}' -d \\\"{'alias': 'name','catid': 3,'description': 'New Text','name': 'New Name'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/clients",
+			"name": "{{base_path}}/api/index.php/v1/banners/clients",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -149,17 +149,17 @@
 						"clients"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/banners/clients'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/clients'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/clients/{client_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -172,17 +172,17 @@
 						"{client_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/banners/clients/{client_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/clients/{client_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -195,12 +195,12 @@
 						"{client_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/banners/clients/{client_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/clients",
+			"name": "{{base_path}}/api/index.php/v1/banners/clients",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -226,12 +226,12 @@
 						"clients"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/banners/clients' -d \\\"{'contact': 'Name','email': 'email@mail.com','extrainfo': '','metakey': '','name': 'Clients','state': 1}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/clients' -d \\\"{'contact': 'Name','email': 'email@mail.com','extrainfo': '','metakey': '','name': 'Clients','state': 1}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/clients/{client_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -245,7 +245,7 @@
 					"raw": "{'contact': 'new Name','email': 'newemail@mail.com','name': 'Clients'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{client_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -258,12 +258,12 @@
 						"{client_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/banners/clients/{client_id}' -d \\\"{'contact': 'new Name','email': 'newemail@mail.com','name': 'Clients'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}' -d \\\"{'contact': 'new Name','email': 'newemail@mail.com','name': 'Clients'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/categories",
+			"name": "{{base_path}}/api/index.php/v1/banners/categories",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -280,17 +280,17 @@
 						"categories"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/banners/categories'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/categories'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/categories/{category_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -303,17 +303,17 @@
 						"{category_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/banners/categories/{category_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/categories/{category_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -326,12 +326,12 @@
 						"{category_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/banners/categories/{category_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/categories",
+			"name": "{{base_path}}/api/index.php/v1/banners/categories",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -357,12 +357,12 @@
 						"categories"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/banners/categories' -d \\\"{'access': 1,'alias': 'cat','extension': 'com_banners','language': '*','note': '','parent_id': 1,'published': 1,'title': 'Title','params': {'workflow_id': 1}}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/categories' -d \\\"{'access': 1,'alias': 'cat','extension': 'com_banners','language': '*','note': '','parent_id': 1,'published': 1,'title': 'Title','params': {'workflow_id': 1}}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/categories/{category_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -376,7 +376,7 @@
 					"raw": "{'alias': 'cat','note': 'Some Text','parent_id': 1,'title': 'New Title'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{category_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -389,17 +389,17 @@
 						"{category_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/banners/categories/{category_id}' -d \\\"{'alias': 'cat','note': 'Some Text','parent_id': 1,'title': 'New Title'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}' -d \\\"{'alias': 'cat','note': 'Some Text','parent_id': 1,'title': 'New Title'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/contenthistory/{banner_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/contenthistory/{{banner_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{banner_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{{banner_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -412,12 +412,12 @@
 						"{banner_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/banners/contenthistory/{banner_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/contenthistory/{{banner_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/contenthistory/keep/{contenthistory_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{{contenthistory_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -427,7 +427,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{contenthistory_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{{contenthistory_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -441,17 +441,17 @@
 						"{contenthistory_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/banners/contenthistory/keep/{contenthistory_id}'"
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{{contenthistory_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/banners/contenthistory/{contenthistory_id}",
+			"name": "{{base_path}}/api/index.php/v1/banners/contenthistory/{{contenthistory_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{contenthistory_id}",
+					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{{contenthistory_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -464,12 +464,12 @@
 						"{contenthistory_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/banners/contenthistory/{contenthistory_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/banners/contenthistory/{{contenthistory_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/config/application",
+			"name": "{{base_path}}/api/index.php/v1/config/application",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -486,12 +486,12 @@
 						"application"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/config/application'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/config/application'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/config/application",
+			"name": "{{base_path}}/api/index.php/v1/config/application",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -517,17 +517,17 @@
 						"application"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/config/application' -d \\\"{'debug': true,'sitename': '123'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/config/application' -d \\\"{'debug': true,'sitename': '123'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/config/{component_name}",
+			"name": "{{base_path}}/api/index.php/v1/config/{{component_name}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/config/{component_name}",
+					"raw": "{{base_path}}/api/index.php/v1/config/{{component_name}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -539,12 +539,12 @@
 						"{component_name}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/config/{component_name}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/config/{{component_name}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/config/application",
+			"name": "{{base_path}}/api/index.php/v1/config/application",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -570,12 +570,12 @@
 						"application"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/config/application' -d \\\"{'link_titles': 1}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/config/application' -d \\\"{'link_titles': 1}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/contact",
+			"name": "{{base_path}}/api/index.php/v1/contact",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -591,17 +591,17 @@
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/contact'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/contact'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/contact/{contact_id}",
+			"name": "{{base_path}}/api/index.php/v1/contact/{{contact_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
+					"raw": "{{base_path}}/api/index.php/v1/contact/{{contact_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -613,17 +613,17 @@
 						"{contact_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/contact/{contact_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/contact/{{contact_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/contact/{contact_id}",
+			"name": "{{base_path}}/api/index.php/v1/contact/{{contact_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
+					"raw": "{{base_path}}/api/index.php/v1/contact/{{contact_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -635,12 +635,12 @@
 						"{contact_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/contact/{contact_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/contact/{{contact_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/contact",
+			"name": "{{base_path}}/api/index.php/v1/contact",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -665,12 +665,12 @@
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/contact' -d \\\"{'alias': 'contact','catid': 4,'language': '*','name': 'Contact'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/contact' -d \\\"{'alias': 'contact','catid': 4,'language': '*','name': 'Contact'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/contact/{contact_id}",
+			"name": "{{base_path}}/api/index.php/v1/contact/{{contact_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -684,7 +684,7 @@
 					"raw": "{'alias': 'contact','catid': 4,'name': 'New Contact'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contact/{contact_id}",
+					"raw": "{{base_path}}/api/index.php/v1/contact/{{contact_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -696,12 +696,12 @@
 						"{contact_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/contact/{contact_id}' -d \\\"{'alias': 'contact','catid': 4,'name': 'New Contact'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/contact/{{contact_id}}' -d \\\"{'alias': 'contact','catid': 4,'name': 'New Contact'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/contact/form/{contact_id}",
+			"name": "{{base_path}}/api/index.php/v1/contact/form/{{contact_id}}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -715,7 +715,7 @@
 					"raw": "{'contact_email': 'email@mail.com','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contact/form/{contact_id}",
+					"raw": "{{base_path}}/api/index.php/v1/contact/form/{{contact_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -728,12 +728,12 @@
 						"{contact_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/contact/form/{contact_id}' -d \\\"{'contact_email': 'email@mail.com','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/contact/form/{{contact_id}}' -d \\\"{'contact_email': 'email@mail.com','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/contact/contact",
+			"name": "{{base_path}}/api/index.php/v1/fields/contact/contact",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -751,17 +751,17 @@
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/fields/contact/contact'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/fields/contact/contact'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}",
+			"name": "{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -775,17 +775,17 @@
 						"{field_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}",
+			"name": "{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -799,12 +799,12 @@
 						"{field_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/contact/contact",
+			"name": "{{base_path}}/api/index.php/v1/fields/contact/contact",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -831,12 +831,12 @@
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/fields/contact/contact' -d \\\"{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/fields/contact/contact' -d \\\"{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}",
+			"name": "{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -850,7 +850,7 @@
 					"raw": "{'title': 'new contact field','name': 'contact-field','label': 'contact field','default_value': '','type': 'text','note': '','description': 'Some New Text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{field_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -864,12 +864,12 @@
 						"{field_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/fields/contact/contact/{field_id}' -d \\\"{'title': 'new contact field','name': 'contact-field','label': 'contact field','default_value': '','type': 'text','note': '','description': 'Some New Text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/fields/contact/contact/{{field_id}}' -d \\\"{'title': 'new contact field','name': 'contact-field','label': 'contact field','default_value': '','type': 'text','note': '','description': 'Some New Text'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/groups/contact/contact",
+			"name": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -888,17 +888,17 @@
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/fields/groups/contact/contact'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/fields/groups/contact/contact'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}",
+			"name": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -913,17 +913,17 @@
 						"{group_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}",
+			"name": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -938,12 +938,12 @@
 						"{group_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/groups/contact/contact",
+			"name": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -971,12 +971,12 @@
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/fields/groups/contact/contact' -d \\\"{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field3','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/fields/groups/contact/contact' -d \\\"{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field3','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}",
+			"name": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -990,7 +990,7 @@
 					"raw": "{'title': 'new contact group','note': '','description': 'new description'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{group_id}",
+					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1005,12 +1005,12 @@
 						"{group_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/fields/groups/contact/contact/{group_id}' -d \\\"{'title': 'new contact group','note': '','description': 'new description'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/fields/groups/contact/contact/{{group_id}}' -d \\\"{'title': 'new contact group','note': '','description': 'new description'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/content/article",
+			"name": "{{base_path}}/api/index.php/v1/content/article",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -1027,17 +1027,17 @@
 						"article"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/content/article'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/content/article'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/content/article/{article_id}",
+			"name": "{{base_path}}/api/index.php/v1/content/article/{{article_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
+					"raw": "{{base_path}}/api/index.php/v1/content/article/{{article_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1050,17 +1050,17 @@
 						"{article_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/content/article/{article_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/content/article/{{article_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/content/article/{article_id}",
+			"name": "{{base_path}}/api/index.php/v1/content/article/{{article_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
+					"raw": "{{base_path}}/api/index.php/v1/content/article/{{article_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1073,12 +1073,12 @@
 						"{article_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/content/article/{article_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/content/article/{{article_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/content/article",
+			"name": "{{base_path}}/api/index.php/v1/content/article",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1104,12 +1104,12 @@
 						"article"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/content/article' -d \\\"{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here's an article'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/content/article' -d \\\"{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here's an article'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/content/article/{article_id}",
+			"name": "{{base_path}}/api/index.php/v1/content/article/{{article_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1123,7 +1123,7 @@
 					"raw": "{'catid': 64,'title': 'Updated article'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/article/{article_id}",
+					"raw": "{{base_path}}/api/index.php/v1/content/article/{{article_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1136,12 +1136,12 @@
 						"{article_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/content/article/{article_id}' -d \\\"{'catid': 64,'title': 'Updated article'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/content/article/{{article_id}}' -d \\\"{'catid': 64,'title': 'Updated article'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages",
+			"name": "{{base_path}}/api/index.php/v1/languages",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -1157,12 +1157,12 @@
 						"languages"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/languages'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/languages'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages",
+			"name": "{{base_path}}/api/index.php/v1/languages",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1187,12 +1187,12 @@
 						"languages"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/languages' -d \\\"{'package': 'pkg_fr-FR'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages' -d \\\"{'package': 'pkg_fr-FR'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/content",
+			"name": "{{base_path}}/api/index.php/v1/languages/content",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -1209,17 +1209,17 @@
 						"content"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/languages/content'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/languages/content'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/v1/languages/content/{language_id}",
+			"name": "{{base_path}}/api/index.php/v1/v1/languages/content/{{language_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/v1/languages/content/{language_id}",
+					"raw": "{{base_path}}/api/index.php/v1/v1/languages/content/{{language_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1233,17 +1233,17 @@
 						"{language_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/v1/languages/content/{language_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/v1/languages/content/{{language_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/content/{language_id}",
+			"name": "{{base_path}}/api/index.php/v1/languages/content/{{language_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/content/{language_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/content/{{language_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1256,12 +1256,12 @@
 						"{language_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/languages/content/{language_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/languages/content/{{language_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/content",
+			"name": "{{base_path}}/api/index.php/v1/languages/content",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1287,12 +1287,12 @@
 						"content"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/languages/content' -d \\\"{'access': 1,'description': '','image': 'fr_FR','lang_code': 'fr-FR','metadesc': '','metakey': '','ordering': 1,'published': 0,'sef': 'fk','sitename': '','title': 'French (FR)','title_native': 'Français (France)'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/content' -d \\\"{'access': 1,'description': '','image': 'fr_FR','lang_code': 'fr-FR','metadesc': '','metakey': '','ordering': 1,'published': 0,'sef': 'fk','sitename': '','title': 'French (FR)','title_native': 'Français (France)'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/content/{language_id}",
+			"name": "{{base_path}}/api/index.php/v1/languages/content/{{language_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1306,7 +1306,7 @@
 					"raw": "{'description': '','lang_code': 'en-GB','metadesc': '','metakey': '','sitename': '','title': 'English (en-GB)','title_native': 'English (United Kingdom)'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/content/{language_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/content/{{language_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1319,17 +1319,17 @@
 						"{language_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/languages/content/{language_id}' -d \\\"{'description': '','lang_code': 'en-GB','metadesc': '','metakey': '','sitename': '','title': 'English (en-GB)','title_native': 'English (United Kingdom)'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/content/{{language_id}}' -d \\\"{'description': '','lang_code': 'en-GB','metadesc': '','metakey': '','sitename': '','title': 'English (en-GB)','title_native': 'English (United Kingdom)'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}",
+			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1343,17 +1343,17 @@
 						"{lang_code}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1368,17 +1368,17 @@
 						"{constant_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1393,12 +1393,12 @@
 						"{constant_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}",
+			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1412,7 +1412,7 @@
 					"raw": "{'key':'new_key','override': 'text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1426,12 +1426,12 @@
 						"{lang_code}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}' -d \\\"{'key':'new_key','override': 'text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}' -d \\\"{'key':'new_key','override': 'text'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1445,7 +1445,7 @@
 					"raw": "{'key':'new_key','override': 'new text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}",
+					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1460,12 +1460,12 @@
 						"{constant_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}' -d \\\"{'key':'new_key','override': 'new text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -d \\\"{'key':'new_key','override': 'new text'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/overrides/search",
+			"name": "{{base_path}}/api/index.php/v1/languages/overrides/search",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1492,12 +1492,12 @@
 						"search"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/languages/overrides/search' -d \\\"{'searchstring': 'JLIB_APPLICATION_ERROR_SAVE_FAILED','searchtype': 'constant'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/overrides/search' -d \\\"{'searchstring': 'JLIB_APPLICATION_ERROR_SAVE_FAILED','searchtype': 'constant'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/languages/overrides/search/cache/refresh",
+			"name": "{{base_path}}/api/index.php/v1/languages/overrides/search/cache/refresh",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1522,17 +1522,17 @@
 						"refresh"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/languages/overrides/search/cache/refresh'"
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/overrides/search/cache/refresh'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1544,17 +1544,17 @@
 						"{app}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/menus/{app}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/{menu_id}",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1567,17 +1567,17 @@
 						"{menu_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/menus/{app}/{menu_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/{menu_id}",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1590,12 +1590,12 @@
 						"{menu_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/menus/{app}/{menu_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1609,7 +1609,7 @@
 					"raw": "{'client_id': 0,'description': 'The menu for the site','menutype': 'menu','title': 'Menu'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1621,12 +1621,12 @@
 						"{app}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/menus/{app}' -d \\\"{'client_id': 0,'description': 'The menu for the site','menutype': 'menu','title': 'Menu'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/menus/{{app}}' -d \\\"{'client_id': 0,'description': 'The menu for the site','menutype': 'menu','title': 'Menu'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/{menu_id}",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1640,7 +1640,7 @@
 					"raw": "{'menutype': 'menu','title': 'New Menu'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/{menu_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1653,17 +1653,17 @@
 						"{menu_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/menus/{app}/{menu_id}' -d \\\"{'menutype': 'menu','title': 'New Menu'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}' -d \\\"{'menutype': 'menu','title': 'New Menu'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/items/types",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/types",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/types",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/types",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1677,17 +1677,17 @@
 						"types"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/menus/{app}/items/types'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}/items/types'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/items",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1700,17 +1700,17 @@
 						"items"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/menus/{app}/items'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}/items'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1724,17 +1724,17 @@
 						"{menu_item_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1748,12 +1748,12 @@
 						"{menu_item_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/items",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1767,7 +1767,7 @@
 					"raw": "{'access': '1','alias': '','associations': {'en-GB': '','fr-FR': ''},'browserNav': '0','component_id': '20','home': '0','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','params': {'cancel_redirect_menuitem': '','catid': '','custom_cancel_redirect': '0','enable_category': '0','menu-anchor_css': '','menu-anchor_title': '','menu-meta_description': '','menu-meta_keywords': '','menu_image': '','menu_image_css': '','menu_show': '1','menu_text': '1','page_heading': '','page_title': '','pageclass_sfx': '','redirect_menuitem': '','robots': '','show_page_heading': ''},'parent_id': '1','publish_down': '','publish_up': '','published': '1','template_style_id': '0','title': 'title','toggle_modules_assigned': '1','toggle_modules_published': '1','type': 'component'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1780,12 +1780,12 @@
 						"items"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/menus/{app}/items' -d \\\"{'access': '1','alias': '','associations': {'en-GB': '','fr-FR': ''},'browserNav': '0','component_id': '20','home': '0','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','params': {'cancel_redirect_menuitem': '','catid': '','custom_cancel_redirect': '0','enable_category': '0','menu-anchor_css': '','menu-anchor_title': '','menu-meta_description': '','menu-meta_keywords': '','menu_image': '','menu_image_css': '','menu_show': '1','menu_text': '1','page_heading': '','page_title': '','pageclass_sfx': '','redirect_menuitem': '','robots': '','show_page_heading': ''},'parent_id': '1','publish_down': '','publish_up': '','published': '1','template_style_id': '0','title': 'title','toggle_modules_assigned': '1','toggle_modules_published': '1','type': 'component'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/menus/{{app}}/items' -d \\\"{'access': '1','alias': '','associations': {'en-GB': '','fr-FR': ''},'browserNav': '0','component_id': '20','home': '0','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','params': {'cancel_redirect_menuitem': '','catid': '','custom_cancel_redirect': '0','enable_category': '0','menu-anchor_css': '','menu-anchor_title': '','menu-meta_description': '','menu-meta_keywords': '','menu_image': '','menu_image_css': '','menu_show': '1','menu_text': '1','page_heading': '','page_title': '','pageclass_sfx': '','redirect_menuitem': '','robots': '','show_page_heading': ''},'parent_id': '1','publish_down': '','publish_up': '','published': '1','template_style_id': '0','title': 'title','toggle_modules_assigned': '1','toggle_modules_published': '1','type': 'component'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}",
+			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1799,7 +1799,7 @@
 					"raw": "{'component_id': '20','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','title': 'new title','type': 'component'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{app}/items/{menu_item_id}",
+					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1813,12 +1813,12 @@
 						"{menu_item_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/menus/{app}/items/{menu_item_id}' -d \\\"{'component_id': '20','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','title': 'new title','type': 'component'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}' -d \\\"{'component_id': '20','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','title': 'new title','type': 'component'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/messages",
+			"name": "{{base_path}}/api/index.php/v1/messages",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -1834,17 +1834,17 @@
 						"messages"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/messages'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/messages'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/messages/{message_id}",
+			"name": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
+					"raw": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1856,17 +1856,17 @@
 						"{message_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/messages/{message_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/messages/{{message_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/messages/{message_id}",
+			"name": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
+					"raw": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1878,12 +1878,12 @@
 						"{message_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/messages/{message_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/messages/{{message_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/messages",
+			"name": "{{base_path}}/api/index.php/v1/messages",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1908,12 +1908,12 @@
 						"messages"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json'  '{{base_path}}api/index.php/v1/messages' -d \\\"{'message': '<p>text</p>','state': 0,'subject': 'text','user_id_from': 773,'user_id_to': 772}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json'  '{{base_path}}/api/index.php/v1/messages' -d \\\"{'message': '<p>text</p>','state': 0,'subject': 'text','user_id_from': 773,'user_id_to': 772}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/messages/{message_id}",
+			"name": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1927,7 +1927,7 @@
 					"raw": "{'message': '<p>new text</p>','subject': 'new text','user_id_from': 773,'user_id_to': 772}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/messages/{message_id}",
+					"raw": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1939,17 +1939,17 @@
 						"{message_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json'  '{{base_path}}api/index.php/v1/messages/{message_id}' -d \\\"{'message': '<p>new text</p>','subject': 'new text','user_id_from': 773,'user_id_to': 772}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json'  '{{base_path}}/api/index.php/v1/messages/{{message_id}}' -d \\\"{'message': '<p>new text</p>','subject': 'new text','user_id_from': 773,'user_id_to': 772}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/modules/types/{app}",
+			"name": "{{base_path}}/api/index.php/v1/modules/types/{{app}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/types/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/types/{{app}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1962,17 +1962,17 @@
 						"{app}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/modules/types/{app}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/modules/types/{{app}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/modules/{app}",
+			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1984,17 +1984,17 @@
 						"{app}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/modules/{app}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/modules/{{app}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/modules/{app}/{module_id}",
+			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2007,17 +2007,17 @@
 						"{module_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/modules/{app}/{module_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/modules/{app}/{module_id}",
+			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2030,12 +2030,12 @@
 						"{module_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/modules/{app}/{module_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/modules/{app}",
+			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2049,7 +2049,7 @@
 					"raw": "{'access': '1','assigned': ['101','105'],'assignment': '0','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','params': {'bootstrap_size': '0','cache': '1','cache_time': '900','cachemode': 'static','count': '10','header_class': '','header_tag': 'h3','layout': '_:default','module_tag': 'div','moduleclass_sfx': '','style': '0'},'position': '','publish_down': '','publish_up': '','published': '1','showtitle': '1','title': 'Title'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2061,12 +2061,12 @@
 						"{app}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/modules/{app}' -d \\\"{'access': '1','assigned': ['101','105'],'assignment': '0','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','params': {'bootstrap_size': '0','cache': '1','cache_time': '900','cachemode': 'static','count': '10','header_class': '','header_tag': 'h3','layout': '_:default','module_tag': 'div','moduleclass_sfx': '','style': '0'},'position': '','publish_down': '','publish_up': '','published': '1','showtitle': '1','title': 'Title'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/modules/{{app}}' -d \\\"{'access': '1','assigned': ['101','105'],'assignment': '0','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','params': {'bootstrap_size': '0','cache': '1','cache_time': '900','cachemode': 'static','count': '10','header_class': '','header_tag': 'h3','layout': '_:default','module_tag': 'div','moduleclass_sfx': '','style': '0'},'position': '','publish_down': '','publish_up': '','published': '1','showtitle': '1','title': 'Title'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/modules/{app}/{module_id}",
+			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2080,7 +2080,7 @@
 					"raw": "{'access': '1','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','title': 'New Title'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{app}/{module_id}",
+					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2093,12 +2093,12 @@
 						"{module_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/modules/{app}/{module_id}' -d \\\"{'access': '1','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','title': 'New Title'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}' -d \\\"{'access': '1','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','title': 'New Title'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/newsfeeds/feeds",
+			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -2115,17 +2115,17 @@
 						"feeds"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/newsfeeds/feeds'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/newsfeeds/feeds'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}",
+			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
+					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2138,17 +2138,17 @@
 						"{feed_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}",
+			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
+					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2161,12 +2161,12 @@
 						"{feed_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/newsfeeds/feeds",
+			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2192,12 +2192,12 @@
 						"feeds"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/newsfeeds/feeds' -d \\\"{'access': 1,'alias': 'alias','catid': 5,'description': '','images': {'float_first': '','float_second': '','image_first': '','image_first_alt': '','image_first_caption': '','image_second': '','image_second_alt': '','image_second_caption': ''},'language': '*','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadata': {'hits': '','rights': '','robots': '','tags': {'tags': '','typeAlias': null}},'metadesc': '','metakey': '','name': 'Name','ordering': 1,'params': {'feed_character_count': '','feed_display_order': '','newsfeed_layout': '','show_feed_description': '','show_feed_image': '','show_item_description': ''},'published': 1}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/newsfeeds/feeds' -d \\\"{'access': 1,'alias': 'alias','catid': 5,'description': '','images': {'float_first': '','float_second': '','image_first': '','image_first_alt': '','image_first_caption': '','image_second': '','image_second_alt': '','image_second_caption': ''},'language': '*','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadata': {'hits': '','rights': '','robots': '','tags': {'tags': '','typeAlias': null}},'metadesc': '','metakey': '','name': 'Name','ordering': 1,'params': {'feed_character_count': '','feed_display_order': '','newsfeed_layout': '','show_feed_description': '','show_feed_image': '','show_item_description': ''},'published': 1}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}",
+			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2211,7 +2211,7 @@
 					"raw": "{'access': 1,'alias': 'test2','catid': 5,'description': '','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadesc': '','metakey': '','name': 'Test'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{feed_id}",
+					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2224,12 +2224,12 @@
 						"{feed_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/newsfeeds/feeds/{feed_id}' -d \\\"{'access': 1,'alias': 'test2','catid': 5,'description': '','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadesc': '','metakey': '','name': 'Test'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}' -d \\\"{'access': 1,'alias': 'test2','catid': 5,'description': '','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadesc': '','metakey': '','name': 'Test'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/privacy/request",
+			"name": "{{base_path}}/api/index.php/v1/privacy/request",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -2246,17 +2246,17 @@
 						"request"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/privacy/request'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/request'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/privacy/request/{request_id}",
+			"name": "{{base_path}}/api/index.php/v1/privacy/request/{{request_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/request/{request_id}",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/request/{{request_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2269,17 +2269,17 @@
 						"{request_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/privacy/request/{request_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/request/{{request_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/privacy/request/export/{request_id}",
+			"name": "{{base_path}}/api/index.php/v1/privacy/request/export/{{request_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/request/export/{request_id}",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/request/export/{{request_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2293,12 +2293,12 @@
 						"{request_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/privacy/request/export/{request_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/request/export/{{request_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/privacy/request",
+			"name": "{{base_path}}/api/index.php/v1/privacy/request",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2324,12 +2324,12 @@
 						"request"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/privacy/request' -d \\\"{'email':'somenewemail@com.ua','request_type':'export'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/privacy/request' -d \\\"{'email':'somenewemail@com.ua','request_type':'export'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/privacy/consent",
+			"name": "{{base_path}}/api/index.php/v1/privacy/consent",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -2346,17 +2346,17 @@
 						"consent"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/privacy/consent'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/consent'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/privacy/consent/{consent_id}",
+			"name": "{{base_path}}/api/index.php/v1/privacy/consent/{{consent_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/consent/{consent_id}",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/consent/{{consent_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2369,17 +2369,17 @@
 						"{consent_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/privacy/consent/{consent_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/consent/{{consent_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/privacy/consent/{consent_id}",
+			"name": "{{base_path}}/api/index.php/v1/privacy/consent/{{consent_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/consent/{consent_id}",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/consent/{{consent_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2392,12 +2392,12 @@
 						"{consent_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/privacy/consent/{consent_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/privacy/consent/{{consent_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/redirect",
+			"name": "{{base_path}}/api/index.php/v1/redirect",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -2413,17 +2413,17 @@
 						"redirect"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/redirect'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/redirect'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/redirect/{redirect_id}",
+			"name": "{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
+					"raw": "{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2435,17 +2435,17 @@
 						"{redirect_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/redirect/{redirect_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/redirect/{redirect_id}",
+			"name": "{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
+					"raw": "{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2457,12 +2457,12 @@
 						"{redirect_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/redirect/{redirect_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/redirect",
+			"name": "{{base_path}}/api/index.php/v1/redirect",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2487,12 +2487,12 @@
 						"redirect"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/redirect' -d \\\"{'comment': '','header': 301,'hits': 0,'new_url': '/content/art/99','old_url': '/content/art/12','published': 1,'referer': ''}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/redirect' -d \\\"{'comment': '','header': 301,'hits': 0,'new_url': '/content/art/99','old_url': '/content/art/12','published': 1,'referer': ''}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/redirect/{redirect_id}",
+			"name": "{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2506,7 +2506,7 @@
 					"raw": "{'new_url': '/content/art/4','old_url': '/content/art/132'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirect/{redirect_id}",
+					"raw": "{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2518,12 +2518,12 @@
 						"{redirect_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/redirect/{redirect_id}' -d \\\"{'new_url': '/content/art/4','old_url': '/content/art/132'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/redirect/{{redirect_id}}' -d \\\"{'new_url': '/content/art/4','old_url': '/content/art/132'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/tags",
+			"name": "{{base_path}}/api/index.php/v1/tags",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -2539,17 +2539,17 @@
 						"tags"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/tags'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/tags'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/tags/{tag_id}",
+			"name": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
+					"raw": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2561,17 +2561,17 @@
 						"{tag_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/tags/{tag_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/tags/{{tag_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/tags/{tag_id}",
+			"name": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
+					"raw": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2583,12 +2583,12 @@
 						"{tag_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/tags/{tag_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/tags/{{tag_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/tags",
+			"name": "{{base_path}}/api/index.php/v1/tags",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2613,12 +2613,12 @@
 						"tags"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/tags' -d \\\"{'access': 1,'access_title': 'Public','alias': 'test','description': '','language': '*','note': '','parent_id': 1,'path': 'test','published': 1,'title': 'test'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/tags' -d \\\"{'access': 1,'access_title': 'Public','alias': 'test','description': '','language': '*','note': '','parent_id': 1,'path': 'test','published': 1,'title': 'test'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/tags/{tag_id}",
+			"name": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2632,7 +2632,7 @@
 					"raw": "{'alias': 'test','title': 'new title'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/tags/{tag_id}",
+					"raw": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2644,17 +2644,17 @@
 						"{tag_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/tags/{tag_id}' -d \\\"{'alias': 'test','title': 'new title'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/tags/{{tag_id}}' -d \\\"{'alias': 'test','title': 'new title'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/templates/styles/{app}",
+			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2667,17 +2667,17 @@
 						"{app}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/templates/styles/{app}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/templates/styles/{{app}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}",
+			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2691,17 +2691,17 @@
 						"{template_style_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}",
+			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2715,12 +2715,12 @@
 						"{template_style_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/templates/styles/{app}",
+			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2734,7 +2734,7 @@
 					"raw": "{'home': '0','params': {'fluidContainer': '0','logoFile': '','sidebarLeftWidth': '3','sidebarRightWidth': '3'},'template': 'cassiopeia','title': 'cassiopeia - Some Text'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2747,12 +2747,12 @@
 						"{app}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/templates/styles/{app}' -d \\\"{'home': '0','params': {'fluidContainer': '0','logoFile': '','sidebarLeftWidth': '3','sidebarRightWidth': '3'},'template': 'cassiopeia','title': 'cassiopeia - Some Text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/templates/styles/{{app}}' -d \\\"{'home': '0','params': {'fluidContainer': '0','logoFile': '','sidebarLeftWidth': '3','sidebarRightWidth': '3'},'template': 'cassiopeia','title': 'cassiopeia - Some Text'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}",
+			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2766,7 +2766,7 @@
 					"raw": "{'template': 'cassiopeia','title': 'new cassiopeia - Default'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{app}/{template_style_id}",
+					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2780,12 +2780,12 @@
 						"{template_style_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/templates/styles/{app}/{template_style_id}' -d  \\\"{'template': 'cassiopeia','title': 'new cassiopeia - Default'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}' -d  \\\"{'template': 'cassiopeia','title': 'new cassiopeia - Default'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/users",
+			"name": "{{base_path}}/api/index.php/v1/users",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -2801,17 +2801,17 @@
 						"users"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/users'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/users'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/users/{user_id}",
+			"name": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
+					"raw": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2823,17 +2823,17 @@
 						"{user_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}api/index.php/v1/users/{user_id}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/users/{{user_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/users/{user_id}",
+			"name": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
+					"raw": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2845,12 +2845,12 @@
 						"{user_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}api/index.php/v1/users/{user_id}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/users/{{user_id}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/users",
+			"name": "{{base_path}}/api/index.php/v1/users",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2875,12 +2875,12 @@
 						"users"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/users' -d \\\"{'block': '0','email': 'test@mail.com','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users' -d \\\"{'block': '0','email': 'test@mail.com','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}\\\""
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}api/index.php/v1/users/{user_id}",
+			"name": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2894,7 +2894,7 @@
 					"raw": "{'email': 'new@mail.com','groups': ['2'],'name': 'name','username': 'username'}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/users/{user_id}",
+					"raw": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2906,7 +2906,7 @@
 						"{user_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}api/index.php/v1/users/{user_id}' -d \\\"{'email': 'new@mail.com','groups': ['2'],'name': 'name','username': 'username'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users/{{user_id}}' -d \\\"{'email': 'new@mail.com','groups': ['2'],'name': 'name','username': 'username'}\\\""
 			},
 			"response": []
 		}
