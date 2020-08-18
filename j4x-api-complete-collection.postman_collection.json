@@ -1,7 +1,8 @@
 {
 	"info": {
 		"_postman_id": "7c3680c2-f017-47f9-841f-bdabb83950df",
-		"name": "j4x api complete collection",
+		"name": "Joomla 4 Web Services API Collection for Postman",
+		"description": "Collection of Joomla 4 Web Services API Endpoints for Postman. See https://github.com/alexandreelise/j4x-api-collection for updates and information.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -2909,6 +2910,28 @@
 				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users/{{user_id}}' -d \\\"{'email': 'new@mail.com','groups': ['2'],'name': 'name','username': 'username'}\\\""
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "Paste your Joomla API Token here.",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-Joomla-Token",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "942ab3fa-2de4-4dfa-b51d-33f5ecc675ae",
+			"key": "base_path",
+			"value": "Put the URL for your Joomla 4 installation here."
 		}
 	],
 	"protocolProfileBehavior": {}
