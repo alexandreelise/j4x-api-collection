@@ -25,3 +25,7 @@ The URLs are set via *base_path*.  You should set this variable within your coll
 - Select Edit.
 - Click on the variables tab.
 - Add (or update) the *base_path* variable, setting the Initial Value field to the URL for your Joomla for installation.
+
+## Documentation
+The Postman generated Api documentation of Joomla! 4 Webservices collection
+[Joomla! 4 Webservices API Documentation](https://documenter.getpostman.com/view/7443864/TVCgxmr7 "Joomla! 4 Webservices API Documentation")
