@@ -212,7 +212,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'contact': 'Name','email': 'email@mail.com','extrainfo': '','metakey': '','name': 'Clients','state': 1}"
+					"raw": "{'contact': 'Name','email': 'email@example.org','extrainfo': '','metakey': '','name': 'Clients','state': 1}"
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/clients",
@@ -227,7 +227,7 @@
 						"clients"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/clients' -d \\\"{'contact': 'Name','email': 'email@mail.com','extrainfo': '','metakey': '','name': 'Clients','state': 1}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/clients' -d \\\"{'contact': 'Name','email': 'email@example.org','extrainfo': '','metakey': '','name': 'Clients','state': 1}\\\""
 			},
 			"response": []
 		},
@@ -243,7 +243,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'contact': 'new Name','email': 'newemail@mail.com','name': 'Clients'}"
+					"raw": "{'contact': 'new Name','email': 'newemail@example.org','name': 'Clients'}"
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
@@ -259,7 +259,7 @@
 						"{client_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}' -d \\\"{'contact': 'new Name','email': 'newemail@mail.com','name': 'Clients'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}' -d \\\"{'contact': 'new Name','email': 'newemail@example.org','name': 'Clients'}\\\""
 			},
 			"response": []
 		},
@@ -713,7 +713,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'contact_email': 'email@mail.com','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}"
+					"raw": "{'contact_email': 'email@example.org','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}"
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/contact/form/{{contact_id}}",
@@ -729,7 +729,7 @@
 						"{contact_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/contact/form/{{contact_id}}' -d \\\"{'contact_email': 'email@mail.com','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/contact/form/{{contact_id}}' -d \\\"{'contact_email': 'email@example.org','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}\\\""
 			},
 			"response": []
 		},
@@ -2862,7 +2862,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'block': '0','email': 'test@mail.com','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}"
+					"raw": "{'block': '0','email': 'test@example.org','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}"
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/users",
@@ -2876,7 +2876,7 @@
 						"users"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users' -d \\\"{'block': '0','email': 'test@mail.com','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users' -d \\\"{'block': '0','email': 'test@example.org','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}\\\""
 			},
 			"response": []
 		},
@@ -2892,7 +2892,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'email': 'new@mail.com','groups': ['2'],'name': 'name','username': 'username'}"
+					"raw": "{'email': 'new@example.org','groups': ['2'],'name': 'name','username': 'username'}"
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
@@ -2907,7 +2907,7 @@
 						"{user_id}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users/{{user_id}}' -d \\\"{'email': 'new@mail.com','groups': ['2'],'name': 'name','username': 'username'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users/{{user_id}}' -d \\\"{'email': 'new@example.org','groups': ['2'],'name': 'name','username': 'username'}\\\""
 			},
 			"response": []
 		}
