@@ -576,12 +576,12 @@
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/contact",
+			"name": "{{base_path}}/api/index.php/v1/contacts",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contact",
+					"raw": "{{base_path}}/api/index.php/v1/contacts",
 					"host": [
 						"{{base_path}}"
 					],
@@ -589,10 +589,10 @@
 						"api",
 						"index.php",
 						"v1",
-						"contact"
+						"contacts"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/contact'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/contacts'"
 			},
 			"response": []
 		},
@@ -1011,12 +1011,12 @@
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/content/article",
+			"name": "{{base_path}}/api/index.php/v1/content/articles",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/article",
+					"raw": "{{base_path}}/api/index.php/v1/content/articles",
 					"host": [
 						"{{base_path}}"
 					],
@@ -1025,10 +1025,10 @@
 						"index.php",
 						"v1",
 						"content",
-						"article"
+						"articles"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/content/article'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/content/articles'"
 			},
 			"response": []
 		},
@@ -2230,12 +2230,12 @@
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/request",
+			"name": "{{base_path}}/api/index.php/v1/privacy/requests",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/request",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/requests",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2244,10 +2244,10 @@
 						"index.php",
 						"v1",
 						"privacy",
-						"request"
+						"requests"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/request'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/requests'"
 			},
 			"response": []
 		},
@@ -2330,12 +2330,12 @@
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/consent",
+			"name": "{{base_path}}/api/index.php/v1/privacy/consents",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/consent",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/consents",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2344,10 +2344,10 @@
 						"index.php",
 						"v1",
 						"privacy",
-						"consent"
+						"consents"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/consent'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/consents'"
 			},
 			"response": []
 		},
@@ -2398,12 +2398,12 @@
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/redirect",
+			"name": "{{base_path}}/api/index.php/v1/redirects",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirect",
+					"raw": "{{base_path}}/api/index.php/v1/redirects",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2411,10 +2411,10 @@
 						"api",
 						"index.php",
 						"v1",
-						"redirect"
+						"redirects"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/redirect'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/redirects'"
 			},
 			"response": []
 		},
