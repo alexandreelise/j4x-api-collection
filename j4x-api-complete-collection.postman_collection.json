@@ -610,7 +610,7 @@
 						"api",
 						"index.php",
 						"v1",
-						"contact",
+						"contacts",
 						"{contact_id}"
 					]
 				},
@@ -632,7 +632,7 @@
 						"api",
 						"index.php",
 						"v1",
-						"contact",
+						"contacts",
 						"{contact_id}"
 					]
 				},
@@ -693,7 +693,7 @@
 						"api",
 						"index.php",
 						"v1",
-						"contact",
+						"contacts",
 						"{contact_id}"
 					]
 				},
@@ -724,7 +724,7 @@
 						"api",
 						"index.php",
 						"v1",
-						"contact",
+						"contacts",
 						"form",
 						"{contact_id}"
 					]
@@ -748,7 +748,7 @@
 						"index.php",
 						"v1",
 						"fields",
-						"contact",
+						"contacts",
 						"contact"
 					]
 				},
@@ -771,7 +771,7 @@
 						"index.php",
 						"v1",
 						"fields",
-						"contact",
+						"contacts",
 						"contact",
 						"{field_id}"
 					]
@@ -795,7 +795,7 @@
 						"index.php",
 						"v1",
 						"fields",
-						"contact",
+						"contacts",
 						"contact",
 						"{field_id}"
 					]
@@ -828,7 +828,7 @@
 						"index.php",
 						"v1",
 						"fields",
-						"contact",
+						"contacts",
 						"contact"
 					]
 				},
@@ -860,7 +860,7 @@
 						"index.php",
 						"v1",
 						"fields",
-						"contact",
+						"contacts",
 						"contact",
 						"{field_id}"
 					]
@@ -885,7 +885,7 @@
 						"v1",
 						"fields",
 						"groups",
-						"contact",
+						"contacts",
 						"contact"
 					]
 				},
@@ -909,7 +909,7 @@
 						"v1",
 						"fields",
 						"groups",
-						"contact",
+						"contacts",
 						"contact",
 						"{group_id}"
 					]
@@ -934,7 +934,7 @@
 						"v1",
 						"fields",
 						"groups",
-						"contact",
+						"contacts",
 						"contact",
 						"{group_id}"
 					]
@@ -968,7 +968,7 @@
 						"v1",
 						"fields",
 						"groups",
-						"contact",
+						"contacts",
 						"contact"
 					]
 				},
@@ -1001,7 +1001,7 @@
 						"v1",
 						"fields",
 						"groups",
-						"contact",
+						"contacts",
 						"contact",
 						"{group_id}"
 					]
@@ -1047,7 +1047,7 @@
 						"index.php",
 						"v1",
 						"content",
-						"article",
+						"articles",
 						"{article_id}"
 					]
 				},
@@ -1070,7 +1070,7 @@
 						"index.php",
 						"v1",
 						"content",
-						"article",
+						"articles",
 						"{article_id}"
 					]
 				},
@@ -1133,7 +1133,7 @@
 						"index.php",
 						"v1",
 						"content",
-						"article",
+						"articles",
 						"{article_id}"
 					]
 				},
@@ -2266,7 +2266,7 @@
 						"index.php",
 						"v1",
 						"privacy",
-						"request",
+						"requests",
 						"{request_id}"
 					]
 				},
@@ -2289,7 +2289,7 @@
 						"index.php",
 						"v1",
 						"privacy",
-						"request",
+						"requests",
 						"export",
 						"{request_id}"
 					]
@@ -2330,12 +2330,12 @@
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/consentss",
+			"name": "{{base_path}}/api/index.php/v1/privacy/consents",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/consentss",
+					"raw": "{{base_path}}/api/index.php/v1/privacy/consents",
 					"host": [
 						"{{base_path}}"
 					],
@@ -2347,7 +2347,7 @@
 						"consents"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/consentss'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/consents'"
 			},
 			"response": []
 		},
@@ -2366,7 +2366,7 @@
 						"index.php",
 						"v1",
 						"privacy",
-						"consent",
+						"consents",
 						"{consent_id}"
 					]
 				},
@@ -2389,7 +2389,7 @@
 						"index.php",
 						"v1",
 						"privacy",
-						"consent",
+						"consents",
 						"{consent_id}"
 					]
 				},
@@ -2432,7 +2432,7 @@
 						"api",
 						"index.php",
 						"v1",
-						"redirect",
+						"redirects",
 						"{redirect_id}"
 					]
 				},
@@ -2454,7 +2454,7 @@
 						"api",
 						"index.php",
 						"v1",
-						"redirect",
+						"redirects",
 						"{redirect_id}"
 					]
 				},
@@ -2515,7 +2515,7 @@
 						"api",
 						"index.php",
 						"v1",
-						"redirect",
+						"redirects",
 						"{redirect_id}"
 					]
 				},
