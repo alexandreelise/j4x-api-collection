@@ -1090,7 +1090,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here's an article'}"
+					"raw": "{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here\\'s an article'}"
 				},
 				"url": {
 					"raw": "{{base_path}}/api/index.php/v1/content/articles",
