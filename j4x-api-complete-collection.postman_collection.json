@@ -1105,7 +1105,7 @@
 						"article"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/content/articles' -d \\\"{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here's an article'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/content/articles' -d \\\"{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here\'s an article'}\\\""
 			},
 			"response": []
 		},
