@@ -2712,7 +2712,7 @@
 		},
 		{
 			"key": "base_path",
-			"value": "api/index.php/v1/"
+			"value": "api/index.php/v1"
 		},
 		{
 			"key": "auth_apikey",
