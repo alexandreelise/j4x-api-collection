@@ -7,72 +7,66 @@
 	},
 	"item": [
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners",
+			"name": "banners",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners",
+					"raw": "{{base_url}}/{{base_path}}/banners",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
+			"name": "banners/{banner_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/{{banner_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
-						"{banner_id}"
+						"{{banner_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/{{banner_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
+			"name": "banners/{banner_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/{{banner_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
-						"{banner_id}"
+						"{{banner_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/banners/{{banner_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/banners/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners",
+			"name": "banners",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -83,26 +77,24 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'catid': 3,'clicks': 0,'custombannercode': '','description': 'Text','metakey': '','name': 'Name','params': {'alt': '','height': '','imageurl': '','width': ''}}"
+					"raw": "{\"catid\":3,\"clicks\":0,\"custombannercode\":\"\",\"description\":\"Text\",\"metakey\":\"\",\"name\":\"Name\",\"params\":{\"alt\":\"\",\"height\":\"\",\"imageurl\":\"\",\"width\":\"\"}}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners",
+					"raw": "{{base_url}}/{{base_path}}/banners",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners' -d \\\"{'catid': 3,'clicks': 0,'custombannercode': '','description': 'Text','metakey': '','name': 'Name','params': {'alt': '','height': '','imageurl': '','width': ''}}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/banners' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"catid\":3,\"clicks\":0,\"custombannercode\":\"\",\"description\":\"Text\",\"metakey\":\"\",\"name\":\"Name\",\"params\":{\"alt\":\"\",\"height\":\"\",\"imageurl\":\"\",\"width\":\"\"}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
+			"name": "banners/{banner_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -113,95 +105,87 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'alias': 'name','catid': 3,'description': 'New Text','name': 'New Name'}"
+					"raw": "{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/{{banner_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/{{banner_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
-						"{banner_id}"
+						"{{banner_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/{{banner_id}}' -d \\\"{'alias': 'name','catid': 3,'description': 'New Text','name': 'New Name'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/clients",
+			"name": "banners/clients",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/clients",
+					"raw": "{{base_url}}/{{base_path}}/banners/clients",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"clients"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/clients'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/clients' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
+			"name": "banners/clients/{client_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/clients/{{client_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"clients",
-						"{client_id}"
+						"{{client_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
+			"name": "banners/clients/{client_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/clients/{{client_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"clients",
-						"{client_id}"
+						"{{client_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/clients",
+			"name": "banners/clients",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -212,27 +196,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'contact': 'Name','email': 'email@example.org','extrainfo': '','metakey': '','name': 'Clients','state': 1}"
+					"raw": "{\"contact\":\"Name\",\"email\":\"email@example.org\",\"extrainfo\":\"\",\"metakey\":\"\",\"name\":\"Clients\",\"state\":1}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/clients",
+					"raw": "{{base_url}}/{{base_path}}/banners/clients",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"clients"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/clients' -d \\\"{'contact': 'Name','email': 'email@example.org','extrainfo': '','metakey': '','name': 'Clients','state': 1}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/banners/clients' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"contact\":\"Name\",\"email\":\"email@example.org\",\"extrainfo\":\"\",\"metakey\":\"\",\"name\":\"Clients\",\"state\":1}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
+			"name": "banners/clients/{client_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -243,96 +225,88 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'contact': 'new Name','email': 'newemail@example.org','name': 'Clients'}"
+					"raw": "{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/clients/{{client_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"clients",
-						"{client_id}"
+						"{{client_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/clients/{{client_id}}' -d \\\"{'contact': 'new Name','email': 'newemail@example.org','name': 'Clients'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/categories",
+			"name": "banners/categories",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/categories",
+					"raw": "{{base_url}}/{{base_path}}/banners/categories",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"categories"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/categories'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/categories' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
+			"name": "banners/categories/{category_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/categories/{{category_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"categories",
-						"{category_id}"
+						"{{category_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
+			"name": "banners/categories/{category_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/categories/{{category_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"categories",
-						"{category_id}"
+						"{{category_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/categories",
+			"name": "banners/categories",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -343,27 +317,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': 1,'alias': 'cat','extension': 'com_banners','language': '*','note': '','parent_id': 1,'published': 1,'title': 'Title','params': {'workflow_id': 1}}"
+					"raw": "{\"access\":1,\"alias\":\"cat\",\"extension\":\"com_banners\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"Title\",\"params\":{\"workflow_id\":1}}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/categories",
+					"raw": "{{base_url}}/{{base_path}}/banners/categories",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"categories"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/categories' -d \\\"{'access': 1,'alias': 'cat','extension': 'com_banners','language': '*','note': '','parent_id': 1,'published': 1,'title': 'Title','params': {'workflow_id': 1}}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/banners/categories' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"cat\",\"extension\":\"com_banners\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"Title\",\"params\":{\"workflow_id\":1}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
+			"name": "banners/categories/{category_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -374,51 +346,47 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'alias': 'cat','note': 'Some Text','parent_id': 1,'title': 'New Title'}"
+					"raw": "{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/categories/{{category_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"categories",
-						"{category_id}"
+						"{{category_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/categories/{{category_id}}' -d \\\"{'alias': 'cat','note': 'Some Text','parent_id': 1,'title': 'New Title'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/contenthistory/{{banner_id}}",
+			"name": "banners/contenthistory/{banner_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{{banner_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/contenthistory/{{banner_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"contenthistory",
-						"{banner_id}"
+						"{{banner_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/banners/contenthistory/{{banner_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/contenthistory/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{{contenthistory_id}}",
+			"name": "banners/contenthistory/keep/{contenthistory_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -428,71 +396,65 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{{contenthistory_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/contenthistory/keep/{{contenthistory_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"contenthistory",
 						"keep",
-						"{contenthistory_id}"
+						"{{contenthistory_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/banners/contenthistory/keep/{{contenthistory_id}}'"
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/contenthistory/keep/{{contenthistory_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/banners/contenthistory/{{contenthistory_id}}",
+			"name": "banners/contenthistory/{contenthistory_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/banners/contenthistory/{{contenthistory_id}}",
+					"raw": "{{base_url}}/{{base_path}}/banners/contenthistory/{{contenthistory_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"banners",
 						"contenthistory",
-						"{contenthistory_id}"
+						"{{contenthistory_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/banners/contenthistory/{{contenthistory_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/banners/contenthistory/{{contenthistory_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/config/application",
+			"name": "config/application",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/config/application",
+					"raw": "{{base_url}}/{{base_path}}/config/application",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"config",
 						"application"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/config/application'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/config/application' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/config/application",
+			"name": "config/application",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -503,49 +465,45 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'debug': true,'sitename': '123'}"
+					"raw": "{\"debug\":true,\"sitename\":\"123\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/config/application",
+					"raw": "{{base_url}}/{{base_path}}/config/application",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"config",
 						"application"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/config/application' -d \\\"{'debug': true,'sitename': '123'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/config/application' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"debug\":true,\"sitename\":\"123\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/config/{{component_name}}",
+			"name": "config/{component_name}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/config/{{component_name}}",
+					"raw": "{{base_url}}/{{base_path}}/config/{{component_name}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"config",
-						"{component_name}"
+						"{{component_name}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/config/{{component_name}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/config/{{component_name}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/config/application",
+			"name": "config/application",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -556,92 +514,84 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'link_titles': 1}"
+					"raw": "{\"link_titles\":1}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/config/application",
+					"raw": "{{base_url}}/{{base_path}}/config/application",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"config",
 						"application"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/config/application' -d \\\"{'link_titles': 1}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/config/application' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"link_titles\":1}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/contacts",
+			"name": "contacts",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contacts",
+					"raw": "{{base_url}}/{{base_path}}/contacts",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"contacts"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/contacts'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/contacts' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/contacts/{{contact_id}}",
+			"name": "contacts/{contact_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contacts/{{contact_id}}",
+					"raw": "{{base_url}}/{{base_path}}/contacts/{{contact_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"contacts",
-						"{contact_id}"
+						"{{contact_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/contacts/{{contact_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/contacts/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/contacts/{{contact_id}}",
+			"name": "contacts/{contact_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contacts/{{contact_id}}",
+					"raw": "{{base_url}}/{{base_path}}/contacts/{{contact_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"contacts",
-						"{contact_id}"
+						"{{contact_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/contacts/{{contact_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/contacts/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/contact",
+			"name": "contact",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -652,26 +602,24 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'alias': 'contact','catid': 4,'language': '*','name': 'Contact'}"
+					"raw": "{\"alias\":\"contact\",\"catid\":4,\"language\":\"*\",\"name\":\"Contact\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contact",
+					"raw": "{{base_url}}/{{base_path}}/contact",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/contact' -d \\\"{'alias': 'contact','catid': 4,'language': '*','name': 'Contact'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/contact' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"contact\",\"catid\":4,\"language\":\"*\",\"name\":\"Contact\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/contacts/{{contact_id}}",
+			"name": "contacts/{contact_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -682,27 +630,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'alias': 'contact','catid': 4,'name': 'New Contact'}"
+					"raw": "{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contacts/{{contact_id}}",
+					"raw": "{{base_url}}/{{base_path}}/contacts/{{contact_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"contacts",
-						"{contact_id}"
+						"{{contact_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/contacts/{{contact_id}}' -d \\\"{'alias': 'contact','catid': 4,'name': 'New Contact'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/contacts/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/contacts/form/{{contact_id}}",
+			"name": "contacts/form/{contact_id}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -713,99 +659,91 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'contact_email': 'email@example.org','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}"
+					"raw": "{\"contact_email\":\"email@example.org\",\"contact_message\":\"some text\",\"contact_name\":\"name\",\"contact_subject\":\"subject\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/contacts/form/{{contact_id}}",
+					"raw": "{{base_url}}/{{base_path}}/contacts/form/{{contact_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"contacts",
 						"form",
-						"{contact_id}"
+						"{{contact_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/contacts/form/{{contact_id}}' -d \\\"{'contact_email': 'email@example.org','contact_message': 'some text','contact_name': 'name','contact_subject': 'subject'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/contacts/form/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"contact_email\":\"email@example.org\",\"contact_message\":\"some text\",\"contact_name\":\"name\",\"contact_subject\":\"subject\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/contacts/contact",
+			"name": "fields/contacts/contact",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/contacts/contact",
+					"raw": "{{base_url}}/{{base_path}}/fields/contacts/contact",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"contacts",
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/fields/contacts/contact'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/contacts/contact' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}",
+			"name": "fields/contacts/contact/{field_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"contacts",
 						"contact",
-						"{field_id}"
+						"{{field_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}",
+			"name": "fields/contacts/contact/{field_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"contacts",
 						"contact",
-						"{field_id}"
+						"{{field_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/contacts/contact",
+			"name": "fields/contacts/contact",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -816,28 +754,26 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}"
+					"raw": "{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/contacts/contact",
+					"raw": "{{base_url}}/{{base_path}}/fields/contacts/contact",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"contacts",
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/fields/contacts/contact' -d \\\"{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/contacts/contact' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}",
+			"name": "fields/contacts/contact/{field_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -848,103 +784,95 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'title': 'new contact field','name': 'contact-field','label': 'contact field','default_value': '','type': 'text','note': '','description': 'Some New Text'}"
+					"raw": "{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"contacts",
 						"contact",
-						"{field_id}"
+						"{{field_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/fields/contacts/contact/{{field_id}}' -d \\\"{'title': 'new contact field','name': 'contact-field','label': 'contact field','default_value': '','type': 'text','note': '','description': 'Some New Text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact",
+			"name": "fields/groups/contacts/contact",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"groups",
 						"contacts",
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/fields/groups/contacts/contact'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/contacts/contact' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}",
+			"name": "fields/groups/contacts/contact/{group_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"groups",
 						"contacts",
 						"contact",
-						"{group_id}"
+						"{{group_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}",
+			"name": "fields/groups/contacts/contact/{group_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"groups",
 						"contacts",
 						"contact",
-						"{group_id}"
+						"{{group_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact",
+			"name": "fields/groups/contacts/contact",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -955,29 +883,27 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field3','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}"
+					"raw": "{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field3\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"groups",
 						"contacts",
 						"contact"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/fields/groups/contacts/contact' -d \\\"{'access': 1,'context': 'com_contact.contact','default_value': '','description': '','group_id': 0,'label': 'contact field','language': '*','name': 'contact-field3','note': '','params': {'class': '','display': '2','display_readonly': '2','hint': '','label_class': '','label_render_class': '','layout': '','prefix': '','render_class': '','show_on': '','showlabel': '1','suffix': ''},'required': 0,'state': 1,'title': 'contact field','type': 'text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/contacts/contact' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field3\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}",
+			"name": "fields/groups/contacts/contact/{group_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -988,98 +914,90 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'title': 'new contact group','note': '','description': 'new description'}"
+					"raw": "{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"fields",
 						"groups",
 						"contacts",
 						"contact",
-						"{group_id}"
+						"{{group_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/fields/groups/contacts/contact/{{group_id}}' -d \\\"{'title': 'new contact group','note': '','description': 'new description'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/content/articles",
+			"name": "content/articles",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/articles",
+					"raw": "{{base_url}}/{{base_path}}/content/articles",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"content",
 						"articles"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/content/articles'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/content/articles/{{article_id}}",
+			"name": "content/articles/{article_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/articles/{{article_id}}",
+					"raw": "{{base_url}}/{{base_path}}/content/articles/{{article_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"content",
 						"articles",
-						"{article_id}"
+						"{{article_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/content/articles/{{article_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/content/articles/{{article_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/content/articles/{{article_id}}",
+			"name": "content/articles/{article_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/articles/{{article_id}}",
+					"raw": "{{base_url}}/{{base_path}}/content/articles/{{article_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"content",
 						"articles",
-						"{article_id}"
+						"{{article_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/content/articles/{{article_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/content/articles/{{article_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/content/articles",
+			"name": "content/articles",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1090,27 +1008,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here\\'s an article'}"
+					"raw": "{\"alias\":\"my-article\",\"articletext\":\"My text\",\"catid\":64,\"language\":\"*\",\"metadesc\":\"\",\"metakey\":\"\",\"title\":\"Here's an article\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/articles",
+					"raw": "{{base_url}}/{{base_path}}/content/articles",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"content",
-						"article"
+						"articles"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/content/articles' -d \\\"{'alias': 'my-article','articletext': 'My text','catid': 64,'language': '*','metadesc': '','metakey': '','title': 'Here\\'s an article'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"my-article\",\"articletext\":\"My text\",\"catid\":64,\"language\":\"*\",\"metadesc\":\"\",\"metakey\":\"\",\"title\":\"Here'\\''s an article\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/content/articles/{{article_id}}",
+			"name": "content/articles/{article_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1121,49 +1037,45 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'catid': 64,'title': 'Updated article'}"
+					"raw": "{\"catid\":64,\"title\":\"Updated article\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/content/articles/{{article_id}}",
+					"raw": "{{base_url}}/{{base_path}}/content/articles/{{article_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"content",
 						"articles",
-						"{article_id}"
+						"{{article_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/content/articles/{{article_id}}' -d \\\"{'catid': 64,'title': 'Updated article'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/content/articles/{{article_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"catid\":64,\"title\":\"Updated article\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages",
+			"name": "languages",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages",
+					"raw": "{{base_url}}/{{base_path}}/languages",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/languages'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/languages' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages",
+			"name": "languages",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1174,95 +1086,87 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'package': 'pkg_fr-FR'}"
+					"raw": "{\"package\":\"pkg_fr-FR\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages",
+					"raw": "{{base_url}}/{{base_path}}/languages",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages' -d \\\"{'package': 'pkg_fr-FR'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"package\":\"pkg_fr-FR\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/content",
+			"name": "languages/content",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/content",
+					"raw": "{{base_url}}/{{base_path}}/languages/content",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"content"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/languages/content'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/languages/content' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/v1/languages/content/{{language_id}}",
+			"name": "v1/languages/content/{language_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/v1/languages/content/{{language_id}}",
+					"raw": "{{base_url}}/{{base_path}}/v1/languages/content/{{language_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"v1",
 						"languages",
 						"content",
-						"{language_id}"
+						"{{language_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/v1/languages/content/{{language_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/v1/languages/content/{{language_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/content/{{language_id}}",
+			"name": "languages/content/{language_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/content/{{language_id}}",
+					"raw": "{{base_url}}/{{base_path}}/languages/content/{{language_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"content",
-						"{language_id}"
+						"{{language_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/languages/content/{{language_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/languages/content/{{language_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/content",
+			"name": "languages/content",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1273,27 +1177,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': 1,'description': '','image': 'fr_FR','lang_code': 'fr-FR','metadesc': '','metakey': '','ordering': 1,'published': 0,'sef': 'fk','sitename': '','title': 'French (FR)','title_native': 'Français (France)'}"
+					"raw": "{\"access\":1,\"description\":\"\",\"image\":\"fr_FR\",\"lang_code\":\"fr-FR\",\"metadesc\":\"\",\"metakey\":\"\",\"ordering\":1,\"published\":0,\"sef\":\"fk\",\"sitename\":\"\",\"title\":\"French (FR)\",\"title_native\":\"Français (France)\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/content",
+					"raw": "{{base_url}}/{{base_path}}/languages/content",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"content"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/content' -d \\\"{'access': 1,'description': '','image': 'fr_FR','lang_code': 'fr-FR','metadesc': '','metakey': '','ordering': 1,'published': 0,'sef': 'fk','sitename': '','title': 'French (FR)','title_native': 'Français (France)'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages/content' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"description\":\"\",\"image\":\"fr_FR\",\"lang_code\":\"fr-FR\",\"metadesc\":\"\",\"metakey\":\"\",\"ordering\":1,\"published\":0,\"sef\":\"fk\",\"sitename\":\"\",\"title\":\"French (FR)\",\"title_native\":\"Français (France)\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/content/{{language_id}}",
+			"name": "languages/content/{language_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1304,102 +1206,94 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'description': '','lang_code': 'en-GB','metadesc': '','metakey': '','sitename': '','title': 'English (en-GB)','title_native': 'English (United Kingdom)'}"
+					"raw": "{\"description\":\"\",\"lang_code\":\"en-GB\",\"metadesc\":\"\",\"metakey\":\"\",\"sitename\":\"\",\"title\":\"English (en-GB)\",\"title_native\":\"English (United Kingdom)\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/content/{{language_id}}",
+					"raw": "{{base_url}}/{{base_path}}/languages/content/{{language_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"content",
-						"{language_id}"
+						"{{language_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/content/{{language_id}}' -d \\\"{'description': '','lang_code': 'en-GB','metadesc': '','metakey': '','sitename': '','title': 'English (en-GB)','title_native': 'English (United Kingdom)'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/languages/content/{{language_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"description\":\"\",\"lang_code\":\"en-GB\",\"metadesc\":\"\",\"metakey\":\"\",\"sitename\":\"\",\"title\":\"English (en-GB)\",\"title_native\":\"English (United Kingdom)\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}",
+			"name": "languages/overrides/{app}/{lang_code}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}",
+					"raw": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"overrides",
-						"{app}",
-						"{lang_code}"
+						"{{app}}",
+						"{{lang_code}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+			"name": "languages/overrides/{app}/{lang_code}/{constant_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+					"raw": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"overrides",
-						"{app}",
-						"{lang_code}",
-						"{constant_id}"
+						"{{app}}",
+						"{{lang_code}}",
+						"{{constant_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+			"name": "languages/overrides/{app}/{lang_code}/{constant_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+					"raw": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"overrides",
-						"{app}",
-						"{lang_code}",
-						"{constant_id}"
+						"{{app}}",
+						"{{lang_code}}",
+						"{{constant_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}",
+			"name": "languages/overrides/{app}/{lang_code}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1410,29 +1304,27 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'key':'new_key','override': 'text'}"
+					"raw": "{\"key\":\"new_key\",\"override\":\"text\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}",
+					"raw": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"overrides",
-						"{app}",
-						"{lang_code}"
+						"{{app}}",
+						"{{lang_code}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}' -d \\\"{'key':'new_key','override': 'text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"key\":\"new_key\",\"override\":\"text\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+			"name": "languages/overrides/{app}/{lang_code}/{constant_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1443,30 +1335,28 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'key':'new_key','override': 'new text'}"
+					"raw": "{\"key\":\"new_key\",\"override\":\"new text\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+					"raw": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"overrides",
-						"{app}",
-						"{lang_code}",
-						"{constant_id}"
+						"{{app}}",
+						"{{lang_code}}",
+						"{{constant_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -d \\\"{'key':'new_key','override': 'new text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"key\":\"new_key\",\"override\":\"new text\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/overrides/search",
+			"name": "languages/overrides/search",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1477,28 +1367,26 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'searchstring': 'JLIB_APPLICATION_ERROR_SAVE_FAILED','searchtype': 'constant'}"
+					"raw": "{\"searchstring\":\"JLIB_APPLICATION_ERROR_SAVE_FAILED\",\"searchtype\":\"constant\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/search",
+					"raw": "{{base_url}}/{{base_path}}/languages/overrides/search",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"overrides",
 						"search"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/overrides/search' -d \\\"{'searchstring': 'JLIB_APPLICATION_ERROR_SAVE_FAILED','searchtype': 'constant'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages/overrides/search' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"searchstring\":\"JLIB_APPLICATION_ERROR_SAVE_FAILED\",\"searchtype\":\"constant\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/languages/overrides/search/cache/refresh",
+			"name": "languages/overrides/search/cache/refresh",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1508,14 +1396,12 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/languages/overrides/search/cache/refresh",
+					"raw": "{{base_url}}/{{base_path}}/languages/overrides/search/cache/refresh",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"languages",
 						"overrides",
 						"search",
@@ -1523,80 +1409,74 @@
 						"refresh"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/languages/overrides/search/cache/refresh'"
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages/overrides/search/cache/refresh' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}",
+			"name": "menus/{app}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}"
+						"{{app}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
+			"name": "menus/{app}/{menu_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
-						"{menu_id}"
+						"{{app}}",
+						"{{menu_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
+			"name": "menus/{app}/{menu_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
-						"{menu_id}"
+						"{{app}}",
+						"{{menu_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}",
+			"name": "menus/{app}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1607,27 +1487,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'client_id': 0,'description': 'The menu for the site','menutype': 'menu','title': 'Menu'}"
+					"raw": "{\"client_id\":0,\"description\":\"The menu for the site\",\"menutype\":\"menu\",\"title\":\"Menu\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}"
+						"{{app}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/menus/{{app}}' -d \\\"{'client_id': 0,'description': 'The menu for the site','menutype': 'menu','title': 'Menu'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/menus/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"client_id\":0,\"description\":\"The menu for the site\",\"menutype\":\"menu\",\"title\":\"Menu\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
+			"name": "menus/{app}/{menu_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1638,123 +1516,113 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'menutype': 'menu','title': 'New Menu'}"
+					"raw": "{\"menutype\":\"menu\",\"title\":\"New Menu\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
-						"{menu_id}"
+						"{{app}}",
+						"{{menu_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/menus/{{app}}/{{menu_id}}' -d \\\"{'menutype': 'menu','title': 'New Menu'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"menutype\":\"menu\",\"title\":\"New Menu\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/types",
+			"name": "menus/{app}/items/types",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/types",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/items/types",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
+						"{{app}}",
 						"items",
 						"types"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}/items/types'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/items/types' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items",
+			"name": "menus/{app}/items",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/items",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
+						"{{app}}",
 						"items"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}/items'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/items' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
+			"name": "menus/{app}/items/{menu_item_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
+						"{{app}}",
 						"items",
-						"{menu_item_id}"
+						"{{menu_item_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
+			"name": "menus/{app}/items/{menu_item_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
+						"{{app}}",
 						"items",
-						"{menu_item_id}"
+						"{{menu_item_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items",
+			"name": "menus/{app}/items",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1765,28 +1633,26 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': '1','alias': '','associations': {'en-GB': '','fr-FR': ''},'browserNav': '0','component_id': '20','home': '0','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','params': {'cancel_redirect_menuitem': '','catid': '','custom_cancel_redirect': '0','enable_category': '0','menu-anchor_css': '','menu-anchor_title': '','menu-meta_description': '','menu-meta_keywords': '','menu_image': '','menu_image_css': '','menu_show': '1','menu_text': '1','page_heading': '','page_title': '','pageclass_sfx': '','redirect_menuitem': '','robots': '','show_page_heading': ''},'parent_id': '1','publish_down': '','publish_up': '','published': '1','template_style_id': '0','title': 'title','toggle_modules_assigned': '1','toggle_modules_published': '1','type': 'component'}"
+					"raw": "{\"access\":\"1\",\"alias\":\"\",\"associations\":{\"en-GB\":\"\",\"fr-FR\":\"\"},\"browserNav\":\"0\",\"component_id\":\"20\",\"home\":\"0\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"params\":{\"cancel_redirect_menuitem\":\"\",\"catid\":\"\",\"custom_cancel_redirect\":\"0\",\"enable_category\":\"0\",\"menu-anchor_css\":\"\",\"menu-anchor_title\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_show\":\"1\",\"menu_text\":\"1\",\"page_heading\":\"\",\"page_title\":\"\",\"pageclass_sfx\":\"\",\"redirect_menuitem\":\"\",\"robots\":\"\",\"show_page_heading\":\"\"},\"parent_id\":\"1\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"template_style_id\":\"0\",\"title\":\"title\",\"toggle_modules_assigned\":\"1\",\"toggle_modules_published\":\"1\",\"type\":\"component\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/items",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
+						"{{app}}",
 						"items"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/menus/{{app}}/items' -d \\\"{'access': '1','alias': '','associations': {'en-GB': '','fr-FR': ''},'browserNav': '0','component_id': '20','home': '0','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','params': {'cancel_redirect_menuitem': '','catid': '','custom_cancel_redirect': '0','enable_category': '0','menu-anchor_css': '','menu-anchor_title': '','menu-meta_description': '','menu-meta_keywords': '','menu_image': '','menu_image_css': '','menu_show': '1','menu_text': '1','page_heading': '','page_title': '','pageclass_sfx': '','redirect_menuitem': '','robots': '','show_page_heading': ''},'parent_id': '1','publish_down': '','publish_up': '','published': '1','template_style_id': '0','title': 'title','toggle_modules_assigned': '1','toggle_modules_published': '1','type': 'component'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/menus/{{app}}/items' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"alias\":\"\",\"associations\":{\"en-GB\":\"\",\"fr-FR\":\"\"},\"browserNav\":\"0\",\"component_id\":\"20\",\"home\":\"0\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"params\":{\"cancel_redirect_menuitem\":\"\",\"catid\":\"\",\"custom_cancel_redirect\":\"0\",\"enable_category\":\"0\",\"menu-anchor_css\":\"\",\"menu-anchor_title\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_show\":\"1\",\"menu_text\":\"1\",\"page_heading\":\"\",\"page_title\":\"\",\"pageclass_sfx\":\"\",\"redirect_menuitem\":\"\",\"robots\":\"\",\"show_page_heading\":\"\"},\"parent_id\":\"1\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"template_style_id\":\"0\",\"title\":\"title\",\"toggle_modules_assigned\":\"1\",\"toggle_modules_published\":\"1\",\"type\":\"component\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
+			"name": "menus/{app}/items/{menu_item_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1797,94 +1663,86 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'component_id': '20','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','title': 'new title','type': 'component'}"
+					"raw": "{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}",
+					"raw": "{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"menus",
-						"{app}",
+						"{{app}}",
 						"items",
-						"{menu_item_id}"
+						"{{menu_item_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/menus/{{app}}/items/{{menu_item_id}}' -d \\\"{'component_id': '20','language': '*','link': 'index.php?option=com_content&view=form&layout=edit','menutype': 'mainmenu','note': '','title': 'new title','type': 'component'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/messages",
+			"name": "messages",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/messages",
+					"raw": "{{base_url}}/{{base_path}}/messages",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"messages"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/messages'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/messages' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
+			"name": "messages/{message_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
+					"raw": "{{base_url}}/{{base_path}}/messages/{{message_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"messages",
-						"{message_id}"
+						"{{message_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/messages/{{message_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
+			"name": "messages/{message_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
+					"raw": "{{base_url}}/{{base_path}}/messages/{{message_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"messages",
-						"{message_id}"
+						"{{message_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/messages/{{message_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/messages",
+			"name": "messages",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1895,26 +1753,24 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'message': '<p>text</p>','state': 0,'subject': 'text','user_id_from': 773,'user_id_to': 772}"
+					"raw": "{\"message\":\"<p>text</p>\",\"state\":0,\"subject\":\"text\",\"user_id_from\":773,\"user_id_to\":772}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/messages",
+					"raw": "{{base_url}}/{{base_path}}/messages",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"messages"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json'  '{{base_path}}/api/index.php/v1/messages' -d \\\"{'message': '<p>text</p>','state': 0,'subject': 'text','user_id_from': 773,'user_id_to': 772}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/messages' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"message\":\"<p>text</p>\",\"state\":0,\"subject\":\"text\",\"user_id_from\":773,\"user_id_to\":772}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
+			"name": "messages/{message_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1925,118 +1781,108 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'message': '<p>new text</p>','subject': 'new text','user_id_from': 773,'user_id_to': 772}"
+					"raw": "{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/messages/{{message_id}}",
+					"raw": "{{base_url}}/{{base_path}}/messages/{{message_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"messages",
-						"{message_id}"
+						"{{message_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json'  '{{base_path}}/api/index.php/v1/messages/{{message_id}}' -d \\\"{'message': '<p>new text</p>','subject': 'new text','user_id_from': 773,'user_id_to': 772}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/modules/types/{{app}}",
+			"name": "modules/types/{app}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/types/{{app}}",
+					"raw": "{{base_url}}/{{base_path}}/modules/types/{{app}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"modules",
 						"types",
-						"{app}"
+						"{{app}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/modules/types/{{app}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/modules/types/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}",
+			"name": "modules/{app}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}",
+					"raw": "{{base_url}}/{{base_path}}/modules/{{app}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"modules",
-						"{app}"
+						"{{app}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/modules/{{app}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/modules/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
+			"name": "modules/{app}/{module_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
+					"raw": "{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"modules",
-						"{app}",
-						"{module_id}"
+						"{{app}}",
+						"{{module_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
+			"name": "modules/{app}/{module_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
+					"raw": "{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"modules",
-						"{app}",
-						"{module_id}"
+						"{{app}}",
+						"{{module_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}",
+			"name": "modules/{app}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2047,27 +1893,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': '1','assigned': ['101','105'],'assignment': '0','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','params': {'bootstrap_size': '0','cache': '1','cache_time': '900','cachemode': 'static','count': '10','header_class': '','header_tag': 'h3','layout': '_:default','module_tag': 'div','moduleclass_sfx': '','style': '0'},'position': '','publish_down': '','publish_up': '','published': '1','showtitle': '1','title': 'Title'}"
+					"raw": "{\"access\":\"1\",\"assigned\":[\"101\",\"105\"],\"assignment\":\"0\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"params\":{\"bootstrap_size\":\"0\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"count\":\"10\",\"header_class\":\"\",\"header_tag\":\"h3\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"moduleclass_sfx\":\"\",\"style\":\"0\"},\"position\":\"\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"showtitle\":\"1\",\"title\":\"Title\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}",
+					"raw": "{{base_url}}/{{base_path}}/modules/{{app}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"modules",
-						"{app}"
+						"{{app}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/modules/{{app}}' -d \\\"{'access': '1','assigned': ['101','105'],'assignment': '0','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','params': {'bootstrap_size': '0','cache': '1','cache_time': '900','cachemode': 'static','count': '10','header_class': '','header_tag': 'h3','layout': '_:default','module_tag': 'div','moduleclass_sfx': '','style': '0'},'position': '','publish_down': '','publish_up': '','published': '1','showtitle': '1','title': 'Title'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/modules/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"assigned\":[\"101\",\"105\"],\"assignment\":\"0\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"params\":{\"bootstrap_size\":\"0\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"count\":\"10\",\"header_class\":\"\",\"header_tag\":\"h3\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"moduleclass_sfx\":\"\",\"style\":\"0\"},\"position\":\"\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"showtitle\":\"1\",\"title\":\"Title\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
+			"name": "modules/{app}/{module_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2078,96 +1922,88 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': '1','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','title': 'New Title'}"
+					"raw": "{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}",
+					"raw": "{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"modules",
-						"{app}",
-						"{module_id}"
+						"{{app}}",
+						"{{module_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/modules/{{app}}/{{module_id}}' -d \\\"{'access': '1','client_id': '0','language': '*','module': 'mod_articles_archive','note': '','ordering': '1','title': 'New Title'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
+			"name": "newsfeeds/feeds",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
+					"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"newsfeeds",
 						"feeds"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/newsfeeds/feeds'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/newsfeeds/feeds' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
+			"name": "newsfeeds/feeds/{feed_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
+					"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"newsfeeds",
 						"feeds",
-						"{feed_id}"
+						"{{feed_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
+			"name": "newsfeeds/feeds/{feed_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
+					"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"newsfeeds",
 						"feeds",
-						"{feed_id}"
+						"{{feed_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
+			"name": "newsfeeds/feeds",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2178,27 +2014,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': 1,'alias': 'alias','catid': 5,'description': '','images': {'float_first': '','float_second': '','image_first': '','image_first_alt': '','image_first_caption': '','image_second': '','image_second_alt': '','image_second_caption': ''},'language': '*','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadata': {'hits': '','rights': '','robots': '','tags': {'tags': '','typeAlias': null}},'metadesc': '','metakey': '','name': 'Name','ordering': 1,'params': {'feed_character_count': '','feed_display_order': '','newsfeed_layout': '','show_feed_description': '','show_feed_image': '','show_item_description': ''},'published': 1}"
+					"raw": "{\"access\":1,\"alias\":\"alias\",\"catid\":5,\"description\":\"\",\"images\":{\"float_first\":\"\",\"float_second\":\"\",\"image_first\":\"\",\"image_first_alt\":\"\",\"image_first_caption\":\"\",\"image_second\":\"\",\"image_second_alt\":\"\",\"image_second_caption\":\"\"},\"language\":\"*\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadata\":{\"hits\":\"\",\"rights\":\"\",\"robots\":\"\",\"tags\":{\"tags\":\"\",\"typeAlias\":null}},\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Name\",\"ordering\":1,\"params\":{\"feed_character_count\":\"\",\"feed_display_order\":\"\",\"newsfeed_layout\":\"\",\"show_feed_description\":\"\",\"show_feed_image\":\"\",\"show_item_description\":\"\"},\"published\":1}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds",
+					"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"newsfeeds",
 						"feeds"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/newsfeeds/feeds' -d \\\"{'access': 1,'alias': 'alias','catid': 5,'description': '','images': {'float_first': '','float_second': '','image_first': '','image_first_alt': '','image_first_caption': '','image_second': '','image_second_alt': '','image_second_caption': ''},'language': '*','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadata': {'hits': '','rights': '','robots': '','tags': {'tags': '','typeAlias': null}},'metadesc': '','metakey': '','name': 'Name','ordering': 1,'params': {'feed_character_count': '','feed_display_order': '','newsfeed_layout': '','show_feed_description': '','show_feed_image': '','show_item_description': ''},'published': 1}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/newsfeeds/feeds' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"alias\",\"catid\":5,\"description\":\"\",\"images\":{\"float_first\":\"\",\"float_second\":\"\",\"image_first\":\"\",\"image_first_alt\":\"\",\"image_first_caption\":\"\",\"image_second\":\"\",\"image_second_alt\":\"\",\"image_second_caption\":\"\"},\"language\":\"*\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadata\":{\"hits\":\"\",\"rights\":\"\",\"robots\":\"\",\"tags\":{\"tags\":\"\",\"typeAlias\":null}},\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Name\",\"ordering\":1,\"params\":{\"feed_character_count\":\"\",\"feed_display_order\":\"\",\"newsfeed_layout\":\"\",\"show_feed_description\":\"\",\"show_feed_image\":\"\",\"show_item_description\":\"\"},\"published\":1}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
+			"name": "newsfeeds/feeds/{feed_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2209,97 +2043,89 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': 1,'alias': 'test2','catid': 5,'description': '','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadesc': '','metakey': '','name': 'Test'}"
+					"raw": "{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}",
+					"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"newsfeeds",
 						"feeds",
-						"{feed_id}"
+						"{{feed_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/newsfeeds/feeds/{{feed_id}}' -d \\\"{'access': 1,'alias': 'test2','catid': 5,'description': '','link': 'http://samoylov/joomla/gsoc19_webservices/index.php','metadesc': '','metakey': '','name': 'Test'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/requests",
+			"name": "privacy/requests",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/requests",
+					"raw": "{{base_url}}/{{base_path}}/privacy/requests",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"privacy",
 						"requests"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/requests'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/privacy/requests' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/requests/{{request_id}}",
+			"name": "privacy/requests/{request_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/requests/{{request_id}}",
+					"raw": "{{base_url}}/{{base_path}}/privacy/requests/{{request_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"privacy",
 						"requests",
-						"{request_id}"
+						"{{request_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/requests/{{request_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/privacy/requests/{{request_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/requests/export/{{request_id}}",
+			"name": "privacy/requests/export/{request_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/requests/export/{{request_id}}",
+					"raw": "{{base_url}}/{{base_path}}/privacy/requests/export/{{request_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"privacy",
 						"requests",
 						"export",
-						"{request_id}"
+						"{{request_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/requests/export/{{request_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/privacy/requests/export/{{request_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/request",
+			"name": "privacy/request",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2310,160 +2136,146 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'email':'somenewemail@com.ua','request_type':'export'}"
+					"raw": "{\"email\":\"somenewemail@com.ua\",\"request_type\":\"export\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/request",
+					"raw": "{{base_url}}/{{base_path}}/privacy/request",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"privacy",
 						"request"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/privacy/request' -d \\\"{'email':'somenewemail@com.ua','request_type':'export'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/privacy/request' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"email\":\"somenewemail@com.ua\",\"request_type\":\"export\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/consents",
+			"name": "privacy/consents",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/consents",
+					"raw": "{{base_url}}/{{base_path}}/privacy/consents",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"privacy",
 						"consents"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/consents'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/privacy/consents' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/consents/{{consent_id}}",
+			"name": "privacy/consents/{consent_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/consents/{{consent_id}}",
+					"raw": "{{base_url}}/{{base_path}}/privacy/consents/{{consent_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"privacy",
 						"consents",
-						"{consent_id}"
+						"{{consent_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/privacy/consents/{{consent_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/privacy/consents/{{consent_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/privacy/consents/{{consent_id}}",
+			"name": "privacy/consents/{consent_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/privacy/consents/{{consent_id}}",
+					"raw": "{{base_url}}/{{base_path}}/privacy/consents/{{consent_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"privacy",
 						"consents",
-						"{consent_id}"
+						"{{consent_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/privacy/consents/{{consent_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/privacy/consents/{{consent_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/redirects",
+			"name": "redirects",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirects",
+					"raw": "{{base_url}}/{{base_path}}/redirects",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"redirects"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/redirects'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/redirects' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}",
+			"name": "redirects/{redirect_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}",
+					"raw": "{{base_url}}/{{base_path}}/redirects/{{redirect_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"redirects",
-						"{redirect_id}"
+						"{{redirect_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}",
+			"name": "redirects/{redirect_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}",
+					"raw": "{{base_url}}/{{base_path}}/redirects/{{redirect_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"redirects",
-						"{redirect_id}"
+						"{{redirect_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/redirect",
+			"name": "redirect",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2474,26 +2286,24 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'comment': '','header': 301,'hits': 0,'new_url': '/content/art/99','old_url': '/content/art/12','published': 1,'referer': ''}"
+					"raw": "{\"comment\":\"\",\"header\":301,\"hits\":0,\"new_url\":\"/content/art/99\",\"old_url\":\"/content/art/12\",\"published\":1,\"referer\":\"\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirect",
+					"raw": "{{base_url}}/{{base_path}}/redirect",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"redirect"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/redirect' -d \\\"{'comment': '','header': 301,'hits': 0,'new_url': '/content/art/99','old_url': '/content/art/12','published': 1,'referer': ''}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/redirect' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"comment\":\"\",\"header\":301,\"hits\":0,\"new_url\":\"/content/art/99\",\"old_url\":\"/content/art/12\",\"published\":1,\"referer\":\"\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}",
+			"name": "redirects/{redirect_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2504,92 +2314,84 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'new_url': '/content/art/4','old_url': '/content/art/132'}"
+					"raw": "{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}",
+					"raw": "{{base_url}}/{{base_path}}/redirects/{{redirect_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"redirects",
-						"{redirect_id}"
+						"{{redirect_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/redirects/{{redirect_id}}' -d \\\"{'new_url': '/content/art/4','old_url': '/content/art/132'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/tags",
+			"name": "tags",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/tags",
+					"raw": "{{base_url}}/{{base_path}}/tags",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"tags"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/tags'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/tags' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
+			"name": "tags/{tag_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
+					"raw": "{{base_url}}/{{base_path}}/tags/{{tag_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"tags",
-						"{tag_id}"
+						"{{tag_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/tags/{{tag_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
+			"name": "tags/{tag_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
+					"raw": "{{base_url}}/{{base_path}}/tags/{{tag_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"tags",
-						"{tag_id}"
+						"{{tag_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/tags/{{tag_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/tags",
+			"name": "tags",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2600,26 +2402,24 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'access': 1,'access_title': 'Public','alias': 'test','description': '','language': '*','note': '','parent_id': 1,'path': 'test','published': 1,'title': 'test'}"
+					"raw": "{\"access\":1,\"access_title\":\"Public\",\"alias\":\"test\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"path\":\"test\",\"published\":1,\"title\":\"test\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/tags",
+					"raw": "{{base_url}}/{{base_path}}/tags",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"tags"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/tags' -d \\\"{'access': 1,'access_title': 'Public','alias': 'test','description': '','language': '*','note': '','parent_id': 1,'path': 'test','published': 1,'title': 'test'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/tags' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"access_title\":\"Public\",\"alias\":\"test\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"path\":\"test\",\"published\":1,\"title\":\"test\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
+			"name": "tags/{tag_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2630,98 +2430,90 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'alias': 'test','title': 'new title'}"
+					"raw": "{\"alias\":\"test\",\"title\":\"new title\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/tags/{{tag_id}}",
+					"raw": "{{base_url}}/{{base_path}}/tags/{{tag_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"tags",
-						"{tag_id}"
+						"{{tag_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/tags/{{tag_id}}' -d \\\"{'alias': 'test','title': 'new title'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"test\",\"title\":\"new title\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}",
+			"name": "templates/styles/{app}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}",
+					"raw": "{{base_url}}/{{base_path}}/templates/styles/{{app}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"templates",
 						"styles",
-						"{app}"
+						"{{app}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/templates/styles/{{app}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/templates/styles/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
+			"name": "templates/styles/{app}/{template_style_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
+					"raw": "{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"templates",
 						"styles",
-						"{app}",
-						"{template_style_id}"
+						"{{app}}",
+						"{{template_style_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
+			"name": "templates/styles/{app}/{template_style_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
+					"raw": "{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"templates",
 						"styles",
-						"{app}",
-						"{template_style_id}"
+						"{{app}}",
+						"{{template_style_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}",
+			"name": "templates/styles/{app}",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2732,28 +2524,26 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'home': '0','params': {'fluidContainer': '0','logoFile': '','sidebarLeftWidth': '3','sidebarRightWidth': '3'},'template': 'cassiopeia','title': 'cassiopeia - Some Text'}"
+					"raw": "{\"home\":\"0\",\"params\":{\"fluidContainer\":\"0\",\"logoFile\":\"\",\"sidebarLeftWidth\":\"3\",\"sidebarRightWidth\":\"3\"},\"template\":\"cassiopeia\",\"title\":\"cassiopeia - Some Text\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}",
+					"raw": "{{base_url}}/{{base_path}}/templates/styles/{{app}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"templates",
 						"styles",
-						"{app}"
+						"{{app}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/templates/styles/{{app}}' -d \\\"{'home': '0','params': {'fluidContainer': '0','logoFile': '','sidebarLeftWidth': '3','sidebarRightWidth': '3'},'template': 'cassiopeia','title': 'cassiopeia - Some Text'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/templates/styles/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"home\":\"0\",\"params\":{\"fluidContainer\":\"0\",\"logoFile\":\"\",\"sidebarLeftWidth\":\"3\",\"sidebarRightWidth\":\"3\"},\"template\":\"cassiopeia\",\"title\":\"cassiopeia - Some Text\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
+			"name": "templates/styles/{app}/{template_style_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2764,94 +2554,86 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'template': 'cassiopeia','title': 'new cassiopeia - Default'}"
+					"raw": "{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}",
+					"raw": "{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"templates",
 						"styles",
-						"{app}",
-						"{template_style_id}"
+						"{{app}}",
+						"{{template_style_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/templates/styles/{{app}}/{{template_style_id}}' -d  \\\"{'template': 'cassiopeia','title': 'new cassiopeia - Default'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/users",
+			"name": "users",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/users",
+					"raw": "{{base_url}}/{{base_path}}/users",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"users"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/users'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/users' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
+			"name": "users/{user_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
+					"raw": "{{base_url}}/{{base_path}}/users/{{user_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"users",
-						"{user_id}"
+						"{{user_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_path}}/api/index.php/v1/users/{{user_id}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
+			"name": "users/{user_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
+					"raw": "{{base_url}}/{{base_path}}/users/{{user_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"users",
-						"{user_id}"
+						"{{user_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_path}}/api/index.php/v1/users/{{user_id}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/users",
+			"name": "users",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2862,26 +2644,24 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'block': '0','email': 'test@example.org','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}"
+					"raw": "{\"block\":\"0\",\"email\":\"test@example.org\",\"groups\":[\"2\"],\"id\":\"0\",\"lastResetTime\":\"\",\"lastvisitDate\":\"\",\"name\":\"nnn\",\"params\":{\"admin_language\":\"\",\"admin_style\":\"\",\"editor\":\"\",\"helpsite\":\"\",\"language\":\"\",\"timezone\":\"\"},\"password\":\"qwerty\",\"password2\":\"qwerty\",\"registerDate\":\"\",\"requireReset\":\"0\",\"resetCount\":\"0\",\"sendEmail\":\"0\",\"username\":\"ad\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/users",
+					"raw": "{{base_url}}/{{base_path}}/users",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"users"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users' -d \\\"{'block': '0','email': 'test@example.org','groups': ['2'],'id': '0','lastResetTime': '','lastvisitDate': '','name': 'nnn','params': {'admin_language': '','admin_style': '','editor': '','helpsite': '','language': '','timezone': ''},'password': 'qwerty','password2': 'qwerty','registerDate': '','requireReset': '0','resetCount': '0','sendEmail': '0','username': 'ad'}\\\""
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/users' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"block\":\"0\",\"email\":\"test@example.org\",\"groups\":[\"2\"],\"id\":\"0\",\"lastResetTime\":\"\",\"lastvisitDate\":\"\",\"name\":\"nnn\",\"params\":{\"admin_language\":\"\",\"admin_style\":\"\",\"editor\":\"\",\"helpsite\":\"\",\"language\":\"\",\"timezone\":\"\"},\"password\":\"qwerty\",\"password2\":\"qwerty\",\"registerDate\":\"\",\"requireReset\":\"0\",\"resetCount\":\"0\",\"sendEmail\":\"0\",\"username\":\"ad\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
+			"name": "users/{user_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -2892,22 +2672,20 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{'email': 'new@example.org','groups': ['2'],'name': 'name','username': 'username'}"
+					"raw": "{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}"
 				},
 				"url": {
-					"raw": "{{base_path}}/api/index.php/v1/users/{{user_id}}",
+					"raw": "{{base_url}}/{{base_path}}/users/{{user_id}}",
 					"host": [
-						"{{base_path}}"
+						"{{base_url}}"
 					],
 					"path": [
-						"api",
-						"index.php",
-						"v1",
+						"{{base_path}}",
 						"users",
-						"{user_id}"
+						"{{user_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH -H 'Content-Type: application/json' '{{base_path}}/api/index.php/v1/users/{{user_id}}' -d \\\"{'email': 'new@example.org','groups': ['2'],'name': 'name','username': 'username'}\\\""
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}'"
 			},
 			"response": []
 		}
@@ -2917,7 +2695,7 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "Paste your Joomla API Token here.",
+				"value": "{{auth_apikey}}",
 				"type": "string"
 			},
 			{
@@ -2929,9 +2707,112 @@
 	},
 	"variable": [
 		{
-			"id": "942ab3fa-2de4-4dfa-b51d-33f5ecc675ae",
+			"key": "base_url",
+			"value": "https://example.com"
+		},
+		{
 			"key": "base_path",
-			"value": "Put the URL for your Joomla 4 installation here."
+			"value": "api/index.php/v1/"
+		},
+		{
+			"key": "auth_apikey",
+			"value": "Paste your Joomla API Token here."
+		},
+		{
+			"key": "banner_id",
+			"value": "{banner_id}"
+		},
+		{
+			"key": "client_id",
+			"value": "{client_id}"
+		},
+		{
+			"key": "category_id",
+			"value": "{category_id}"
+		},
+		{
+			"key": "contenthistory_id",
+			"value": "{contenthistory_id}"
+		},
+		{
+			"key": "component_name",
+			"value": "{component_name}"
+		},
+		{
+			"key": "contact_id",
+			"value": "{contact_id}"
+		},
+		{
+			"key": "field_id",
+			"value": "{field_id}"
+		},
+		{
+			"key": "group_id",
+			"value": "{group_id}"
+		},
+		{
+			"key": "article_id",
+			"value": "{article_id}"
+		},
+		{
+			"key": "language_id",
+			"value": "{language_id}"
+		},
+		{
+			"key": "app",
+			"value": "(site|administrator)"
+		},
+		{
+			"key": "lang_code",
+			"value": "{lang_code}"
+		},
+		{
+			"key": "constant_id",
+			"value": "{constant_id}"
+		},
+		{
+			"key": "menu_id",
+			"value": "{menu_id}"
+		},
+		{
+			"key": "menu_item_id",
+			"value": "{menu_item_id}"
+		},
+		{
+			"key": "message_id",
+			"value": "{message_id}"
+		},
+		{
+			"key": "module_id",
+			"value": "{module_id}"
+		},
+		{
+			"key": "feed_id",
+			"value": "{feed_id}"
+		},
+		{
+			"key": "request_id",
+			"value": "{request_id}"
+		},
+		{
+			"key": "consent_id",
+			"value": "{consent_id}"
+		},
+		{
+			"key": "redirect_id",
+			"value": "{redirect_id}"
+		},
+		{
+			"key": "tag_id",
+			"value": "{tag_id}"
+		},
+		{
+			"key": "template_style_id",
+			"value": "{template_style_id}"
+		},
+		{
+			"key": "user_id",
+			"value": "{user_id}"
 		}
 	],
 	"protocolProfileBehavior": {}
