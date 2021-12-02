@@ -947,7 +947,7 @@
 					"path": [
 						"{{base_path}}",
 						"fields",
-						"articles",
+						"content",
 						"article"
 					]
 				},
@@ -968,7 +968,7 @@
 					"path": [
 						"{{base_path}}",
 						"fields",
-						"articles",
+						"content",
 						"article",
 						"{{field_id}}"
 					]
@@ -990,7 +990,7 @@
 					"path": [
 						"{{base_path}}",
 						"fields",
-						"articles",
+						"content",
 						"article",
 						"{{field_id}}"
 					]
@@ -1021,7 +1021,7 @@
 					"path": [
 						"{{base_path}}",
 						"fields",
-						"articles",
+						"content",
 						"article"
 					]
 				},
@@ -1051,7 +1051,7 @@
 					"path": [
 						"{{base_path}}",
 						"fields",
-						"articles",
+						"content",
 						"article",
 						"{{field_id}}"
 					]
@@ -1074,7 +1074,7 @@
 						"{{base_path}}",
 						"fields",
 						"groups",
-						"articles",
+						"content",
 						"article"
 					]
 				},
@@ -1096,7 +1096,7 @@
 						"{{base_path}}",
 						"fields",
 						"groups",
-						"articles",
+						"content",
 						"article",
 						"{{group_id}}"
 					]
@@ -1119,7 +1119,7 @@
 						"{{base_path}}",
 						"fields",
 						"groups",
-						"articles",
+						"content",
 						"article",
 						"{{group_id}}"
 					]
@@ -1151,7 +1151,7 @@
 						"{{base_path}}",
 						"fields",
 						"groups",
-						"articles",
+						"content",
 						"article"
 					]
 				},
@@ -1182,7 +1182,7 @@
 						"{{base_path}}",
 						"fields",
 						"groups",
-						"articles",
+						"content",
 						"article",
 						"{{group_id}}"
 					]
