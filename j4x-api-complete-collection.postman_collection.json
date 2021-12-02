@@ -935,12 +935,12 @@
 			"response": []
 		},
 		{
-			"name": "fields/content/article",
+			"name": "fields/content/articles",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/content/article",
+					"raw": "{{base_url}}/{{base_path}}/fields/content/articles",
 					"host": [
 						"{{base_url}}"
 					],
@@ -948,20 +948,20 @@
 						"{{base_path}}",
 						"fields",
 						"content",
-						"article"
+						"articles"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/content/article' -H 'X-Joomla-Token: {{auth_apikey}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/content/article/{field_id}",
+			"name": "fields/content/articles/{field_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/content/article/{{field_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}",
 					"host": [
 						"{{base_url}}"
 					],
@@ -969,21 +969,21 @@
 						"{{base_path}}",
 						"fields",
 						"content",
-						"article",
+						"articles",
 						"{{field_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/content/article/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/content/article/{field_id}",
+			"name": "fields/content/articles/{field_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/content/article/{{field_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}",
 					"host": [
 						"{{base_url}}"
 					],
@@ -991,16 +991,16 @@
 						"{{base_path}}",
 						"fields",
 						"content",
-						"article",
+						"articles",
 						"{{field_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/fields/content/article/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/content/article",
+			"name": "fields/content/articles",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1014,7 +1014,7 @@
 					"raw": "{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}"
 				},
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/content/article",
+					"raw": "{{base_url}}/{{base_path}}/fields/content/articles",
 					"host": [
 						"{{base_url}}"
 					],
@@ -1022,15 +1022,15 @@
 						"{{base_path}}",
 						"fields",
 						"content",
-						"article"
+						"articles"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/content/article' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}'"
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/content/article/{field_id}",
+			"name": "fields/content/articles/{field_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1044,7 +1044,7 @@
 					"raw": "{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
 				},
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/content/article/{{field_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}",
 					"host": [
 						"{{base_url}}"
 					],
@@ -1052,21 +1052,21 @@
 						"{{base_path}}",
 						"fields",
 						"content",
-						"article",
+						"articles",
 						"{{field_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/content/article/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/groups/content/article",
+			"name": "fields/groups/content/articles",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/article",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/articles",
 					"host": [
 						"{{base_url}}"
 					],
@@ -1075,20 +1075,20 @@
 						"fields",
 						"groups",
 						"content",
-						"article"
+						"articles"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/content/article' -H 'X-Joomla-Token: {{auth_apikey}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/groups/content/article/{group_id}",
+			"name": "fields/groups/content/articles/{group_id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/article/{{group_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}",
 					"host": [
 						"{{base_url}}"
 					],
@@ -1097,21 +1097,21 @@
 						"fields",
 						"groups",
 						"content",
-						"article",
+						"articles",
 						"{{group_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/content/article/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/groups/content/article/{group_id}",
+			"name": "fields/groups/content/articles/{group_id}",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/article/{{group_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}",
 					"host": [
 						"{{base_url}}"
 					],
@@ -1120,16 +1120,16 @@
 						"fields",
 						"groups",
 						"content",
-						"article",
+						"articles",
 						"{{group_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/fields/groups/content/article/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/groups/content/article",
+			"name": "fields/groups/content/articles",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -1143,7 +1143,7 @@
 					"raw": "{\"access\":1,\"context\":\"com_content.article\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"article field group\",\"checked_out\":0,\"created_by\":0}"
 				},
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/article",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/articles",
 					"host": [
 						"{{base_url}}"
 					],
@@ -1152,15 +1152,15 @@
 						"fields",
 						"groups",
 						"content",
-						"article"
+						"articles"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/content/article' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"article field group\",\"checked_out\":0,\"created_by\":0}'"
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"article field group\",\"checked_out\":0,\"created_by\":0}'"
 			},
 			"response": []
 		},
 		{
-			"name": "fields/groups/content/article/{group_id}",
+			"name": "fields/groups/content/articles/{group_id}",
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -1174,7 +1174,7 @@
 					"raw": "{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}"
 				},
 				"url": {
-					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/article/{{group_id}}",
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}",
 					"host": [
 						"{{base_url}}"
 					],
@@ -1183,11 +1183,11 @@
 						"fields",
 						"groups",
 						"content",
-						"article",
+						"articles",
 						"{{group_id}}"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/content/article/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}'"
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}'"
 			},
 			"response": []
 		},
