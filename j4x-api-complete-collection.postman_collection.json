@@ -1011,7 +1011,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}"
+					"raw": "{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}"
 				},
 				"url": {
 					"raw": "{{base_url}}/{{base_path}}/fields/content/article",
@@ -1025,7 +1025,7 @@
 						"article"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/content/article' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}'"
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/content/article' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}'"
 			},
 			"response": []
 		},
@@ -1140,7 +1140,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field3\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}"
+					"raw": "{\"access\":1,\"context\":\"com_content.article\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"article field group\",\"checked_out\":0,\"created_by\":0}"
 				},
 				"url": {
 					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/article",
@@ -1155,7 +1155,7 @@
 						"article"
 					]
 				},
-				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/content/article' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field3\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}'"
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/content/article' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"article field group\",\"checked_out\":0,\"created_by\":0}'"
 			},
 			"response": []
 		},
