@@ -1,5 +1,8 @@
 # j4x-api-collection
-An attempt to help the Joomla! 4 early adopters mainly focused for developers. It's an unofficial Postman collection of official Joomla 4 beta API 
+An attempt to help the Joomla! 4 early adopters mainly focused for developers. It's an unofficial Postman collection of official Joomla 4.0.x API
+
+[Joomla! 4 Webservices API Documentation](https://documenter.getpostman.com/view/7443864/UVRDF5KV "Joomla! 4 Webservices API Documentation")
+
 
 ## Installation
 - Download the latest version of j4x-api-complete-collection.postman_collection.json from the file list above
@@ -28,4 +31,4 @@ The URLs are set via *base_path*.  You should set this variable within your coll
 
 ## Documentation
 The Postman generated Api documentation of Joomla! 4 Webservices collection
-[Joomla! 4 Webservices API Documentation](https://documenter.getpostman.com/view/7443864/TVCgxmr7 "Joomla! 4 Webservices API Documentation")
+[Joomla! 4 Webservices API Documentation](https://documenter.getpostman.com/view/7443864/UVRDF5KV "Joomla! 4 Webservices API Documentation")
