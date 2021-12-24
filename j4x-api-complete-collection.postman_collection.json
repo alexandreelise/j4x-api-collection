@@ -1563,7 +1563,8 @@
 				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/content/articles/{{article_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"catid\":64,\"title\":\"Updated article\"}'"
 			},
 			"response": []
-		},{
+		},
+		{
 			"name": "fields/users",
 			"request": {
 				"method": "GET",
@@ -1807,6 +1808,137 @@
 					]
 				},
 				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/users/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new user group\",\"note\":\"\",\"description\":\"new description\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "fields/groups/content/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/categories",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{base_path}}",
+						"fields",
+						"groups",
+						"content",
+						"categories"
+					]
+				},
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/content/categories' -H 'X-Joomla-Token: {{auth_apikey}}'"
+			},
+			"response": []
+		},
+		{
+			"name": "fields/groups/content/categories/{group_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/categories/{{group_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{base_path}}",
+						"fields",
+						"groups",
+						"content",
+						"categories",
+						"{{group_id}}"
+					]
+				},
+				"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/content/categories/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+			},
+			"response": []
+		},
+		{
+			"name": "fields/groups/content/categories/{group_id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/categories/{{group_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{base_path}}",
+						"fields",
+						"groups",
+						"content",
+						"categories",
+						"{{group_id}}"
+					]
+				},
+				"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/fields/groups/content/categories/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+			},
+			"response": []
+		},
+		{
+			"name": "fields/groups/content/categories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"access\":1,\"context\":\"com_content.categories\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"category field group\",\"checked_out\":0,\"created_by\":0}"
+				},
+				"url": {
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/categories",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{base_path}}",
+						"fields",
+						"groups",
+						"content",
+						"categories"
+					]
+				},
+				"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/content/categories' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.categories\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"category field group\",\"checked_out\":0,\"created_by\":0}'"
+			},
+			"response": []
+		},
+		{
+			"name": "fields/groups/content/categories/{group_id}",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"new category group\",\"note\":\"\",\"description\":\"new description\"}"
+				},
+				"url": {
+					"raw": "{{base_url}}/{{base_path}}/fields/groups/content/categories/{{group_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{base_path}}",
+						"fields",
+						"groups",
+						"content",
+						"categories",
+						"{{group_id}}"
+					]
+				},
+				"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/content/categories/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new category group\",\"note\":\"\",\"description\":\"new description\"}'"
 			},
 			"response": []
 		},
