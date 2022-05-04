@@ -14,7 +14,7 @@
           "item": [
             {
               "name": "banners",
-              "_postman_id": "5c79719d-363e-4451-8ff4-3df6395918e8",
+              "id": "5c79719d-363e-4451-8ff4-3df6395918e8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -28,10 +28,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"catid\":3,\"clicks\":0,\"custombannercode\":\"\",\"description\":\"Text\",\"metakey\":\"\",\"name\":\"Name\",\"params\":{\"alt\":\"\",\"height\":\"\",\"imageurl\":\"\",\"width\":\"\"}}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"catid\":3,\"clicks\":0,\"custombannercode\":\"\",\"description\":\"Demo description\",\"metakey\":\"\",\"name\":\"Name\",\"params\":{\"alt\":\"\",\"height\":\"\",\"imageurl\":\"\",\"width\":\"\"}}"
                 },
                 "url": "{{base_url}}/{{base_path}}/banners",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/banners' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"catid\":3,\"clicks\":0,\"custombannercode\":\"\",\"description\":\"Text\",\"metakey\":\"\",\"name\":\"Name\",\"params\":{\"alt\":\"\",\"height\":\"\",\"imageurl\":\"\",\"width\":\"\"}}'"
@@ -40,7 +37,7 @@
             },
             {
               "name": "banners/{banner_id}",
-              "_postman_id": "ea2c5f65-469d-4085-8a91-1c832f9867b2",
+              "id": "ea2c5f65-469d-4085-8a91-1c832f9867b2",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -54,10 +51,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/banners/{{banner_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}'"
@@ -66,7 +60,7 @@
             },
             {
               "name": "banners",
-              "_postman_id": "1e313c86-5359-4b03-96ce-f7c7f15ef042",
+              "id": "1e313c86-5359-4b03-96ce-f7c7f15ef042",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -80,7 +74,7 @@
             },
             {
               "name": "banners/{banner_id}",
-              "_postman_id": "f4093aaa-0d19-4e0d-8604-b8756dbf7852",
+              "id": "f4093aaa-0d19-4e0d-8604-b8756dbf7852",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -94,7 +88,7 @@
             },
             {
               "name": "banners/{banner_id}",
-              "_postman_id": "680e4f7d-38e4-4ad9-b979-e62ab398855d",
+              "id": "680e4f7d-38e4-4ad9-b979-e62ab398855d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -107,15 +101,14 @@
               "response": []
             }
           ],
-          "_postman_id": "7f6cafc2-099b-4b8a-b531-c23f8cf0ec4d",
-          "_postman_isSubFolder": true
+          "id": "7f6cafc2-099b-4b8a-b531-c23f8cf0ec4d"
         },
         {
           "name": "1.2 Banners Clients",
           "item": [
             {
               "name": "banners/clients",
-              "_postman_id": "15a766ea-1753-45ad-b025-9d733a175f58",
+              "id": "15a766ea-1753-45ad-b025-9d733a175f58",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -129,10 +122,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"contact\":\"Name\",\"email\":\"email@example.org\",\"extrainfo\":\"\",\"metakey\":\"\",\"name\":\"Clients\",\"state\":1}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"contact\":\"Name\",\"email\":\"email@example.org\",\"extrainfo\":\"\",\"metakey\":\"\",\"name\":\"Clients\",\"state\":1}"
                 },
                 "url": "{{base_url}}/{{base_path}}/banners/clients",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/banners/clients' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"contact\":\"Name\",\"email\":\"email@example.org\",\"extrainfo\":\"\",\"metakey\":\"\",\"name\":\"Clients\",\"state\":1}'"
@@ -141,7 +131,7 @@
             },
             {
               "name": "banners/clients/{client_id}",
-              "_postman_id": "142214c5-a582-4787-8d1d-8a65fa5f812e",
+              "id": "142214c5-a582-4787-8d1d-8a65fa5f812e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -155,10 +145,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/banners/clients/{{client_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}'"
@@ -167,7 +154,7 @@
             },
             {
               "name": "banners/clients",
-              "_postman_id": "7987b29c-253c-4a50-9fe0-bbd688d279cb",
+              "id": "7987b29c-253c-4a50-9fe0-bbd688d279cb",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -181,7 +168,7 @@
             },
             {
               "name": "banners/clients/{client_id}",
-              "_postman_id": "cd8da41f-2927-4180-8ad4-56dc8920e68e",
+              "id": "cd8da41f-2927-4180-8ad4-56dc8920e68e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -195,7 +182,7 @@
             },
             {
               "name": "banners/clients/{client_id}",
-              "_postman_id": "fa263e3d-0d32-4e5f-82df-b47f7c655d8a",
+              "id": "fa263e3d-0d32-4e5f-82df-b47f7c655d8a",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -208,15 +195,14 @@
               "response": []
             }
           ],
-          "_postman_id": "042c977a-b741-4724-a7ec-76e41f4ea95e",
-          "_postman_isSubFolder": true
+          "id": "042c977a-b741-4724-a7ec-76e41f4ea95e"
         },
         {
           "name": "1.3 Banners Categories",
           "item": [
             {
               "name": "banners/categories",
-              "_postman_id": "f75ec466-90c2-4d01-af95-683b16c11755",
+              "id": "f75ec466-90c2-4d01-af95-683b16c11755",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -230,10 +216,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"alias\":\"cat\",\"extension\":\"com_banners\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"Title\",\"params\":{\"workflow_id\":1}}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"alias\":\"cat\",\"extension\":\"com_banners\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"Title\",\"params\":{\"workflow_id\":1}}"
                 },
                 "url": "{{base_url}}/{{base_path}}/banners/categories",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/banners/categories' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"cat\",\"extension\":\"com_banners\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"Title\",\"params\":{\"workflow_id\":1}}'"
@@ -242,7 +225,7 @@
             },
             {
               "name": "banners/categories/{category_id}",
-              "_postman_id": "fd228aec-c48e-4192-bf5b-85e71f73fbbd",
+              "id": "fd228aec-c48e-4192-bf5b-85e71f73fbbd",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -256,10 +239,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/banners/categories/{{category_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}'"
@@ -268,7 +248,7 @@
             },
             {
               "name": "banners/categories",
-              "_postman_id": "c3af5f19-9b9f-4428-85d0-3d8eae5c1e7b",
+              "id": "c3af5f19-9b9f-4428-85d0-3d8eae5c1e7b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -282,7 +262,7 @@
             },
             {
               "name": "banners/categories/{category_id}",
-              "_postman_id": "87c64326-26bf-4723-b148-5d0c70428c0f",
+              "id": "87c64326-26bf-4723-b148-5d0c70428c0f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -296,7 +276,7 @@
             },
             {
               "name": "banners/categories/{category_id}",
-              "_postman_id": "d47afd0d-eb73-43a4-bd8d-055d73dcda4e",
+              "id": "d47afd0d-eb73-43a4-bd8d-055d73dcda4e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -309,15 +289,14 @@
               "response": []
             }
           ],
-          "_postman_id": "d5c20cd7-71f6-4ed1-b83d-96d6d641709b",
-          "_postman_isSubFolder": true
+          "id": "d5c20cd7-71f6-4ed1-b83d-96d6d641709b"
         },
         {
           "name": "1.4 Banners Content History",
           "item": [
             {
               "name": "banners/contenthistory/keep/{contenthistory_id}",
-              "_postman_id": "62f01cdb-5aa0-404e-a317-828d6fed7a42",
+              "id": "62f01cdb-5aa0-404e-a317-828d6fed7a42",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -336,7 +315,7 @@
             },
             {
               "name": "banners/contenthistory/{banner_id}",
-              "_postman_id": "b698eefd-6ec6-4279-94a3-c69561e8ea6c",
+              "id": "b698eefd-6ec6-4279-94a3-c69561e8ea6c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -350,7 +329,7 @@
             },
             {
               "name": "banners/contenthistory/{contenthistory_id}",
-              "_postman_id": "7dcaebfa-139c-4351-8e9d-3d7604162886",
+              "id": "7dcaebfa-139c-4351-8e9d-3d7604162886",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -363,11 +342,10 @@
               "response": []
             }
           ],
-          "_postman_id": "830e61da-3e4c-45ba-bad8-d40919dace98",
-          "_postman_isSubFolder": true
+          "id": "830e61da-3e4c-45ba-bad8-d40919dace98"
         }
       ],
-      "_postman_id": "6aaba9cb-2867-4b27-8bbc-7fced108ca48"
+      "id": "6aaba9cb-2867-4b27-8bbc-7fced108ca48"
     },
     {
       "name": "2. Config",
@@ -377,7 +355,7 @@
           "item": [
             {
               "name": "config/application",
-              "_postman_id": "4a0e025b-bf24-498d-9ed2-34404eb00475",
+              "id": "4a0e025b-bf24-498d-9ed2-34404eb00475",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -391,7 +369,7 @@
             },
             {
               "name": "config/application",
-              "_postman_id": "cb732caa-9077-4d2d-b1d5-822a43f382bb",
+              "id": "cb732caa-9077-4d2d-b1d5-822a43f382bb",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -405,10 +383,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"debug\":true,\"sitename\":\"123\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"debug\":true,\"sitename\":\"123\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/config/application",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/config/application' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"debug\":true,\"sitename\":\"123\"}'"
@@ -416,15 +391,14 @@
               "response": []
             }
           ],
-          "_postman_id": "973d87ae-2949-4dab-80e2-1103690de5de",
-          "_postman_isSubFolder": true
+          "id": "973d87ae-2949-4dab-80e2-1103690de5de"
         },
         {
           "name": "2.2 Config Component",
           "item": [
             {
               "name": "config/{component_name}",
-              "_postman_id": "15e94e80-114c-482b-bfd4-70075095b92f",
+              "id": "15e94e80-114c-482b-bfd4-70075095b92f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -437,11 +411,10 @@
               "response": []
             }
           ],
-          "_postman_id": "bc3e5e8a-604f-47e6-a869-78d6425d3295",
-          "_postman_isSubFolder": true
+          "id": "bc3e5e8a-604f-47e6-a869-78d6425d3295"
         }
       ],
-      "_postman_id": "ab1df597-8191-41de-b6f2-6f3b4f063209"
+      "id": "ab1df597-8191-41de-b6f2-6f3b4f063209"
     },
     {
       "name": "3. Contacts",
@@ -451,7 +424,7 @@
           "item": [
             {
               "name": "contacts",
-              "_postman_id": "1a48b30f-481a-4a7a-9f5c-e99cbe9a5e10",
+              "id": "1a48b30f-481a-4a7a-9f5c-e99cbe9a5e10",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -465,10 +438,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"alias\":\"contact\",\"catid\":4,\"language\":\"*\",\"name\":\"Contact\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"alias\":\"contact\",\"catid\":4,\"language\":\"*\",\"name\":\"Contact\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/contacts",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/contact' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"contact\",\"catid\":4,\"language\":\"*\",\"name\":\"Contact\"}'"
@@ -477,7 +447,7 @@
             },
             {
               "name": "contacts/{contact_id}",
-              "_postman_id": "c2775b76-22b2-4354-a54e-0132c4a8d8f5",
+              "id": "c2775b76-22b2-4354-a54e-0132c4a8d8f5",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -491,10 +461,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/contacts/{{contact_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/contacts/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}'"
@@ -503,7 +470,7 @@
             },
             {
               "name": "contacts",
-              "_postman_id": "997629ec-8051-41d3-ae30-79432bf567bd",
+              "id": "997629ec-8051-41d3-ae30-79432bf567bd",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -517,7 +484,7 @@
             },
             {
               "name": "contacts/{contact_id}",
-              "_postman_id": "57912ad1-5e9e-4cd7-b083-fc7af84fded6",
+              "id": "57912ad1-5e9e-4cd7-b083-fc7af84fded6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -531,7 +498,7 @@
             },
             {
               "name": "contacts/{contact_id}",
-              "_postman_id": "12292e56-b0e5-4849-b7a7-a6da0216d4de",
+              "id": "12292e56-b0e5-4849-b7a7-a6da0216d4de",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -544,15 +511,14 @@
               "response": []
             }
           ],
-          "_postman_id": "96997383-c58f-4795-bc54-155aba78e68d",
-          "_postman_isSubFolder": true
+          "id": "96997383-c58f-4795-bc54-155aba78e68d"
         },
         {
           "name": "3.2 Contacts Form",
           "item": [
             {
               "name": "contacts/form/{contact_id}",
-              "_postman_id": "ae2c34a1-1a2a-4fbb-b2f0-3d4303020c84",
+              "id": "ae2c34a1-1a2a-4fbb-b2f0-3d4303020c84",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -566,10 +532,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"contact_email\":\"email@example.org\",\"contact_message\":\"some text\",\"contact_name\":\"name\",\"contact_subject\":\"subject\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"contact_email\":\"email@example.org\",\"contact_message\":\"some text\",\"contact_name\":\"name\",\"contact_subject\":\"subject\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/contacts/form/{{contact_id}}",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/contacts/form/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"contact_email\":\"email@example.org\",\"contact_message\":\"some text\",\"contact_name\":\"name\",\"contact_subject\":\"subject\"}'"
@@ -577,15 +540,14 @@
               "response": []
             }
           ],
-          "_postman_id": "8bbbf930-09b0-4538-a43c-99639718b5fd",
-          "_postman_isSubFolder": true
+          "id": "8bbbf930-09b0-4538-a43c-99639718b5fd"
         },
         {
           "name": "3.3 Contact Custom Fields",
           "item": [
             {
               "name": "fields/contacts/contact",
-              "_postman_id": "d5e42256-c1e7-451d-bcfa-f18bef11b71f",
+              "id": "d5e42256-c1e7-451d-bcfa-f18bef11b71f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -599,10 +561,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/contacts/contact",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/contacts/contact' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}'"
@@ -611,7 +570,7 @@
             },
             {
               "name": "fields/contacts/contact/{field_id}",
-              "_postman_id": "f3860d7a-975b-4e58-a7cb-25cd272a6a7b",
+              "id": "f3860d7a-975b-4e58-a7cb-25cd272a6a7b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -625,10 +584,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
@@ -637,7 +593,7 @@
             },
             {
               "name": "fields/contacts/contact",
-              "_postman_id": "5842ab3c-5cdf-452e-b8d5-19c84250920b",
+              "id": "5842ab3c-5cdf-452e-b8d5-19c84250920b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -651,7 +607,7 @@
             },
             {
               "name": "fields/contacts/contact/{field_id}",
-              "_postman_id": "754d5409-c8b0-4d12-8f6a-8ef2778c168f",
+              "id": "754d5409-c8b0-4d12-8f6a-8ef2778c168f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -665,7 +621,7 @@
             },
             {
               "name": "fields/contacts/contact/{field_id}",
-              "_postman_id": "23aa2250-bf4d-40a2-a9bf-1db809a88f94",
+              "id": "23aa2250-bf4d-40a2-a9bf-1db809a88f94",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -678,15 +634,14 @@
               "response": []
             }
           ],
-          "_postman_id": "32ca79a0-0da4-46fe-8a17-400493786682",
-          "_postman_isSubFolder": true
+          "id": "32ca79a0-0da4-46fe-8a17-400493786682"
         },
         {
           "name": "3.4 Contacts Custom Fields Groups",
           "item": [
             {
               "name": "fields/groups/contacts/contact",
-              "_postman_id": "dc0092ea-cb37-4484-a807-0c98084a82e9",
+              "id": "dc0092ea-cb37-4484-a807-0c98084a82e9",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -700,10 +655,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field3\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field3\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/contacts/contact' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_contact.contact\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact field\",\"language\":\"*\",\"name\":\"contact-field3\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact field\",\"type\":\"text\"}'"
@@ -712,7 +664,7 @@
             },
             {
               "name": "fields/groups/contacts/contact/{group_id}",
-              "_postman_id": "162b8803-4b98-4a25-83d8-0011bb45a667",
+              "id": "162b8803-4b98-4a25-83d8-0011bb45a667",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -726,10 +678,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}'"
@@ -738,7 +687,7 @@
             },
             {
               "name": "fields/groups/contacts/contact",
-              "_postman_id": "4d8a42a8-25a9-4600-891f-4dab8bc46007",
+              "id": "4d8a42a8-25a9-4600-891f-4dab8bc46007",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -752,7 +701,7 @@
             },
             {
               "name": "fields/groups/contacts/contact/{group_id}",
-              "_postman_id": "7c824c80-8db8-4510-a139-44c6563e461f",
+              "id": "7c824c80-8db8-4510-a139-44c6563e461f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -766,7 +715,7 @@
             },
             {
               "name": "fields/groups/contacts/contact/{group_id}",
-              "_postman_id": "82e09049-3d91-414e-9e23-37308500196a",
+              "id": "82e09049-3d91-414e-9e23-37308500196a",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -779,15 +728,14 @@
               "response": []
             }
           ],
-          "_postman_id": "ad87cea3-6992-4e82-a9a1-fc7f714031a7",
-          "_postman_isSubFolder": true
+          "id": "ad87cea3-6992-4e82-a9a1-fc7f714031a7"
         },
         {
           "name": "3.5 Contacts Categories Custom Fields",
           "item": [
             {
               "name": "fields/contacts/categories",
-              "_postman_id": "15ab36ae-ee39-4522-9406-9ef93fd6d38f",
+              "id": "15ab36ae-ee39-4522-9406-9ef93fd6d38f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -801,10 +749,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"context\":\"com_contact.categories\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact category field\",\"language\":\"*\",\"name\":\"contact-category-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact category field\",\"type\":\"text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"context\":\"com_contact.categories\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact category field\",\"language\":\"*\",\"name\":\"contact-category-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact category field\",\"type\":\"text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/contacts/categories",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/contacts/categories' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_contact.categories\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"contact category field\",\"language\":\"*\",\"name\":\"contact-category-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"required\":0,\"state\":1,\"title\":\"contact category field\",\"type\":\"text\"}'"
@@ -813,7 +758,7 @@
             },
             {
               "name": "fields/contacts/categories/{field_id}",
-              "_postman_id": "50232165-951e-4f44-9025-cfdc520a2347",
+              "id": "50232165-951e-4f44-9025-cfdc520a2347",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -827,10 +772,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"title\":\"new contact category field\",\"name\":\"contact-category-field\",\"label\":\"contact category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"title\":\"new contact category field\",\"name\":\"contact-category-field\",\"label\":\"contact category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/contacts/categories/{{field_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/contacts/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact category field\",\"name\":\"contact-category-field\",\"label\":\"contact category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
@@ -839,7 +781,7 @@
             },
             {
               "name": "fields/contacts/categories",
-              "_postman_id": "55129c70-7ec6-4ef3-9e49-8ed6b82cb9e1",
+              "id": "55129c70-7ec6-4ef3-9e49-8ed6b82cb9e1",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -853,7 +795,7 @@
             },
             {
               "name": "fields/contacts/categories/{field_id}",
-              "_postman_id": "a9269b21-d847-4223-84b1-2eb889a912bc",
+              "id": "a9269b21-d847-4223-84b1-2eb889a912bc",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -867,7 +809,7 @@
             },
             {
               "name": "fields/contacts/categories/{field_id}",
-              "_postman_id": "991e955c-79bc-42d2-8e19-be9f6f3574f5",
+              "id": "991e955c-79bc-42d2-8e19-be9f6f3574f5",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -880,11 +822,10 @@
               "response": []
             }
           ],
-          "_postman_id": "37759ef4-a8c8-436d-84f1-2ecbd1401cca",
-          "_postman_isSubFolder": true
+          "id": "37759ef4-a8c8-436d-84f1-2ecbd1401cca"
         }
       ],
-      "_postman_id": "0e85a0fc-1175-4f81-84ae-dfb9249b44a8"
+      "id": "0e85a0fc-1175-4f81-84ae-dfb9249b44a8"
     },
     {
       "name": "4. Content",
@@ -894,7 +835,7 @@
           "item": [
             {
               "name": "content/articles",
-              "_postman_id": "79e05ad5-1f38-46fd-8a4f-eb34fa334ac0",
+              "id": "79e05ad5-1f38-46fd-8a4f-eb34fa334ac0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -908,10 +849,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"alias\":\"my-article\",\"articletext\":\"My text\",\"catid\":64,\"language\":\"*\",\"metadesc\":\"\",\"metakey\":\"\",\"title\":\"Here's an article\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"alias\":\"my-article\",\"articletext\":\"My text\",\"catid\":64,\"language\":\"*\",\"metadesc\":\"\",\"metakey\":\"\",\"title\":\"Here's an article\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/content/articles",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"my-article\",\"articletext\":\"My text\",\"catid\":64,\"language\":\"*\",\"metadesc\":\"\",\"metakey\":\"\",\"title\":\"Here'\\''s an article\"}'"
@@ -920,7 +858,7 @@
             },
             {
               "name": "content/articles/{article_id}",
-              "_postman_id": "ad6573d5-f7df-458e-b5c5-8e9f2465f26c",
+              "id": "ad6573d5-f7df-458e-b5c5-8e9f2465f26c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -934,10 +872,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"catid\":64,\"title\":\"Updated article\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"catid\":64,\"title\":\"Updated article\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/content/articles/{{article_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/content/articles/{{article_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"catid\":64,\"title\":\"Updated article\"}'"
@@ -946,7 +881,7 @@
             },
             {
               "name": "content/articles",
-              "_postman_id": "f1950d29-4156-466f-a326-cbce359d63d9",
+              "id": "f1950d29-4156-466f-a326-cbce359d63d9",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -960,7 +895,7 @@
             },
             {
               "name": "content/articles/{article_id}",
-              "_postman_id": "fc8b0a40-a734-40d0-9530-967d38440707",
+              "id": "fc8b0a40-a734-40d0-9530-967d38440707",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -974,7 +909,7 @@
             },
             {
               "name": "content/articles/{article_id}",
-              "_postman_id": "85483d06-222e-4bc5-a2cc-3066d9b1de70",
+              "id": "85483d06-222e-4bc5-a2cc-3066d9b1de70",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -987,15 +922,14 @@
               "response": []
             }
           ],
-          "_postman_id": "e85b22b7-1f8f-4073-a95a-d3e7db6f060a",
-          "_postman_isSubFolder": true
+          "id": "e85b22b7-1f8f-4073-a95a-d3e7db6f060a"
         },
         {
           "name": "4.2 Content Articles Custom Fields",
           "item": [
             {
               "name": "fields/content/articles",
-              "_postman_id": "efabbb14-cdcd-4e31-bf72-365d25c4405b",
+              "id": "efabbb14-cdcd-4e31-bf72-365d25c4405b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1009,10 +943,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/content/articles",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"article field\",\"language\":\"*\",\"name\":\"article-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"article field\",\"type\":\"text\"}'"
@@ -1021,7 +952,7 @@
             },
             {
               "name": "fields/content/articles/{field_id}",
-              "_postman_id": "40adffac-f5bd-4329-8a30-e496da54d614",
+              "id": "40adffac-f5bd-4329-8a30-e496da54d614",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1035,10 +966,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
@@ -1047,7 +975,7 @@
             },
             {
               "name": "fields/content/articles",
-              "_postman_id": "d3445c1e-3c75-4ac6-9979-92136208b9f3",
+              "id": "d3445c1e-3c75-4ac6-9979-92136208b9f3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1061,7 +989,7 @@
             },
             {
               "name": "fields/content/articles/{field_id}",
-              "_postman_id": "da50121a-e109-4511-af7a-7c16be032063",
+              "id": "da50121a-e109-4511-af7a-7c16be032063",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1075,7 +1003,7 @@
             },
             {
               "name": "fields/content/articles/{field_id}",
-              "_postman_id": "106a753b-2eb0-4d96-a559-f9a260b001d1",
+              "id": "106a753b-2eb0-4d96-a559-f9a260b001d1",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1088,15 +1016,14 @@
               "response": []
             }
           ],
-          "_postman_id": "c6e81595-b87f-4a17-9f4e-e260f543e937",
-          "_postman_isSubFolder": true
+          "id": "c6e81595-b87f-4a17-9f4e-e260f543e937"
         },
         {
           "name": "4.3 Content Articles Custom Fields Groups",
           "item": [
             {
               "name": "fields/groups/content/articles",
-              "_postman_id": "54e8cc03-822c-4834-bd62-64f2206e5889",
+              "id": "54e8cc03-822c-4834-bd62-64f2206e5889",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1110,10 +1037,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"context\":\"com_content.article\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"article field group\",\"checked_out\":0,\"created_by\":0}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"context\":\"com_content.article\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"article field group\",\"checked_out\":0,\"created_by\":0}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/groups/content/articles",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.article\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"article field group\",\"checked_out\":0,\"created_by\":0}'"
@@ -1122,7 +1046,7 @@
             },
             {
               "name": "fields/groups/content/articles/{group_id}",
-              "_postman_id": "01f66850-6c98-47ed-9671-f4339e95f880",
+              "id": "01f66850-6c98-47ed-9671-f4339e95f880",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1136,10 +1060,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}'"
@@ -1148,7 +1069,7 @@
             },
             {
               "name": "fields/groups/content/articles",
-              "_postman_id": "aec9fbcd-4d88-490c-829e-ff676542d375",
+              "id": "aec9fbcd-4d88-490c-829e-ff676542d375",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1162,7 +1083,7 @@
             },
             {
               "name": "fields/groups/content/articles/{group_id}",
-              "_postman_id": "689b2dbb-122a-4ceb-8603-402a0bb34048",
+              "id": "689b2dbb-122a-4ceb-8603-402a0bb34048",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1176,7 +1097,7 @@
             },
             {
               "name": "fields/groups/content/articles/{group_id}",
-              "_postman_id": "c35d68e6-7425-4106-a25f-ebf29fff2e72",
+              "id": "c35d68e6-7425-4106-a25f-ebf29fff2e72",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1189,15 +1110,14 @@
               "response": []
             }
           ],
-          "_postman_id": "7c2b1c93-5f9d-4795-9d28-ddc2e4810171",
-          "_postman_isSubFolder": true
+          "id": "7c2b1c93-5f9d-4795-9d28-ddc2e4810171"
         },
         {
           "name": "4.4 Content Categories Custom Fields",
           "item": [
             {
               "name": "fields/content/categories",
-              "_postman_id": "0fd9d68f-5e8a-45eb-a592-431dbf620fcd",
+              "id": "0fd9d68f-5e8a-45eb-a592-431dbf620fcd",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1211,10 +1131,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"context\":\"com_content.categories\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"content category field\",\"language\":\"*\",\"name\":\"content-category-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"content category field\",\"type\":\"text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"context\":\"com_content.categories\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"content category field\",\"language\":\"*\",\"name\":\"content-category-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"content category field\",\"type\":\"text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/content/categories",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/content/categories' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_content.categories\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"content category field\",\"language\":\"*\",\"name\":\"content-category-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"content category field\",\"type\":\"text\"}'"
@@ -1223,7 +1140,7 @@
             },
             {
               "name": "fields/content/categories/{field_id}",
-              "_postman_id": "b0de7627-7f21-441f-afb7-d3351e9eb470",
+              "id": "b0de7627-7f21-441f-afb7-d3351e9eb470",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1237,10 +1154,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"title\":\"new content category field\",\"name\":\"content-category-field\",\"label\":\"content category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"title\":\"new content category field\",\"name\":\"content-category-field\",\"label\":\"content category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/content/categories/{{field_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/content/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new content category field\",\"name\":\"content-category-field\",\"label\":\"content category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
@@ -1249,7 +1163,7 @@
             },
             {
               "name": "fields/content/categories",
-              "_postman_id": "b39865e5-12c4-4b81-b7dd-3b0eb82a3465",
+              "id": "b39865e5-12c4-4b81-b7dd-3b0eb82a3465",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1263,7 +1177,7 @@
             },
             {
               "name": "fields/content/categories/{field_id}",
-              "_postman_id": "23e7b32f-0c29-4adb-8812-237bbc02dfaf",
+              "id": "23e7b32f-0c29-4adb-8812-237bbc02dfaf",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1277,7 +1191,7 @@
             },
             {
               "name": "fields/content/categories/{field_id}",
-              "_postman_id": "03141f57-7c06-4be5-b18c-6d153101a371",
+              "id": "03141f57-7c06-4be5-b18c-6d153101a371",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1290,11 +1204,10 @@
               "response": []
             }
           ],
-          "_postman_id": "2ed0a28c-b3c1-403e-b8d9-4b56560001e4",
-          "_postman_isSubFolder": true
+          "id": "2ed0a28c-b3c1-403e-b8d9-4b56560001e4"
         }
       ],
-      "_postman_id": "8c75ed22-aba1-4d86-825d-a56329d3d32b"
+      "id": "8c75ed22-aba1-4d86-825d-a56329d3d32b"
     },
     {
       "name": "5. Languages",
@@ -1304,7 +1217,7 @@
           "item": [
             {
               "name": "languages",
-              "_postman_id": "4332feec-6690-4409-8170-302c1cc7f293",
+              "id": "4332feec-6690-4409-8170-302c1cc7f293",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1318,10 +1231,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"package\":\"pkg_fr-FR\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"package\":\"pkg_fr-FR\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/languages",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"package\":\"pkg_fr-FR\"}'"
@@ -1330,7 +1240,7 @@
             },
             {
               "name": "languages",
-              "_postman_id": "54dd014f-f323-467b-a7d9-7c94e3db4b66",
+              "id": "54dd014f-f323-467b-a7d9-7c94e3db4b66",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1343,15 +1253,14 @@
               "response": []
             }
           ],
-          "_postman_id": "b01a538f-86b8-4040-b7a0-6df4ec3792eb",
-          "_postman_isSubFolder": true
+          "id": "b01a538f-86b8-4040-b7a0-6df4ec3792eb"
         },
         {
           "name": "5.2 Languages Content",
           "item": [
             {
               "name": "languages/content",
-              "_postman_id": "02231bb1-aa93-497f-8a13-1cf6ae74a51f",
+              "id": "02231bb1-aa93-497f-8a13-1cf6ae74a51f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1365,10 +1274,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"description\":\"\",\"image\":\"fr_FR\",\"lang_code\":\"fr-FR\",\"metadesc\":\"\",\"metakey\":\"\",\"ordering\":1,\"published\":0,\"sef\":\"fk\",\"sitename\":\"\",\"title\":\"French (FR)\",\"title_native\":\"Français (France)\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"description\":\"\",\"image\":\"fr_FR\",\"lang_code\":\"fr-FR\",\"metadesc\":\"\",\"metakey\":\"\",\"ordering\":1,\"published\":0,\"sef\":\"fk\",\"sitename\":\"\",\"title\":\"French (FR)\",\"title_native\":\"Français (France)\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/languages/content",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages/content' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"description\":\"\",\"image\":\"fr_FR\",\"lang_code\":\"fr-FR\",\"metadesc\":\"\",\"metakey\":\"\",\"ordering\":1,\"published\":0,\"sef\":\"fk\",\"sitename\":\"\",\"title\":\"French (FR)\",\"title_native\":\"Français (France)\"}'"
@@ -1377,7 +1283,7 @@
             },
             {
               "name": "languages/content/{language_id}",
-              "_postman_id": "465d4dc0-c964-4a11-8d59-334ebab13a90",
+              "id": "465d4dc0-c964-4a11-8d59-334ebab13a90",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1391,10 +1297,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"description\":\"\",\"lang_code\":\"en-GB\",\"metadesc\":\"\",\"metakey\":\"\",\"sitename\":\"\",\"title\":\"English (en-GB)\",\"title_native\":\"English (United Kingdom)\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"description\":\"\",\"lang_code\":\"en-GB\",\"metadesc\":\"\",\"metakey\":\"\",\"sitename\":\"\",\"title\":\"English (en-GB)\",\"title_native\":\"English (United Kingdom)\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/languages/content/{{language_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/languages/content/{{language_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"description\":\"\",\"lang_code\":\"en-GB\",\"metadesc\":\"\",\"metakey\":\"\",\"sitename\":\"\",\"title\":\"English (en-GB)\",\"title_native\":\"English (United Kingdom)\"}'"
@@ -1403,7 +1306,7 @@
             },
             {
               "name": "languages/content",
-              "_postman_id": "ef77ede7-ecac-4292-82c4-f6fc18f57226",
+              "id": "ef77ede7-ecac-4292-82c4-f6fc18f57226",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1417,7 +1320,7 @@
             },
             {
               "name": "v1/languages/content/{language_id}",
-              "_postman_id": "30c4fd0f-b74f-4631-83aa-0c325cd8478c",
+              "id": "30c4fd0f-b74f-4631-83aa-0c325cd8478c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1431,7 +1334,7 @@
             },
             {
               "name": "languages/content/{language_id}",
-              "_postman_id": "e6aa68a7-0673-4972-a944-de2f2395da5e",
+              "id": "e6aa68a7-0673-4972-a944-de2f2395da5e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1444,8 +1347,7 @@
               "response": []
             }
           ],
-          "_postman_id": "822f3732-d2c8-4b9f-9ddb-61febd00af7b",
-          "_postman_isSubFolder": true
+          "id": "822f3732-d2c8-4b9f-9ddb-61febd00af7b"
         },
         {
           "name": "5.3 Languages Overrides",
@@ -1455,7 +1357,7 @@
               "item": [
                 {
                   "name": "languages/overrides/{app}/{lang_code}",
-                  "_postman_id": "b1d6d484-807c-49e8-8b1e-feb96b1097f7",
+                  "id": "b1d6d484-807c-49e8-8b1e-feb96b1097f7",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -1469,10 +1371,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\"key\":\"new_key\",\"override\":\"text\"}",
-                      "options": {
-                        "raw": {}
-                      }
+                      "raw": "{\"key\":\"new_key\",\"override\":\"text\"}"
                     },
                     "url": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}",
                     "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"key\":\"new_key\",\"override\":\"text\"}'"
@@ -1481,7 +1380,7 @@
                 },
                 {
                   "name": "languages/overrides/{app}/{lang_code}/{constant_id}",
-                  "_postman_id": "29f023ff-8220-4bea-9f20-ed6bdff7f28c",
+                  "id": "29f023ff-8220-4bea-9f20-ed6bdff7f28c",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -1495,10 +1394,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\"key\":\"new_key\",\"override\":\"new text\"}",
-                      "options": {
-                        "raw": {}
-                      }
+                      "raw": "{\"key\":\"new_key\",\"override\":\"new text\"}"
                     },
                     "url": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
                     "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"key\":\"new_key\",\"override\":\"new text\"}'"
@@ -1507,7 +1403,7 @@
                 },
                 {
                   "name": "languages/overrides/{app}/{lang_code}",
-                  "_postman_id": "7f1ef8c8-6f9a-45d9-912e-6183cda96a30",
+                  "id": "7f1ef8c8-6f9a-45d9-912e-6183cda96a30",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -1521,7 +1417,7 @@
                 },
                 {
                   "name": "languages/overrides/{app}/{lang_code}/{constant_id}",
-                  "_postman_id": "ff388e3d-e389-44a9-8522-9c63767d2fbd",
+                  "id": "ff388e3d-e389-44a9-8522-9c63767d2fbd",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -1535,7 +1431,7 @@
                 },
                 {
                   "name": "languages/overrides/{app}/{lang_code}/{constant_id}",
-                  "_postman_id": "9ca3cbf4-38af-4627-9ca4-86bd01778861",
+                  "id": "9ca3cbf4-38af-4627-9ca4-86bd01778861",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -1548,15 +1444,14 @@
                   "response": []
                 }
               ],
-              "_postman_id": "3276e870-18dd-4959-be2d-fb10da2b5276",
-              "_postman_isSubFolder": true
+              "id": "3276e870-18dd-4959-be2d-fb10da2b5276"
             },
             {
               "name": "5.3.2 Languages Overrides Search",
               "item": [
                 {
                   "name": "languages/overrides/search",
-                  "_postman_id": "144af565-51db-47b6-8a59-049db844ae70",
+                  "id": "144af565-51db-47b6-8a59-049db844ae70",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -1570,10 +1465,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\"searchstring\":\"JLIB_APPLICATION_ERROR_SAVE_FAILED\",\"searchtype\":\"constant\"}",
-                      "options": {
-                        "raw": {}
-                      }
+                      "raw": "{\"searchstring\":\"JLIB_APPLICATION_ERROR_SAVE_FAILED\",\"searchtype\":\"constant\"}"
                     },
                     "url": "{{base_url}}/{{base_path}}/languages/overrides/search",
                     "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages/overrides/search' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"searchstring\":\"JLIB_APPLICATION_ERROR_SAVE_FAILED\",\"searchtype\":\"constant\"}'"
@@ -1582,7 +1474,7 @@
                 },
                 {
                   "name": "languages/overrides/search/cache/refresh",
-                  "_postman_id": "a3d9edc0-aa54-4cfe-9ac0-6f6fd40051b4",
+                  "id": "a3d9edc0-aa54-4cfe-9ac0-6f6fd40051b4",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
@@ -1600,15 +1492,13 @@
                   "response": []
                 }
               ],
-              "_postman_id": "bdc9bd9d-05e6-4f27-8183-453bdcaa0401",
-              "_postman_isSubFolder": true
+              "id": "bdc9bd9d-05e6-4f27-8183-453bdcaa0401"
             }
           ],
-          "_postman_id": "bc2052a5-af63-4e86-a220-d9149f1ad2fa",
-          "_postman_isSubFolder": true
+          "id": "bc2052a5-af63-4e86-a220-d9149f1ad2fa"
         }
       ],
-      "_postman_id": "8944a82d-65e5-4c06-96b6-367be4766941"
+      "id": "8944a82d-65e5-4c06-96b6-367be4766941"
     },
     {
       "name": "6. Menus",
@@ -1618,7 +1508,7 @@
           "item": [
             {
               "name": "menus/{app}",
-              "_postman_id": "295d56ea-e988-4633-aa99-3ef59495e041",
+              "id": "295d56ea-e988-4633-aa99-3ef59495e041",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1632,10 +1522,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"client_id\":0,\"description\":\"The menu for the site\",\"menutype\":\"menu\",\"title\":\"Menu\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"client_id\":0,\"description\":\"The menu for the site\",\"menutype\":\"menu\",\"title\":\"Menu\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/menus/{{app}}",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/menus/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"client_id\":0,\"description\":\"The menu for the site\",\"menutype\":\"menu\",\"title\":\"Menu\"}'"
@@ -1644,7 +1531,7 @@
             },
             {
               "name": "menus/{app}/{menu_id}",
-              "_postman_id": "d2ad963f-61ed-4012-97a2-ab2c67352b71",
+              "id": "d2ad963f-61ed-4012-97a2-ab2c67352b71",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1658,10 +1545,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"menutype\":\"menu\",\"title\":\"New Menu\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"menutype\":\"menu\",\"title\":\"New Menu\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"menutype\":\"menu\",\"title\":\"New Menu\"}'"
@@ -1670,7 +1554,7 @@
             },
             {
               "name": "menus/{app}",
-              "_postman_id": "c6310069-4b9a-4a1a-a5ba-58a844f52dbe",
+              "id": "c6310069-4b9a-4a1a-a5ba-58a844f52dbe",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1684,7 +1568,7 @@
             },
             {
               "name": "menus/{app}/{menu_id}",
-              "_postman_id": "8226ae05-3fc3-40b4-a17d-9a3854191817",
+              "id": "8226ae05-3fc3-40b4-a17d-9a3854191817",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1698,7 +1582,7 @@
             },
             {
               "name": "menus/{app}/{menu_id}",
-              "_postman_id": "60164748-f748-484b-bfd1-33f28851e23b",
+              "id": "60164748-f748-484b-bfd1-33f28851e23b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1711,15 +1595,14 @@
               "response": []
             }
           ],
-          "_postman_id": "bbc03cdd-44fb-4a0d-b51f-0f2f4bf48521",
-          "_postman_isSubFolder": true
+          "id": "bbc03cdd-44fb-4a0d-b51f-0f2f4bf48521"
         },
         {
           "name": "6.2 Menus Items",
           "item": [
             {
               "name": "menus/{app}/items",
-              "_postman_id": "58723634-bd95-4df2-872e-42619644bf2b",
+              "id": "58723634-bd95-4df2-872e-42619644bf2b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1733,10 +1616,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":\"1\",\"alias\":\"\",\"associations\":{\"en-GB\":\"\",\"fr-FR\":\"\"},\"browserNav\":\"0\",\"component_id\":\"20\",\"home\":\"0\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"params\":{\"cancel_redirect_menuitem\":\"\",\"catid\":\"\",\"custom_cancel_redirect\":\"0\",\"enable_category\":\"0\",\"menu-anchor_css\":\"\",\"menu-anchor_title\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_show\":\"1\",\"menu_text\":\"1\",\"page_heading\":\"\",\"page_title\":\"\",\"pageclass_sfx\":\"\",\"redirect_menuitem\":\"\",\"robots\":\"\",\"show_page_heading\":\"\"},\"parent_id\":\"1\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"template_style_id\":\"0\",\"title\":\"title\",\"toggle_modules_assigned\":\"1\",\"toggle_modules_published\":\"1\",\"type\":\"component\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":\"1\",\"alias\":\"\",\"associations\":{\"en-GB\":\"\",\"fr-FR\":\"\"},\"browserNav\":\"0\",\"component_id\":\"20\",\"home\":\"0\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"params\":{\"cancel_redirect_menuitem\":\"\",\"catid\":\"\",\"custom_cancel_redirect\":\"0\",\"enable_category\":\"0\",\"menu-anchor_css\":\"\",\"menu-anchor_title\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_show\":\"1\",\"menu_text\":\"1\",\"page_heading\":\"\",\"page_title\":\"\",\"pageclass_sfx\":\"\",\"redirect_menuitem\":\"\",\"robots\":\"\",\"show_page_heading\":\"\"},\"parent_id\":\"1\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"template_style_id\":\"0\",\"title\":\"title\",\"toggle_modules_assigned\":\"1\",\"toggle_modules_published\":\"1\",\"type\":\"component\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/menus/{{app}}/items",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/menus/{{app}}/items' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"alias\":\"\",\"associations\":{\"en-GB\":\"\",\"fr-FR\":\"\"},\"browserNav\":\"0\",\"component_id\":\"20\",\"home\":\"0\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"params\":{\"cancel_redirect_menuitem\":\"\",\"catid\":\"\",\"custom_cancel_redirect\":\"0\",\"enable_category\":\"0\",\"menu-anchor_css\":\"\",\"menu-anchor_title\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_show\":\"1\",\"menu_text\":\"1\",\"page_heading\":\"\",\"page_title\":\"\",\"pageclass_sfx\":\"\",\"redirect_menuitem\":\"\",\"robots\":\"\",\"show_page_heading\":\"\"},\"parent_id\":\"1\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"template_style_id\":\"0\",\"title\":\"title\",\"toggle_modules_assigned\":\"1\",\"toggle_modules_published\":\"1\",\"type\":\"component\"}'"
@@ -1745,7 +1625,7 @@
             },
             {
               "name": "menus/{app}/items/{menu_item_id}",
-              "_postman_id": "3a514b3f-800a-4371-a5a4-117be53c8724",
+              "id": "3a514b3f-800a-4371-a5a4-117be53c8724",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1759,10 +1639,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}'"
@@ -1771,7 +1648,7 @@
             },
             {
               "name": "menus/{app}/items/types",
-              "_postman_id": "ab7c31bf-3697-4c82-a1fc-a0d4de4005ea",
+              "id": "ab7c31bf-3697-4c82-a1fc-a0d4de4005ea",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1785,7 +1662,7 @@
             },
             {
               "name": "menus/{app}/items",
-              "_postman_id": "4307551c-c78f-4b29-9270-5904bd34ff21",
+              "id": "4307551c-c78f-4b29-9270-5904bd34ff21",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1799,7 +1676,7 @@
             },
             {
               "name": "menus/{app}/items/{menu_item_id}",
-              "_postman_id": "413edb07-cc3c-407a-95b1-d3f3134b51fd",
+              "id": "413edb07-cc3c-407a-95b1-d3f3134b51fd",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1813,7 +1690,7 @@
             },
             {
               "name": "menus/{app}/items/{menu_item_id}",
-              "_postman_id": "d826c6fc-581b-4335-92bc-8594934ddebe",
+              "id": "d826c6fc-581b-4335-92bc-8594934ddebe",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1826,11 +1703,10 @@
               "response": []
             }
           ],
-          "_postman_id": "b4e21293-0c99-4ee1-b770-4255d357ef7c",
-          "_postman_isSubFolder": true
+          "id": "b4e21293-0c99-4ee1-b770-4255d357ef7c"
         }
       ],
-      "_postman_id": "e0c3a29c-43ea-47c4-9441-b76a8f4e549a"
+      "id": "e0c3a29c-43ea-47c4-9441-b76a8f4e549a"
     },
     {
       "name": "7. Messages",
@@ -1840,7 +1716,7 @@
           "item": [
             {
               "name": "messages",
-              "_postman_id": "97e23aed-e0f5-467e-a556-b1fb5246c7f7",
+              "id": "97e23aed-e0f5-467e-a556-b1fb5246c7f7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1854,10 +1730,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"message\":\"<p>text</p>\",\"state\":0,\"subject\":\"text\",\"user_id_from\":773,\"user_id_to\":772}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"message\":\"<p>text</p>\",\"state\":0,\"subject\":\"text\",\"user_id_from\":773,\"user_id_to\":772}"
                 },
                 "url": "{{base_url}}/{{base_path}}/messages",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/messages' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"message\":\"<p>text</p>\",\"state\":0,\"subject\":\"text\",\"user_id_from\":773,\"user_id_to\":772}'"
@@ -1866,7 +1739,7 @@
             },
             {
               "name": "messages/{message_id}",
-              "_postman_id": "21555e3c-f704-4522-b90f-cd671762629c",
+              "id": "21555e3c-f704-4522-b90f-cd671762629c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1880,10 +1753,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}"
                 },
                 "url": "{{base_url}}/{{base_path}}/messages/{{message_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}'"
@@ -1892,7 +1762,7 @@
             },
             {
               "name": "messages",
-              "_postman_id": "79ded859-8813-41a3-b713-069e2d012fd3",
+              "id": "79ded859-8813-41a3-b713-069e2d012fd3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1906,7 +1776,7 @@
             },
             {
               "name": "messages/{message_id}",
-              "_postman_id": "e5aea449-9eeb-47c7-b3d4-38fdc3af1838",
+              "id": "e5aea449-9eeb-47c7-b3d4-38fdc3af1838",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1920,7 +1790,7 @@
             },
             {
               "name": "messages/{message_id}",
-              "_postman_id": "5b5795d6-0901-4b17-9d2a-b37585b0ecb0",
+              "id": "5b5795d6-0901-4b17-9d2a-b37585b0ecb0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1933,11 +1803,10 @@
               "response": []
             }
           ],
-          "_postman_id": "7fb29a8a-0821-4529-a407-a77b6adb20c0",
-          "_postman_isSubFolder": true
+          "id": "7fb29a8a-0821-4529-a407-a77b6adb20c0"
         }
       ],
-      "_postman_id": "94e601ab-2e1b-4b32-9400-a4d1fd141ca8"
+      "id": "94e601ab-2e1b-4b32-9400-a4d1fd141ca8"
     },
     {
       "name": "8. Modules",
@@ -1947,7 +1816,7 @@
           "item": [
             {
               "name": "modules/{app}",
-              "_postman_id": "26529944-73f4-414c-b4bc-ba9ee1744f1d",
+              "id": "26529944-73f4-414c-b4bc-ba9ee1744f1d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1961,10 +1830,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":\"1\",\"assigned\":[\"101\",\"105\"],\"assignment\":\"0\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"params\":{\"bootstrap_size\":\"0\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"count\":\"10\",\"header_class\":\"\",\"header_tag\":\"h3\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"moduleclass_sfx\":\"\",\"style\":\"0\"},\"position\":\"\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"showtitle\":\"1\",\"title\":\"Title\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":\"1\",\"assigned\":[\"101\",\"105\"],\"assignment\":\"0\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"params\":{\"bootstrap_size\":\"0\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"count\":\"10\",\"header_class\":\"\",\"header_tag\":\"h3\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"moduleclass_sfx\":\"\",\"style\":\"0\"},\"position\":\"\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"showtitle\":\"1\",\"title\":\"Title\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/modules/{{app}}",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/modules/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"assigned\":[\"101\",\"105\"],\"assignment\":\"0\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"params\":{\"bootstrap_size\":\"0\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"count\":\"10\",\"header_class\":\"\",\"header_tag\":\"h3\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"moduleclass_sfx\":\"\",\"style\":\"0\"},\"position\":\"\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"showtitle\":\"1\",\"title\":\"Title\"}'"
@@ -1973,7 +1839,7 @@
             },
             {
               "name": "modules/{app}/{module_id}",
-              "_postman_id": "8462d211-0ebc-4293-ac9c-9a4436190f02",
+              "id": "8462d211-0ebc-4293-ac9c-9a4436190f02",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1987,10 +1853,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}'"
@@ -1999,7 +1862,7 @@
             },
             {
               "name": "modules/types/{app}",
-              "_postman_id": "c73ca052-2bcd-43c3-a83a-520b9b0641e7",
+              "id": "c73ca052-2bcd-43c3-a83a-520b9b0641e7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2013,7 +1876,7 @@
             },
             {
               "name": "modules/{app}",
-              "_postman_id": "10136d6c-9313-4ca2-bd5e-6fdcd633db85",
+              "id": "10136d6c-9313-4ca2-bd5e-6fdcd633db85",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2027,7 +1890,7 @@
             },
             {
               "name": "modules/{app}/{module_id}",
-              "_postman_id": "21a9ef28-028c-4f4d-ad63-bc82791c3252",
+              "id": "21a9ef28-028c-4f4d-ad63-bc82791c3252",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2041,7 +1904,7 @@
             },
             {
               "name": "modules/{app}/{module_id}",
-              "_postman_id": "31363894-dfb0-44e4-adfd-b3a858899e31",
+              "id": "31363894-dfb0-44e4-adfd-b3a858899e31",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2054,11 +1917,10 @@
               "response": []
             }
           ],
-          "_postman_id": "0b79c056-86c7-40cb-9ac9-8044e6a2af4e",
-          "_postman_isSubFolder": true
+          "id": "0b79c056-86c7-40cb-9ac9-8044e6a2af4e"
         }
       ],
-      "_postman_id": "40c1bd60-f07e-449f-847f-e3e7467c412a"
+      "id": "40c1bd60-f07e-449f-847f-e3e7467c412a"
     },
     {
       "name": "9. Newsfeeds",
@@ -2068,7 +1930,7 @@
           "item": [
             {
               "name": "newsfeeds/feeds",
-              "_postman_id": "6711a62a-a802-4393-869f-5ecc7989de77",
+              "id": "6711a62a-a802-4393-869f-5ecc7989de77",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2082,10 +1944,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"alias\":\"alias\",\"catid\":5,\"description\":\"\",\"images\":{\"float_first\":\"\",\"float_second\":\"\",\"image_first\":\"\",\"image_first_alt\":\"\",\"image_first_caption\":\"\",\"image_second\":\"\",\"image_second_alt\":\"\",\"image_second_caption\":\"\"},\"language\":\"*\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadata\":{\"hits\":\"\",\"rights\":\"\",\"robots\":\"\",\"tags\":{\"tags\":\"\",\"typeAlias\":null}},\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Name\",\"ordering\":1,\"params\":{\"feed_character_count\":\"\",\"feed_display_order\":\"\",\"newsfeed_layout\":\"\",\"show_feed_description\":\"\",\"show_feed_image\":\"\",\"show_item_description\":\"\"},\"published\":1}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"alias\":\"alias\",\"catid\":5,\"description\":\"\",\"images\":{\"float_first\":\"\",\"float_second\":\"\",\"image_first\":\"\",\"image_first_alt\":\"\",\"image_first_caption\":\"\",\"image_second\":\"\",\"image_second_alt\":\"\",\"image_second_caption\":\"\"},\"language\":\"*\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadata\":{\"hits\":\"\",\"rights\":\"\",\"robots\":\"\",\"tags\":{\"tags\":\"\",\"typeAlias\":null}},\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Name\",\"ordering\":1,\"params\":{\"feed_character_count\":\"\",\"feed_display_order\":\"\",\"newsfeed_layout\":\"\",\"show_feed_description\":\"\",\"show_feed_image\":\"\",\"show_item_description\":\"\"},\"published\":1}"
                 },
                 "url": "{{base_url}}/{{base_path}}/newsfeeds/feeds",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/newsfeeds/feeds' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"alias\",\"catid\":5,\"description\":\"\",\"images\":{\"float_first\":\"\",\"float_second\":\"\",\"image_first\":\"\",\"image_first_alt\":\"\",\"image_first_caption\":\"\",\"image_second\":\"\",\"image_second_alt\":\"\",\"image_second_caption\":\"\"},\"language\":\"*\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadata\":{\"hits\":\"\",\"rights\":\"\",\"robots\":\"\",\"tags\":{\"tags\":\"\",\"typeAlias\":null}},\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Name\",\"ordering\":1,\"params\":{\"feed_character_count\":\"\",\"feed_display_order\":\"\",\"newsfeed_layout\":\"\",\"show_feed_description\":\"\",\"show_feed_image\":\"\",\"show_item_description\":\"\"},\"published\":1}'"
@@ -2094,7 +1953,7 @@
             },
             {
               "name": "newsfeeds/feeds/{feed_id}",
-              "_postman_id": "a156f080-5ad0-4dc4-bf4d-2041c8b4ccef",
+              "id": "a156f080-5ad0-4dc4-bf4d-2041c8b4ccef",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2108,10 +1967,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}'"
@@ -2120,7 +1976,7 @@
             },
             {
               "name": "newsfeeds/feeds",
-              "_postman_id": "c2935f92-94b8-4491-80a4-a45106d872f7",
+              "id": "c2935f92-94b8-4491-80a4-a45106d872f7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2134,7 +1990,7 @@
             },
             {
               "name": "newsfeeds/feeds/{feed_id}",
-              "_postman_id": "313d3889-603e-48c7-b0e9-95d1875aff7c",
+              "id": "313d3889-603e-48c7-b0e9-95d1875aff7c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2148,7 +2004,7 @@
             },
             {
               "name": "newsfeeds/feeds/{feed_id}",
-              "_postman_id": "dcfc60d0-4327-4636-aa59-380e83251e54",
+              "id": "dcfc60d0-4327-4636-aa59-380e83251e54",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2161,11 +2017,10 @@
               "response": []
             }
           ],
-          "_postman_id": "ae597ddc-e3ea-40dd-b8a8-b9045855b86f",
-          "_postman_isSubFolder": true
+          "id": "ae597ddc-e3ea-40dd-b8a8-b9045855b86f"
         }
       ],
-      "_postman_id": "be0526de-dc65-45ce-b87b-f42f3814ed5e"
+      "id": "be0526de-dc65-45ce-b87b-f42f3814ed5e"
     },
     {
       "name": "10. Privacy",
@@ -2175,7 +2030,7 @@
           "item": [
             {
               "name": "privacy/requests",
-              "_postman_id": "914f7855-5713-44f9-b315-615a26a3a914",
+              "id": "914f7855-5713-44f9-b315-615a26a3a914",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2189,10 +2044,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"email\":\"test@example.org\",\"request_type\":\"export\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"email\":\"test@example.org\",\"request_type\":\"export\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/privacy/requests",
                 "description": "Generated from a curl request:  \ncurl -X POST '{{base_url}}/{{base_path}}/privacy/request' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"email\":\"test@example.org\",\"request_type\":\"export\"}'"
@@ -2201,7 +2053,7 @@
             },
             {
               "name": "privacy/requests",
-              "_postman_id": "45bc7f7b-3e0c-4719-bbde-ca61da05edf7",
+              "id": "45bc7f7b-3e0c-4719-bbde-ca61da05edf7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2215,7 +2067,7 @@
             },
             {
               "name": "privacy/requests/{request_id}",
-              "_postman_id": "efa4d32f-ddd6-494e-8380-3d09ef84b80d",
+              "id": "efa4d32f-ddd6-494e-8380-3d09ef84b80d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2229,7 +2081,7 @@
             },
             {
               "name": "privacy/requests/export/{request_id}",
-              "_postman_id": "7c066901-e9f4-4113-b765-c2b8a57c0c76",
+              "id": "7c066901-e9f4-4113-b765-c2b8a57c0c76",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2242,15 +2094,14 @@
               "response": []
             }
           ],
-          "_postman_id": "c948edd9-d52c-4f67-b231-674547e1c5f2",
-          "_postman_isSubFolder": true
+          "id": "c948edd9-d52c-4f67-b231-674547e1c5f2"
         },
         {
           "name": "10.2 Privacy Consents",
           "item": [
             {
               "name": "privacy/consents",
-              "_postman_id": "2d04155e-287c-4ee6-8239-2c9a279edcc8",
+              "id": "2d04155e-287c-4ee6-8239-2c9a279edcc8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2264,7 +2115,7 @@
             },
             {
               "name": "privacy/consents/{consent_id}",
-              "_postman_id": "50dbf31f-93b2-437b-bb0a-56ecb6246b24",
+              "id": "50dbf31f-93b2-437b-bb0a-56ecb6246b24",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2278,7 +2129,7 @@
             },
             {
               "name": "privacy/consents/{consent_id}",
-              "_postman_id": "49346baf-5be1-4c3e-9ed0-2784da412252",
+              "id": "49346baf-5be1-4c3e-9ed0-2784da412252",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2291,11 +2142,10 @@
               "response": []
             }
           ],
-          "_postman_id": "dbb56697-5826-4065-9344-08146f167d48",
-          "_postman_isSubFolder": true
+          "id": "dbb56697-5826-4065-9344-08146f167d48"
         }
       ],
-      "_postman_id": "5eebfd8c-30cd-439c-bb61-9bf5a5b31fe7"
+      "id": "5eebfd8c-30cd-439c-bb61-9bf5a5b31fe7"
     },
     {
       "name": "11. Redirects",
@@ -2305,7 +2155,7 @@
           "item": [
             {
               "name": "redirect",
-              "_postman_id": "1e6b4f5a-a330-4191-8348-f0fed43b6c15",
+              "id": "1e6b4f5a-a330-4191-8348-f0fed43b6c15",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2319,10 +2169,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"comment\":\"\",\"header\":301,\"hits\":0,\"new_url\":\"/content/art/99\",\"old_url\":\"/content/art/12\",\"published\":1,\"referer\":\"\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"comment\":\"\",\"header\":301,\"hits\":0,\"new_url\":\"/content/art/99\",\"old_url\":\"/content/art/12\",\"published\":1,\"referer\":\"\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/redirect",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/redirect' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"comment\":\"\",\"header\":301,\"hits\":0,\"new_url\":\"/content/art/99\",\"old_url\":\"/content/art/12\",\"published\":1,\"referer\":\"\"}'"
@@ -2331,7 +2178,7 @@
             },
             {
               "name": "redirects/{redirect_id}",
-              "_postman_id": "d1949a7f-bd1b-40c1-b536-6c78e9ef1449",
+              "id": "d1949a7f-bd1b-40c1-b536-6c78e9ef1449",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2345,10 +2192,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/redirects/{{redirect_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}'"
@@ -2357,7 +2201,7 @@
             },
             {
               "name": "redirects",
-              "_postman_id": "9a3f3df3-ab4a-4b1e-9c94-d5fe2d9cddb5",
+              "id": "9a3f3df3-ab4a-4b1e-9c94-d5fe2d9cddb5",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2371,7 +2215,7 @@
             },
             {
               "name": "redirects/{redirect_id}",
-              "_postman_id": "6909b104-df7a-477c-996a-29538518c20d",
+              "id": "6909b104-df7a-477c-996a-29538518c20d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2385,7 +2229,7 @@
             },
             {
               "name": "redirects/{redirect_id}",
-              "_postman_id": "48e5a133-435b-458a-845d-75226cbf3fda",
+              "id": "48e5a133-435b-458a-845d-75226cbf3fda",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2398,11 +2242,10 @@
               "response": []
             }
           ],
-          "_postman_id": "bdb5abb3-764f-4342-868a-abc9e938d85e",
-          "_postman_isSubFolder": true
+          "id": "bdb5abb3-764f-4342-868a-abc9e938d85e"
         }
       ],
-      "_postman_id": "8f122ee1-9f27-45ed-ab56-b3811ba8fcc2"
+      "id": "8f122ee1-9f27-45ed-ab56-b3811ba8fcc2"
     },
     {
       "name": "12. Tags",
@@ -2412,7 +2255,7 @@
           "item": [
             {
               "name": "tags",
-              "_postman_id": "1873f69b-a4c5-4809-b978-091cd108bd40",
+              "id": "1873f69b-a4c5-4809-b978-091cd108bd40",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2426,10 +2269,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"access_title\":\"Public\",\"alias\":\"test\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"path\":\"test\",\"published\":1,\"title\":\"test\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"access_title\":\"Public\",\"alias\":\"test\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"path\":\"test\",\"published\":1,\"title\":\"test\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/tags",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/tags' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"access_title\":\"Public\",\"alias\":\"test\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"path\":\"test\",\"published\":1,\"title\":\"test\"}'"
@@ -2438,7 +2278,7 @@
             },
             {
               "name": "tags/{tag_id}",
-              "_postman_id": "3b259c5c-75e4-4e51-b412-06ff4498a16c",
+              "id": "3b259c5c-75e4-4e51-b412-06ff4498a16c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2452,10 +2292,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"alias\":\"test\",\"title\":\"new title\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"alias\":\"test\",\"title\":\"new title\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/tags/{{tag_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"test\",\"title\":\"new title\"}'"
@@ -2464,7 +2301,7 @@
             },
             {
               "name": "tags",
-              "_postman_id": "28001e5c-aa28-48aa-9445-3f53fcf20126",
+              "id": "28001e5c-aa28-48aa-9445-3f53fcf20126",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2478,7 +2315,7 @@
             },
             {
               "name": "tags/{tag_id}",
-              "_postman_id": "b38ecfc1-2fdb-4ff3-84df-87004d1e30ac",
+              "id": "b38ecfc1-2fdb-4ff3-84df-87004d1e30ac",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2492,7 +2329,7 @@
             },
             {
               "name": "tags/{tag_id}",
-              "_postman_id": "051cdfd9-4490-4047-b8ee-7ddac7a65351",
+              "id": "051cdfd9-4490-4047-b8ee-7ddac7a65351",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2505,11 +2342,10 @@
               "response": []
             }
           ],
-          "_postman_id": "a568ba08-0066-409b-a20e-3f5dc16aed24",
-          "_postman_isSubFolder": true
+          "id": "a568ba08-0066-409b-a20e-3f5dc16aed24"
         }
       ],
-      "_postman_id": "93ef7ec2-a6fe-49a6-afe5-fa999a24a626"
+      "id": "93ef7ec2-a6fe-49a6-afe5-fa999a24a626"
     },
     {
       "name": "13. Templates",
@@ -2519,7 +2355,7 @@
           "item": [
             {
               "name": "templates/styles/{app}",
-              "_postman_id": "33e40e46-aee5-400e-b7d5-fe02909c9fd8",
+              "id": "33e40e46-aee5-400e-b7d5-fe02909c9fd8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2533,10 +2369,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"home\":\"0\",\"params\":{\"fluidContainer\":\"0\",\"logoFile\":\"\",\"sidebarLeftWidth\":\"3\",\"sidebarRightWidth\":\"3\"},\"template\":\"cassiopeia\",\"title\":\"cassiopeia - Some Text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"home\":\"0\",\"params\":{\"fluidContainer\":\"0\",\"logoFile\":\"\",\"sidebarLeftWidth\":\"3\",\"sidebarRightWidth\":\"3\"},\"template\":\"cassiopeia\",\"title\":\"cassiopeia - Some Text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/templates/styles/{{app}}",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/templates/styles/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"home\":\"0\",\"params\":{\"fluidContainer\":\"0\",\"logoFile\":\"\",\"sidebarLeftWidth\":\"3\",\"sidebarRightWidth\":\"3\"},\"template\":\"cassiopeia\",\"title\":\"cassiopeia - Some Text\"}'"
@@ -2545,7 +2378,7 @@
             },
             {
               "name": "templates/styles/{app}/{template_style_id}",
-              "_postman_id": "4a46648f-f88a-4f7c-a3f9-1536147a101b",
+              "id": "4a46648f-f88a-4f7c-a3f9-1536147a101b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2559,10 +2392,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}'"
@@ -2571,7 +2401,7 @@
             },
             {
               "name": "templates/styles/{app}",
-              "_postman_id": "dd088856-b390-4bca-98e3-183521080f9e",
+              "id": "dd088856-b390-4bca-98e3-183521080f9e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2585,7 +2415,7 @@
             },
             {
               "name": "templates/styles/{app}/{template_style_id}",
-              "_postman_id": "0efd053e-4435-452d-84cd-1ce8cca3c73b",
+              "id": "0efd053e-4435-452d-84cd-1ce8cca3c73b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2599,7 +2429,7 @@
             },
             {
               "name": "templates/styles/{app}/{template_style_id}",
-              "_postman_id": "7e3d8a3a-2a30-4ab2-a6ab-48587459e284",
+              "id": "7e3d8a3a-2a30-4ab2-a6ab-48587459e284",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2612,11 +2442,10 @@
               "response": []
             }
           ],
-          "_postman_id": "cb828707-ae38-4006-acb1-34d7fa04853b",
-          "_postman_isSubFolder": true
+          "id": "cb828707-ae38-4006-acb1-34d7fa04853b"
         }
       ],
-      "_postman_id": "6b3364f5-ab1c-420e-aa4a-2209d57a2432"
+      "id": "6b3364f5-ab1c-420e-aa4a-2209d57a2432"
     },
     {
       "name": "14. Users",
@@ -2626,7 +2455,7 @@
           "item": [
             {
               "name": "users",
-              "_postman_id": "1fd25761-a0cc-4346-b2f1-fb827dcaeee8",
+              "id": "1fd25761-a0cc-4346-b2f1-fb827dcaeee8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2640,10 +2469,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"block\":\"0\",\"email\":\"test@example.org\",\"groups\":[\"2\"],\"id\":\"0\",\"lastResetTime\":\"\",\"lastvisitDate\":\"\",\"name\":\"nnn\",\"params\":{\"admin_language\":\"\",\"admin_style\":\"\",\"editor\":\"\",\"helpsite\":\"\",\"language\":\"\",\"timezone\":\"\"},\"password\":\"qwerty\",\"password2\":\"qwerty\",\"registerDate\":\"\",\"requireReset\":\"0\",\"resetCount\":\"0\",\"sendEmail\":\"0\",\"username\":\"ad\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"block\":\"0\",\"email\":\"test@example.org\",\"groups\":[\"2\"],\"id\":\"0\",\"lastResetTime\":\"\",\"lastvisitDate\":\"\",\"name\":\"nnn\",\"params\":{\"admin_language\":\"\",\"admin_style\":\"\",\"editor\":\"\",\"helpsite\":\"\",\"language\":\"\",\"timezone\":\"\"},\"password\":\"qwerty\",\"password2\":\"qwerty\",\"registerDate\":\"\",\"requireReset\":\"0\",\"resetCount\":\"0\",\"sendEmail\":\"0\",\"username\":\"ad\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/users",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/users' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"block\":\"0\",\"email\":\"test@example.org\",\"groups\":[\"2\"],\"id\":\"0\",\"lastResetTime\":\"\",\"lastvisitDate\":\"\",\"name\":\"nnn\",\"params\":{\"admin_language\":\"\",\"admin_style\":\"\",\"editor\":\"\",\"helpsite\":\"\",\"language\":\"\",\"timezone\":\"\"},\"password\":\"qwerty\",\"password2\":\"qwerty\",\"registerDate\":\"\",\"requireReset\":\"0\",\"resetCount\":\"0\",\"sendEmail\":\"0\",\"username\":\"ad\"}'"
@@ -2652,7 +2478,7 @@
             },
             {
               "name": "users/{user_id}",
-              "_postman_id": "41f7db74-ae48-44f5-a4e5-c0d4d68ac77b",
+              "id": "41f7db74-ae48-44f5-a4e5-c0d4d68ac77b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2666,10 +2492,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/users/{{user_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}'"
@@ -2678,7 +2501,7 @@
             },
             {
               "name": "users",
-              "_postman_id": "3b56a47a-a65d-4d76-8d3a-6f9b35a43d73",
+              "id": "3b56a47a-a65d-4d76-8d3a-6f9b35a43d73",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2692,7 +2515,7 @@
             },
             {
               "name": "users/{user_id}",
-              "_postman_id": "fa48427a-c9ab-488e-a4cb-c64ba9dd665d",
+              "id": "fa48427a-c9ab-488e-a4cb-c64ba9dd665d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2706,7 +2529,7 @@
             },
             {
               "name": "users/{user_id}",
-              "_postman_id": "708100c7-d862-4edc-bcd9-3f4e74603ab2",
+              "id": "708100c7-d862-4edc-bcd9-3f4e74603ab2",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2719,15 +2542,14 @@
               "response": []
             }
           ],
-          "_postman_id": "990a354c-6130-4320-9929-21a730bc59fd",
-          "_postman_isSubFolder": true
+          "id": "990a354c-6130-4320-9929-21a730bc59fd"
         },
         {
           "name": "14.2 Users Custom Fields",
           "item": [
             {
               "name": "fields/users",
-              "_postman_id": "622b6030-5db4-46ac-b6b2-3032dd87aa23",
+              "id": "622b6030-5db4-46ac-b6b2-3032dd87aa23",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2741,10 +2563,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"context\":\"com_users.user\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"user field\",\"language\":\"*\",\"name\":\"user-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"user field\",\"type\":\"text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"context\":\"com_users.user\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"user field\",\"language\":\"*\",\"name\":\"user-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"user field\",\"type\":\"text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/users",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/users' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_users.user\",\"default_value\":\"\",\"description\":\"\",\"group_id\":0,\"label\":\"user field\",\"language\":\"*\",\"name\":\"user-field\",\"note\":\"\",\"params\":{\"class\":\"\",\"display\":\"2\",\"display_readonly\":\"2\",\"hint\":\"\",\"label_class\":\"\",\"label_render_class\":\"\",\"layout\":\"\",\"prefix\":\"\",\"render_class\":\"\",\"show_on\":\"\",\"showlabel\":\"1\",\"suffix\":\"\"},\"fieldparams\":{\"filter\":\"alnum\",\"maxlength\":40},\"required\":0,\"state\":1,\"title\":\"user field\",\"type\":\"text\"}'"
@@ -2753,7 +2572,7 @@
             },
             {
               "name": "fields/users/{field_id}",
-              "_postman_id": "3cae3de7-21e4-439e-a534-935a3a9c5c5f",
+              "id": "3cae3de7-21e4-439e-a534-935a3a9c5c5f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2767,10 +2586,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/users/{{field_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/users/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
@@ -2779,7 +2595,7 @@
             },
             {
               "name": "fields/users",
-              "_postman_id": "81824b04-69e2-4f7f-bd2b-c1119906bf8e",
+              "id": "81824b04-69e2-4f7f-bd2b-c1119906bf8e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2793,7 +2609,7 @@
             },
             {
               "name": "fields/users/{field_id}",
-              "_postman_id": "42289639-ab8a-4d05-8c0f-79d3d77b9714",
+              "id": "42289639-ab8a-4d05-8c0f-79d3d77b9714",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2807,7 +2623,7 @@
             },
             {
               "name": "fields/users/{field_id}",
-              "_postman_id": "7f32fb77-3022-4a49-bdc8-186e49f2f39c",
+              "id": "7f32fb77-3022-4a49-bdc8-186e49f2f39c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2820,15 +2636,14 @@
               "response": []
             }
           ],
-          "_postman_id": "1f8ece81-de63-4b40-8d60-2b0e5068f664",
-          "_postman_isSubFolder": true
+          "id": "1f8ece81-de63-4b40-8d60-2b0e5068f664"
         },
         {
           "name": "14.3 Users Custom Fields Groups",
           "item": [
             {
               "name": "fields/groups/users",
-              "_postman_id": "4156152f-c656-4e69-983f-db15c49fb7c7",
+              "id": "4156152f-c656-4e69-983f-db15c49fb7c7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2842,10 +2657,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"access\":1,\"context\":\"com_users.user\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"user field group\",\"checked_out\":0,\"created_by\":0}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"access\":1,\"context\":\"com_users.user\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"user field group\",\"checked_out\":0,\"created_by\":0}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/groups/users",
                 "description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/fields/groups/users' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"context\":\"com_users.user\",\"description\":\"\",\"language\":\"*\",\"note\":\"\",\"params\":{\"display_readonly\":\"1\"},\"required\":0,\"state\":1,\"title\":\"user field group\",\"checked_out\":0,\"created_by\":0}'"
@@ -2854,7 +2666,7 @@
             },
             {
               "name": "fields/groups/users/{group_id}",
-              "_postman_id": "2d299497-b287-427c-ab78-06557b00b7c3",
+              "id": "2d299497-b287-427c-ab78-06557b00b7c3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2868,10 +2680,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"title\":\"new user group\",\"note\":\"\",\"description\":\"new description\"}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\"title\":\"new user group\",\"note\":\"\",\"description\":\"new description\"}"
                 },
                 "url": "{{base_url}}/{{base_path}}/fields/groups/users/{{group_id}}",
                 "description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/users/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new user group\",\"note\":\"\",\"description\":\"new description\"}'"
@@ -2880,7 +2689,7 @@
             },
             {
               "name": "fields/groups/users",
-              "_postman_id": "e9dc92d8-2205-42d4-bc54-b2fbe8c51e7e",
+              "id": "e9dc92d8-2205-42d4-bc54-b2fbe8c51e7e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2894,7 +2703,7 @@
             },
             {
               "name": "fields/groups/users/{group_id}",
-              "_postman_id": "41d4cf3f-73d5-4692-ba1e-af652cee99ef",
+              "id": "41d4cf3f-73d5-4692-ba1e-af652cee99ef",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2908,7 +2717,7 @@
             },
             {
               "name": "fields/groups/users/{group_id}",
-              "_postman_id": "6b74f431-da5f-4fd5-9169-9a0ee236eccd",
+              "id": "6b74f431-da5f-4fd5-9169-9a0ee236eccd",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2921,11 +2730,10 @@
               "response": []
             }
           ],
-          "_postman_id": "a7969e8d-2edb-4a3e-8692-3f4241431261",
-          "_postman_isSubFolder": true
+          "id": "a7969e8d-2edb-4a3e-8692-3f4241431261"
         }
       ],
-      "_postman_id": "180b8d75-276f-47ef-bf46-77542e2dce4c"
+      "id": "180b8d75-276f-47ef-bf46-77542e2dce4c"
     }
   ],
   "auth": {
@@ -2961,166 +2769,139 @@
   ],
   "variable": [
     {
-      "id": "f7d1b902-86d7-43a9-b761-227e640e2825",
+      "id": "eee83b8e-7e9d-4a4c-93e4-3781f002f7d7",
       "key": "base_url",
-      "value": "https://example.org",
-      "type": "string"
+      "value": "https://example.org"
     },
     {
-      "id": "4cfdfbfc-edeb-40f1-a055-68f0bf774f3f",
+      "id": "18b4d875-ff1f-483c-bc01-e82bea223928",
       "key": "base_path",
-      "value": "api/index.php/v1",
-      "type": "string"
+      "value": "api/index.php/v1"
     },
     {
-      "id": "4bf0e6c9-1a1a-4d4e-b8b8-67935bf57fe4",
+      "id": "7b35f90d-c72c-49e4-ad6a-146b0c3a56c5",
       "key": "auth_apikey",
-      "value": "Paste your Joomla API Token here.",
-      "type": "string"
+      "value": "Paste your Joomla API Token here."
     },
     {
-      "id": "187e832e-7140-4dd8-8c1a-11471a3a1961",
+      "id": "484a4404-8efd-4b16-b7e6-a70e0eb5f346",
       "key": "banner_id",
-      "value": "{banner_id}",
-      "type": "string"
+      "value": "{banner_id}"
     },
     {
-      "id": "a2b9998b-5696-4862-acbb-72c022bb76c2",
+      "id": "3a3ddfc3-c3c9-4951-9c78-cac53d9bad06",
       "key": "client_id",
-      "value": "{client_id}",
-      "type": "string"
+      "value": "{client_id}"
     },
     {
-      "id": "4c347dc8-1cf4-4cf5-b12c-c7877692adbb",
+      "id": "9f760f7a-6fe6-4713-947e-cabf3d54d23f",
       "key": "category_id",
-      "value": "{category_id}",
-      "type": "string"
+      "value": "{category_id}"
     },
     {
-      "id": "bd872e17-2886-47cb-867d-8e7ce99b54c6",
+      "id": "28e21748-47d9-4f35-b61b-d3ad5cbcf165",
       "key": "contenthistory_id",
-      "value": "{contenthistory_id}",
-      "type": "string"
+      "value": "{contenthistory_id}"
     },
     {
-      "id": "a6e0e47e-aea9-40b3-8a2f-b2ed22621744",
+      "id": "7a561fbf-6e96-4634-bf16-89d82ae9c61c",
       "key": "component_name",
-      "value": "{component_name}",
-      "type": "string"
+      "value": "{component_name}"
     },
     {
-      "id": "0a337a55-64d6-4243-bd77-d12e99a11e95",
+      "id": "27bbbd7d-50a4-4403-893c-9b3f6c8d2ec9",
       "key": "contact_id",
-      "value": "{contact_id}",
-      "type": "string"
+      "value": "{contact_id}"
     },
     {
-      "id": "d15cec81-eda1-448f-beb7-e4dac888669e",
+      "id": "cf6ed67d-4a3b-4f22-ba16-87bf18aba688",
       "key": "field_id",
-      "value": "{field_id}",
-      "type": "string"
+      "value": "{field_id}"
     },
     {
-      "id": "b3eb56b5-af53-476d-b312-38a3b0ced2d6",
+      "id": "aa96e715-04da-48aa-afe5-4f7a5532f771",
       "key": "group_id",
-      "value": "{group_id}",
-      "type": "string"
+      "value": "{group_id}"
     },
     {
-      "id": "1bddfc8c-cf31-4e9a-86da-f1a6ca91fa3d",
+      "id": "8a07dd18-f7b5-4181-b57e-554ad3097544",
       "key": "article_id",
-      "value": "{article_id}",
-      "type": "string"
+      "value": "{article_id}"
     },
     {
-      "id": "8640fa3d-04d2-4926-b1bc-fba53c90dc74",
+      "id": "bb8b6ff5-266b-4ec6-869a-4a780151bea9",
       "key": "language_id",
-      "value": "{language_id}",
-      "type": "string"
+      "value": "{language_id}"
     },
     {
-      "id": "42a1a973-aea2-4e56-b10e-a4211d79c037",
+      "id": "0af87b43-7fd5-45fb-9125-2a856edcd0a2",
       "key": "app",
-      "value": "(site|administrator)",
-      "type": "string"
+      "value": "(site|administrator)"
     },
     {
-      "id": "f6009565-5931-4f18-8820-acf854cab6c3",
+      "id": "219678e8-0c0c-4d55-813a-ad7233806553",
       "key": "lang_code",
-      "value": "{lang_code}",
-      "type": "string"
+      "value": "{lang_code}"
     },
     {
-      "id": "1c3b4eca-9f8e-4df6-860d-d76e19cadbef",
+      "id": "09696fbd-990c-4d0f-95f0-134a495853e4",
       "key": "constant_id",
-      "value": "{constant_id}",
-      "type": "string"
+      "value": "{constant_id}"
     },
     {
-      "id": "52b78e6e-78f9-4b3b-915d-c1afcb7a0942",
+      "id": "2d6840bb-95be-4ec0-af74-5d019dd8d040",
       "key": "menu_id",
-      "value": "{menu_id}",
-      "type": "string"
+      "value": "{menu_id}"
     },
     {
-      "id": "8be447b0-b0d8-4abe-a3ac-39c283dd429c",
+      "id": "d453be1e-9c56-4778-8b7e-0fa96f28d82c",
       "key": "menu_item_id",
-      "value": "{menu_item_id}",
-      "type": "string"
+      "value": "{menu_item_id}"
     },
     {
-      "id": "e7d44a7f-4b3f-4636-a704-d15e01bfad0d",
+      "id": "5e97fb88-5ce2-4b23-9ad3-afc1cf367d7a",
       "key": "message_id",
-      "value": "{message_id}",
-      "type": "string"
+      "value": "{message_id}"
     },
     {
-      "id": "55e5db18-0a14-494e-8a54-274f88d7e4a0",
+      "id": "935198d6-e778-4a1f-8395-c90e627cb8d0",
       "key": "module_id",
-      "value": "{module_id}",
-      "type": "string"
+      "value": "{module_id}"
     },
     {
-      "id": "d78445f4-e560-4b93-8a8d-800cdfa6cbb6",
+      "id": "e56e8c61-b5d8-4cf7-b1c6-682f56c51e92",
       "key": "feed_id",
-      "value": "{feed_id}",
-      "type": "string"
+      "value": "{feed_id}"
     },
     {
-      "id": "df9d6f2a-e12e-4617-bc6a-3e336ae5cf75",
+      "id": "ed8064b3-80b8-4a2c-a187-e25758436946",
       "key": "request_id",
-      "value": "{request_id}",
-      "type": "string"
+      "value": "{request_id}"
     },
     {
-      "id": "ec25ea12-8904-470a-96b7-b99f338137b2",
+      "id": "14d48e29-c89d-4fe2-b38d-e72304b0a2d5",
       "key": "consent_id",
-      "value": "{consent_id}",
-      "type": "string"
+      "value": "{consent_id}"
     },
     {
-      "id": "6c62242c-8108-41ef-a7d9-71b9e18f6485",
+      "id": "8183c800-a2ab-48bc-ad9d-2c75fda9f6f0",
       "key": "redirect_id",
-      "value": "{redirect_id}",
-      "type": "string"
+      "value": "{redirect_id}"
     },
     {
-      "id": "4950ee4b-984b-4551-95a3-2c4bb7e57793",
+      "id": "b7ba9ca9-ae22-476e-8dba-572970a6efd9",
       "key": "tag_id",
-      "value": "{tag_id}",
-      "type": "string"
+      "value": "{tag_id}"
     },
     {
-      "id": "6e54ab5d-817e-4181-964a-603411908ecf",
+      "id": "255a5b88-2eb6-47c8-ae3b-43ec43165ec5",
       "key": "template_style_id",
-      "value": "{template_style_id}",
-      "type": "string"
+      "value": "{template_style_id}"
     },
     {
-      "id": "33b3583f-0308-4817-bbb5-094c6f84387e",
+      "id": "3e9b5e41-440f-4402-9501-cba9211644a4",
       "key": "user_id",
-      "value": "{user_id}",
-      "type": "string"
+      "value": "{user_id}"
     }
   ]
 }
