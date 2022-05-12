@@ -1,1 +1,7 @@
 .idea/
+.DS_Store
+*.tmp
+*.bak
+*.log
+tmp/
+log/
