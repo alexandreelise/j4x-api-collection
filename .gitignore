@@ -5,3 +5,11 @@
 *.log
 tmp/
 log/
+!/latest-postman-apis/
+!/latest-postman-apis/README.md
+
+!/latest-postman-collections/
+!/latest-postman-collections/README.md
+
+!/latest-postman-environments/
+!/latest-postman-environments/README.md
