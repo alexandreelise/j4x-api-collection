@@ -7,14 +7,14 @@ info:
         information.
     version: 1.0.0
 servers:
-    - url: "{{base_url}}"
+    - url: https://example.org
 components:
     securitySchemes:
-        ApiKeyAuth:
+        BearerAuth:
             type: http
-            scheme: apiKey
+            scheme: bearer
 security:
-    - ApiKeyAuth: []
+    - BearerAuth: []
 tags:
     - name: 1. Banners
     - name: 1. Banners > 1.1 Banners
