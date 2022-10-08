@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "c678a936-c256-497c-9894-d8f193d81e7e",
-		"name": "j4x-api-complete-collection",
+		"name": "Joomla 4.x Collection - Unofficial",
 		"description": "Collection of Joomla 4 Web Services API Endpoints for Postman. See https://github.com/alexandreelise/j4x-api-collection for updates and information.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -2769,137 +2769,137 @@
 	],
 	"variable": [
 		{
-			"id": "a22ba1d4-30c1-4489-9a4c-c5e70514f087",
+			"id": "6f75a66d-c20a-415f-870f-3f60ac690bab",
 			"key": "base_url",
 			"value": "https://example.org"
 		},
 		{
-			"id": "992f8535-3cdd-45ef-b30a-7bf2bfab2bf0",
+			"id": "4cc14a25-05e3-4a0d-b05e-36892bd25afc",
 			"key": "base_path",
 			"value": "api/index.php/v1"
 		},
 		{
-			"id": "d272850f-1b62-469f-8a82-3180809594bf",
+			"id": "4d9d3947-5923-4691-9a56-45531a1e9ff3",
 			"key": "auth_apikey",
 			"value": "Paste your Joomla API Token here."
 		},
 		{
-			"id": "4c7c8a83-e405-467f-b143-8f3c560fe5ff",
+			"id": "345977c5-be50-4e0c-91aa-29d2797e9468",
 			"key": "banner_id",
 			"value": "{banner_id}"
 		},
 		{
-			"id": "9d10d96d-6904-4012-8df3-1e4a974f5c4b",
+			"id": "f309f7f2-a9c8-47b6-8b30-550c7e1f9dff",
 			"key": "client_id",
 			"value": "{client_id}"
 		},
 		{
-			"id": "88c5ed6e-4824-44cc-ab92-af1f61387461",
+			"id": "61ab47aa-7896-4f0a-bd9f-17cad3705e3b",
 			"key": "category_id",
 			"value": "{category_id}"
 		},
 		{
-			"id": "882967e8-825a-4b72-b2dc-593fdd2e20bc",
+			"id": "188b2c25-9341-4aa6-ba44-df4bc8b3d30b",
 			"key": "contenthistory_id",
 			"value": "{contenthistory_id}"
 		},
 		{
-			"id": "e0998326-3274-4532-a355-798c90019b60",
+			"id": "a444e405-7b7a-4d15-b5ff-97364d801bf6",
 			"key": "component_name",
 			"value": "{component_name}"
 		},
 		{
-			"id": "6d39bd23-1f19-44ed-a8eb-207a19abaaa5",
+			"id": "d45eaaff-d1d0-4411-810a-ed289d0dd41a",
 			"key": "contact_id",
 			"value": "{contact_id}"
 		},
 		{
-			"id": "40a7fca2-9925-4c31-af1a-c596715c224f",
+			"id": "ed20d3af-a967-4baf-bb78-42b3ea8f6744",
 			"key": "field_id",
 			"value": "{field_id}"
 		},
 		{
-			"id": "6944a25a-6b28-42f1-94bc-fa7403793edd",
+			"id": "27225626-d289-4f06-bcda-70f9d2071127",
 			"key": "group_id",
 			"value": "{group_id}"
 		},
 		{
-			"id": "3954021a-eedc-4b70-8ccb-eb4080ac057f",
+			"id": "0540649f-3a97-48fe-b453-a26dc4d015b5",
 			"key": "article_id",
 			"value": "{article_id}"
 		},
 		{
-			"id": "a0af5caf-6e07-48c8-b76d-d071d41b6feb",
+			"id": "bfb9e920-15d5-496d-8fde-c0fef1ac2e41",
 			"key": "language_id",
 			"value": "{language_id}"
 		},
 		{
-			"id": "35738904-86b4-42a4-a918-537a4fb17f49",
+			"id": "d2365133-6969-491a-8b71-7cc79dfb5bb0",
 			"key": "app",
 			"value": "(site|administrator)"
 		},
 		{
-			"id": "9157f6e5-e8a3-452c-9972-575f6710c790",
+			"id": "39701f38-afa2-4610-b148-8980f7ffa422",
 			"key": "lang_code",
 			"value": "{lang_code}"
 		},
 		{
-			"id": "d552ae14-a3ca-43f0-8c90-36a8c63c49bf",
+			"id": "fe38bb0b-07e7-4b73-969b-49715881af3b",
 			"key": "constant_id",
 			"value": "{constant_id}"
 		},
 		{
-			"id": "263ee587-340e-474f-8d01-35f285e1875c",
+			"id": "5bf42541-2e9a-4db4-a5ec-e990f24b116d",
 			"key": "menu_id",
 			"value": "{menu_id}"
 		},
 		{
-			"id": "27305d4e-dd0b-42d1-b8ae-fc85e6fbef82",
+			"id": "52d33be5-fd59-4834-a9d9-02d657e7e6c6",
 			"key": "menu_item_id",
 			"value": "{menu_item_id}"
 		},
 		{
-			"id": "f33ec7a0-0ccd-40e2-a70a-ccc718b8ef68",
+			"id": "95409381-b1cc-408f-b2b3-3fc1e31bbf57",
 			"key": "message_id",
 			"value": "{message_id}"
 		},
 		{
-			"id": "e9111603-e1c1-4b48-9b83-6784ba952c7d",
+			"id": "28c07b8d-2835-491c-a0be-c87fde81f007",
 			"key": "module_id",
 			"value": "{module_id}"
 		},
 		{
-			"id": "3cace2fe-ac47-463f-b225-e16a27603066",
+			"id": "6aa20a7b-7f17-4f8b-9cb2-eeff8e3840aa",
 			"key": "feed_id",
 			"value": "{feed_id}"
 		},
 		{
-			"id": "cc45e34a-02cb-4c37-85bd-05f1456d69c1",
+			"id": "0878a51e-4aae-49bd-b28c-8bdab8a9fe1e",
 			"key": "request_id",
 			"value": "{request_id}"
 		},
 		{
-			"id": "f4510135-3694-4d6a-b28e-1d4a6d0e8f02",
+			"id": "91a0a385-b5db-4cf0-bceb-24523e835364",
 			"key": "consent_id",
 			"value": "{consent_id}"
 		},
 		{
-			"id": "01f09fc1-99f9-4475-b9d3-1676c58ef38c",
+			"id": "5ab21230-ace8-45bf-a91e-f423d9b279ef",
 			"key": "redirect_id",
 			"value": "{redirect_id}"
 		},
 		{
-			"id": "015273be-689d-4e31-b7ca-761d08f302af",
+			"id": "bd0a31dc-7e21-4c8a-b892-d03cb6935ce2",
 			"key": "tag_id",
 			"value": "{tag_id}"
 		},
 		{
-			"id": "32a44e06-e672-485e-9303-42b489a52d63",
+			"id": "46094616-cea3-402f-ad11-7a0993fa313e",
 			"key": "template_style_id",
 			"value": "{template_style_id}"
 		},
 		{
-			"id": "061b07cd-c122-4235-b706-dc551bd1bfbf",
+			"id": "f54b152b-1306-4446-9eae-161da09ad640",
 			"key": "user_id",
 			"value": "{user_id}"
 		}
