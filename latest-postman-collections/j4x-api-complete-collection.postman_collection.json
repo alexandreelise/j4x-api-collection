@@ -3908,7 +3908,29 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/templates/styles/:app/:template_style_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"templates",
+										"styles",
+										":app",
+										":template_style_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "template_style_id",
+											"value": "{{template_style_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3922,7 +3944,29 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/templates/styles/:app/:template_style_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"templates",
+										"styles",
+										":app",
+										":template_style_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "template_style_id",
+											"value": "{{template_style_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3980,7 +4024,23 @@
 									"mode": "raw",
 									"raw": "{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/users/{{user_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/users/:user_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"users",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "user_id",
+											"value": "{{user_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}'"
 							},
 							"response": []
@@ -4008,7 +4068,23 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/users/{{user_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/users/:user_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"users",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "user_id",
+											"value": "{{user_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -4022,7 +4098,23 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/users/{{user_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/users/:user_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"users",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "user_id",
+											"value": "{{user_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -4074,7 +4166,24 @@
 									"mode": "raw",
 									"raw": "{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/fields/users/{{field_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/users/:field_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"users",
+										":field_id"
+									],
+									"variable": [
+										{
+											"key": "field_id",
+											"value": "{{field_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/users/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
 							},
 							"response": []
