@@ -1844,7 +1844,25 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/fields/content/categories/{{field_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/content/categories/:field_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"content",
+										"categories",
+										":field_id"
+									],
+									"variable": [
+										{
+											"key": "field_id",
+											"value": "{{field_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/fields/content/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -1945,7 +1963,24 @@
 									"mode": "raw",
 									"raw": "{\"description\":\"\",\"lang_code\":\"en-GB\",\"metadesc\":\"\",\"metakey\":\"\",\"sitename\":\"\",\"title\":\"English (en-GB)\",\"title_native\":\"English (United Kingdom)\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/languages/content/{{language_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/languages/content/:language_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"languages",
+										"content",
+										":language_id"
+									],
+									"variable": [
+										{
+											"key": "language_id",
+											"value": "{{language_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/languages/content/{{language_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"description\":\"\",\"lang_code\":\"en-GB\",\"metadesc\":\"\",\"metakey\":\"\",\"sitename\":\"\",\"title\":\"English (en-GB)\",\"title_native\":\"English (United Kingdom)\"}'"
 							},
 							"response": []
@@ -1965,7 +2000,7 @@
 							"response": []
 						},
 						{
-							"name": "v1/languages/content/{language_id}",
+							"name": "languages/content/{language_id}",
 							"id": "e6781a78-640c-4437-ba88-9285e0d3445b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1973,7 +2008,25 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/v1/languages/content/{{language_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/v1/languages/content/:language_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"v1",
+										"languages",
+										"content",
+										":language_id"
+									],
+									"variable": [
+										{
+											"key": "language_id",
+											"value": "{{language_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/v1/languages/content/{{language_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -1987,7 +2040,24 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/languages/content/{{language_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/languages/content/:language_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"languages",
+										"content",
+										":language_id"
+									],
+									"variable": [
+										{
+											"key": "language_id",
+											"value": "{{language_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/languages/content/{{language_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
