@@ -3676,7 +3676,23 @@
 									"mode": "raw",
 									"raw": "{\"alias\":\"test\",\"title\":\"new title\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/tags/{{tag_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/tags/:tag_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"tags",
+										":tag_id"
+									],
+									"variable": [
+										{
+											"key": "tag_id",
+											"value": "{{tag_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"test\",\"title\":\"new title\"}'"
 							},
 							"response": []
@@ -3704,7 +3720,23 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/tags/{{tag_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/tags/:tag_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"tags",
+										":tag_id"
+									],
+									"variable": [
+										{
+											"key": "tag_id",
+											"value": "{{tag_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3718,7 +3750,23 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/tags/{{tag_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/tags/:tag_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"tags",
+										":tag_id"
+									],
+									"variable": [
+										{
+											"key": "tag_id",
+											"value": "{{tag_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3753,7 +3801,24 @@
 									"mode": "raw",
 									"raw": "{\"home\":\"0\",\"params\":{\"fluidContainer\":\"0\",\"logoFile\":\"\",\"sidebarLeftWidth\":\"3\",\"sidebarRightWidth\":\"3\"},\"template\":\"cassiopeia\",\"title\":\"cassiopeia - Some Text\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/templates/styles/{{app}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/templates/styles/:app",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"templates",
+										"styles",
+										":app"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/templates/styles/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"home\":\"0\",\"params\":{\"fluidContainer\":\"0\",\"logoFile\":\"\",\"sidebarLeftWidth\":\"3\",\"sidebarRightWidth\":\"3\"},\"template\":\"cassiopeia\",\"title\":\"cassiopeia - Some Text\"}'"
 							},
 							"response": []
@@ -3776,7 +3841,29 @@
 									"mode": "raw",
 									"raw": "{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/templates/styles/:app/:template_style_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"templates",
+										"styles",
+										":app",
+										":template_style_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "template_style_id",
+											"value": "{{template_style_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}'"
 							},
 							"response": []
@@ -3790,7 +3877,24 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/templates/styles/{{app}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/templates/styles/:app",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"templates",
+										"styles",
+										":app"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/templates/styles/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
