@@ -2365,7 +2365,23 @@
 									"mode": "raw",
 									"raw": "{\"client_id\":0,\"description\":\"The menu for the site\",\"menutype\":\"menu\",\"title\":\"Menu\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/menus/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"client_id\":0,\"description\":\"The menu for the site\",\"menutype\":\"menu\",\"title\":\"Menu\"}'"
 							},
 							"response": []
@@ -2388,7 +2404,28 @@
 									"mode": "raw",
 									"raw": "{\"menutype\":\"menu\",\"title\":\"New Menu\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/:menu_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										":menu_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "menu_id",
+											"value": "{{menu_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"menutype\":\"menu\",\"title\":\"New Menu\"}'"
 							},
 							"response": []
@@ -2402,7 +2439,23 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2416,7 +2469,28 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/:menu_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										":menu_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "menu_id",
+											"value": "{{menu_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2430,7 +2504,28 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/:menu_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										":menu_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "menu_id",
+											"value": "{{menu_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2459,7 +2554,24 @@
 									"mode": "raw",
 									"raw": "{\"access\":\"1\",\"alias\":\"\",\"associations\":{\"en-GB\":\"\",\"fr-FR\":\"\"},\"browserNav\":\"0\",\"component_id\":\"20\",\"home\":\"0\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"params\":{\"cancel_redirect_menuitem\":\"\",\"catid\":\"\",\"custom_cancel_redirect\":\"0\",\"enable_category\":\"0\",\"menu-anchor_css\":\"\",\"menu-anchor_title\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_show\":\"1\",\"menu_text\":\"1\",\"page_heading\":\"\",\"page_title\":\"\",\"pageclass_sfx\":\"\",\"redirect_menuitem\":\"\",\"robots\":\"\",\"show_page_heading\":\"\"},\"parent_id\":\"1\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"template_style_id\":\"0\",\"title\":\"title\",\"toggle_modules_assigned\":\"1\",\"toggle_modules_published\":\"1\",\"type\":\"component\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/items",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/items",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										"items"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/menus/{{app}}/items' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"alias\":\"\",\"associations\":{\"en-GB\":\"\",\"fr-FR\":\"\"},\"browserNav\":\"0\",\"component_id\":\"20\",\"home\":\"0\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"params\":{\"cancel_redirect_menuitem\":\"\",\"catid\":\"\",\"custom_cancel_redirect\":\"0\",\"enable_category\":\"0\",\"menu-anchor_css\":\"\",\"menu-anchor_title\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_show\":\"1\",\"menu_text\":\"1\",\"page_heading\":\"\",\"page_title\":\"\",\"pageclass_sfx\":\"\",\"redirect_menuitem\":\"\",\"robots\":\"\",\"show_page_heading\":\"\"},\"parent_id\":\"1\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"template_style_id\":\"0\",\"title\":\"title\",\"toggle_modules_assigned\":\"1\",\"toggle_modules_published\":\"1\",\"type\":\"component\"}'"
 							},
 							"response": []
@@ -2482,7 +2594,29 @@
 									"mode": "raw",
 									"raw": "{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/items/:menu_item_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										"items",
+										":menu_item_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "menu_item_id",
+											"value": "{{menu_item_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}'"
 							},
 							"response": []
@@ -2496,7 +2630,25 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/items/types",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/items/types",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										"items",
+										"types"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/items/types' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
