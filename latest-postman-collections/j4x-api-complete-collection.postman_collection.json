@@ -2662,7 +2662,24 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/items",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/items",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										"items"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/items' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2676,7 +2693,29 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/items/:menu_item_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										"items",
+										":menu_item_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "menu_item_id",
+											"value": "{{menu_item_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2690,7 +2729,29 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/items/:menu_item_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										"items",
+										":menu_item_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "menu_item_id",
+											"value": "{{menu_item_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2748,7 +2809,23 @@
 									"mode": "raw",
 									"raw": "{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}"
 								},
-								"url": "{{base_url}}/{{base_path}}/messages/{{message_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/messages/:message_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"messages",
+										":message_id"
+									],
+									"variable": [
+										{
+											"key": "message_id",
+											"value": "{{message_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}'"
 							},
 							"response": []
@@ -2776,7 +2853,23 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/messages/{{message_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/messages/:message_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"messages",
+										":message_id"
+									],
+									"variable": [
+										{
+											"key": "message_id",
+											"value": "{{message_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2790,7 +2883,23 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/messages/{{message_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/messages/:message_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"messages",
+										":message_id"
+									],
+									"variable": [
+										{
+											"key": "message_id",
+											"value": "{{message_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2825,7 +2934,23 @@
 									"mode": "raw",
 									"raw": "{\"access\":\"1\",\"assigned\":[\"101\",\"105\"],\"assignment\":\"0\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"params\":{\"bootstrap_size\":\"0\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"count\":\"10\",\"header_class\":\"\",\"header_tag\":\"h3\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"moduleclass_sfx\":\"\",\"style\":\"0\"},\"position\":\"\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"showtitle\":\"1\",\"title\":\"Title\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/modules/{{app}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/modules/:app",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"modules",
+										":app"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/modules/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"assigned\":[\"101\",\"105\"],\"assignment\":\"0\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"params\":{\"bootstrap_size\":\"0\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"count\":\"10\",\"header_class\":\"\",\"header_tag\":\"h3\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"moduleclass_sfx\":\"\",\"style\":\"0\"},\"position\":\"\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"showtitle\":\"1\",\"title\":\"Title\"}'"
 							},
 							"response": []
@@ -2848,7 +2973,28 @@
 									"mode": "raw",
 									"raw": "{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/modules/:app/:module_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"modules",
+										":app",
+										":module_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "module_id",
+											"value": "{{module_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}'"
 							},
 							"response": []
@@ -2862,7 +3008,24 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/modules/types/{{app}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/modules/types/:app",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"modules",
+										"types",
+										":app"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/modules/types/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -2876,7 +3039,23 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/modules/{{app}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/modules/:app",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"modules",
+										":app"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/modules/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
