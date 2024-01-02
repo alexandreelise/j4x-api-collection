@@ -2211,7 +2211,34 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+										"url": {
+											"raw": "{{base_url}}/{{base_path}}/languages/overrides/:app/:lang_code/:constant_id",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"{{base_path}}",
+												"languages",
+												"overrides",
+												":app",
+												":lang_code",
+												":constant_id"
+											],
+											"variable": [
+												{
+													"key": "app",
+													"value": "{{app}}"
+												},
+												{
+													"key": "lang_code",
+													"value": "{{lang_code}}"
+												},
+												{
+													"key": "constant_id",
+													"value": "{{constant_id}}"
+												}
+											]
+										},
 										"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 									},
 									"response": []
@@ -2225,7 +2252,34 @@
 									"request": {
 										"method": "DELETE",
 										"header": [],
-										"url": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+										"url": {
+											"raw": "{{base_url}}/{{base_path}}/languages/overrides/:app/:lang_code/:constant_id",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"{{base_path}}",
+												"languages",
+												"overrides",
+												":app",
+												":lang_code",
+												":constant_id"
+											],
+											"variable": [
+												{
+													"key": "app",
+													"value": "{{app}}"
+												},
+												{
+													"key": "lang_code",
+													"value": "{{lang_code}}"
+												},
+												{
+													"key": "constant_id",
+													"value": "{{constant_id}}"
+												}
+											]
+										},
 										"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 									},
 									"response": []
