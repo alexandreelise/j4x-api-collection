@@ -2089,7 +2089,29 @@
 											"mode": "raw",
 											"raw": "{\"key\":\"new_key\",\"override\":\"text\"}"
 										},
-										"url": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}",
+										"url": {
+											"raw": "{{base_url}}/{{base_path}}/languages/overrides/:app/:lang_code",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"{{base_path}}",
+												"languages",
+												"overrides",
+												":app",
+												":lang_code"
+											],
+											"variable": [
+												{
+													"key": "app",
+													"value": "{{app}}"
+												},
+												{
+													"key": "lang_code",
+													"value": "{{lang_code}}"
+												}
+											]
+										},
 										"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"key\":\"new_key\",\"override\":\"text\"}'"
 									},
 									"response": []
@@ -2112,7 +2134,34 @@
 											"mode": "raw",
 											"raw": "{\"key\":\"new_key\",\"override\":\"new text\"}"
 										},
-										"url": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}",
+										"url": {
+											"raw": "{{base_url}}/{{base_path}}/languages/overrides/:app/:lang_code/:constant_id",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"{{base_path}}",
+												"languages",
+												"overrides",
+												":app",
+												":lang_code",
+												":constant_id"
+											],
+											"variable": [
+												{
+													"key": "app",
+													"value": "{{app}}"
+												},
+												{
+													"key": "lang_code",
+													"value": "{{lang_code}}"
+												},
+												{
+													"key": "constant_id",
+													"value": "{{constant_id}}"
+												}
+											]
+										},
 										"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"key\":\"new_key\",\"override\":\"new text\"}'"
 									},
 									"response": []
@@ -2126,7 +2175,29 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}",
+										"url": {
+											"raw": "{{base_url}}/{{base_path}}/languages/overrides/:app/:lang_code",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"{{base_path}}",
+												"languages",
+												"overrides",
+												":app",
+												":lang_code"
+											],
+											"variable": [
+												{
+													"key": "app",
+													"value": "{{app}}"
+												},
+												{
+													"key": "lang_code",
+													"value": "{{lang_code}}"
+												}
+											]
+										},
 										"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 									},
 									"response": []
