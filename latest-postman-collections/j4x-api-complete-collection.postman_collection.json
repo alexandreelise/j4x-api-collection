@@ -3069,7 +3069,28 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/modules/:app/:module_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"modules",
+										":app",
+										":module_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "module_id",
+											"value": "{{module_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3083,7 +3104,28 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/modules/:app/:module_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"modules",
+										":app",
+										":module_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "module_id",
+											"value": "{{module_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3141,7 +3183,24 @@
 									"mode": "raw",
 									"raw": "{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds/:feed_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"newsfeeds",
+										"feeds",
+										":feed_id"
+									],
+									"variable": [
+										{
+											"key": "feed_id",
+											"value": "{{feed_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}'"
 							},
 							"response": []
@@ -3169,7 +3228,24 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds/:feed_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"newsfeeds",
+										"feeds",
+										":feed_id"
+									],
+									"variable": [
+										{
+											"key": "feed_id",
+											"value": "{{feed_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3183,7 +3259,24 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds/:feed_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"newsfeeds",
+										"feeds",
+										":feed_id"
+									],
+									"variable": [
+										{
+											"key": "feed_id",
+											"value": "{{feed_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3246,7 +3339,24 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/privacy/requests/{{request_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/privacy/requests/:request_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"privacy",
+										"requests",
+										":request_id"
+									],
+									"variable": [
+										{
+											"key": "request_id",
+											"value": "{{request_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/privacy/requests/{{request_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3260,7 +3370,25 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/privacy/requests/export/{{request_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/privacy/requests/export/:request_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"privacy",
+										"requests",
+										"export",
+										":request_id"
+									],
+									"variable": [
+										{
+											"key": "request_id",
+											"value": "{{request_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/privacy/requests/export/{{request_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
