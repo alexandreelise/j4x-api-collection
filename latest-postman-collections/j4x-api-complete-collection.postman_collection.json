@@ -3422,7 +3422,24 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/privacy/consents/{{consent_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/privacy/consents/:consent_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"privacy",
+										"consents",
+										":consent_id"
+									],
+									"variable": [
+										{
+											"key": "consent_id",
+											"value": "{{consent_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/privacy/consents/{{consent_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3436,7 +3453,24 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/privacy/consents/{{consent_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/privacy/consents/:consent_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"privacy",
+										"consents",
+										":consent_id"
+									],
+									"variable": [
+										{
+											"key": "consent_id",
+											"value": "{{consent_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/privacy/consents/{{consent_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3494,7 +3528,23 @@
 									"mode": "raw",
 									"raw": "{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/redirects/{{redirect_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/redirects/:redirect_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"redirects",
+										":redirect_id"
+									],
+									"variable": [
+										{
+											"key": "redirect_id",
+											"value": "{{redirect_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}'"
 							},
 							"response": []
@@ -3522,7 +3572,23 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/redirects/{{redirect_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/redirects/:redirect_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"redirects",
+										":redirect_id"
+									],
+									"variable": [
+										{
+											"key": "redirect_id",
+											"value": "{{redirect_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -3536,7 +3602,23 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/redirects/{{redirect_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/redirects/:request_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"redirects",
+										":request_id"
+									],
+									"variable": [
+										{
+											"key": "request_id",
+											"value": "{{redirect_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
