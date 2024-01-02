@@ -240,7 +240,24 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/banners/clients/{{client_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/clients/:client_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"clients",
+										":client_id"
+									],
+									"variable": [
+										{
+											"key": "client_id",
+											"value": "{{client_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -254,7 +271,24 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/banners/clients/{{client_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/clients/:client_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"clients",
+										":client_id"
+									],
+									"variable": [
+										{
+											"key": "client_id",
+											"value": "{{client_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -306,7 +340,24 @@
 									"mode": "raw",
 									"raw": "{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}"
 								},
-								"url": "{{base_url}}/{{base_path}}/banners/categories/{{category_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"key": "category_id",
+											"value": "{{category_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}'"
 							},
 							"response": []
@@ -334,7 +385,24 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/banners/categories/{{category_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"key": "category_id",
+											"value": "{{category_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -348,7 +416,24 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{base_url}}/{{base_path}}/banners/categories/{{category_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"key": "category_id",
+											"value": "{{category_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X DELETE '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
@@ -373,7 +458,25 @@
 										"value": "application/json"
 									}
 								],
-								"url": "{{base_url}}/{{base_path}}/banners/contenthistory/keep/{{contenthistory_id}}",
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/contenthistory/keep/:contenthistory_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"contenthistory",
+										"keep",
+										":contenthistory_id"
+									],
+									"variable": [
+										{
+											"key": "contenthistory_id",
+											"value": "{{contenthistory_id}}"
+										}
+									]
+								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/contenthistory/keep/{{contenthistory_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
