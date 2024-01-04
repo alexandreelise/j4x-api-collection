@@ -1,8 +1,8 @@
 {
 	"info": {
 		"_postman_id": "c678a936-c256-497c-9894-d8f193d81e7e",
-		"name": "Joomla 4.x Collection - Unofficial",
-		"description": "Collection of Joomla 4 Web Services API Endpoints for Postman. See https://github.com/alexandreelise/j4x-api-collection for updates and information.",
+		"name": "Joomla Web Services Collection - Unofficial",
+		"description": "Collection of Joomla 4 Web Services API Endpoints for Postman. See [https://github.com/alexandreelise/j4x-api-collection](https://github.com/alexandreelise/j4x-api-collection) for updates and information.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
