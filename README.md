@@ -1,4 +1,4 @@
-# Joomla Web Services Collection For Postman
+# 100+ Endpoints Joomla Web Services Collection For Postman
 An attempt to help the Joomla! 4.x/5.x/6.x early adopters mainly focused for developers. It's an unofficial Postman collection of official Joomla Web Services Specification.
 
 
