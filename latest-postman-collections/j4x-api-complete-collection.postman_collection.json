@@ -4536,7 +4536,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9d055d91-96e1-407d-980d-744c230091a4",
+				"id": "6d83569b-0b0b-4e87-aa3a-3f15dea32459",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -4546,7 +4546,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fd86b657-2cae-4e20-988e-ef8fff0fa7fc",
+				"id": "16098967-ea48-48ba-815a-875868213fbc",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1]",
@@ -4679,16 +4679,41 @@
 		},
 		{
 			"key": "articles_filter_category",
-			"value": "",
+			"value": "2",
 			"type": "string"
 		},
 		{
 			"key": "articles_filter_state",
-			"value": "",
+			"value": "1",
 			"type": "string"
 		},
 		{
 			"key": "articles_filter_featured",
+			"value": "0",
+			"type": "string"
+		},
+		{
+			"key": "articles_filter_tag",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "articles_filter_search",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "articles_list_ordering",
+			"value": "modified",
+			"type": "string"
+		},
+		{
+			"key": "articles_list_direction",
+			"value": "desc",
+			"type": "string"
+		},
+		{
+			"key": "tour_id",
 			"value": "",
 			"type": "string"
 		}
