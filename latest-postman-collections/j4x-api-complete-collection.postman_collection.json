@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "c678a936-c256-497c-9894-d8f193d81e7e",
 		"name": "Joomla Web Services Collection For Postman",
-		"description": "## 100+ Endpoints Joomla Web Services Collection For Postman\n\nAn attempt to help the Joomla! 4.x/5.x/6.x early adopters mainly focused for developers. It's an unofficial Postman collection of official Joomla Web Services Specification.\n\n[https://github.com/alexandreelise/j4x-api-collection](https://github.com/alexandreelise/j4x-api-collection) for updates and information.\n\n## Installation\n\n- Click on the Run in Postman button above or below in this README\n    \n- Follow the instructions (You should fork the collection in your own postman workspace)\n    \n- You should now have a new collection of endpoints in Postman\n    \n- Click on the collection, then on the ... on the right of the collection to open the settings for the collection\n    \n- Set your own values for Authentication and Variables per the steps below\n    \n- Test a generic GET request from the list to then confirm your authentication is working and your base_url and base_path is set correctly.\n    \n\n## Authentication\n\nAuthentication is done using a Joomla API Token. To get the token, go to your Super User profile in your Joomla 4 Installation and activate then copy the API key. In Postman, edit the Collection and then click on the Authorization tab.\n\n- Select Type = \"API Key\"\n    \n- For the Key field, enter \"X-Joomla-Token\"\n    \n- In the Value field, paste your Joomla API Token\n    \n- For the Add To field, leave the value as \"Header\"\n    \n- Click Update to save the settings or click on Variables tab to modify your Base Path variable.\n    \n\nIf you prefer a video about how to set up your Joomla API Token here is one:\n\n[Short video how to setup Joomla API Token](https://youtube.com/clip/UgkxfHFK1vhr1oCpJvhBWwC8Mvm0LBB2WZ7A?si=nVa8FHGBlBUNxIek)\n\nFull video is :\n\n<video src=\"https://youtube.com/embed/lT9qodsvfZg\" width=\"340\"></video>\n\nJoomla 4 tutorial: Using the Web Services API\n\n## URLs\n\nThe URLs are set via _base_url_ and _base_path_. You should set this variable within your collection.\n\n- Click the 3 dots on the collection.\n    \n- Select Edit.\n    \n- Click on the variables tab.\n    \n- Add (or update) the _base_url_ and _base_path_ variable, setting the Initial Value field to the URL for your Joomla for installation.\n    \n\n## Documentation\n\nThe Postman generated Api documentation of Joomla! 4 Webservices collection",
+		"description": "## 100+ Endpoints Joomla Web Services Collection For Postman\n\nAn attempt to help the Joomla! 4.x/5.x/6.x early adopters mainly focused for developers. It's an unofficial Postman collection of official Joomla Web Services Specification.\n\n[https://github.com/alexandreelise/j4x-api-collection](https://github.com/alexandreelise/j4x-api-collection) for updates and information.\n\n## Presentation\n\nSlides by Marc DECHÈVRE [https://slides.woluweb.be/api/api.html](https://slides.woluweb.be/api/api.html)\n\n## Installation\n\n- Click on the Run in Postman button above or below in this README\n    \n- Follow the instructions (You should fork the collection in your own postman workspace)\n    \n- You should now have a new collection of endpoints in Postman\n    \n- Click on the collection, then on the ... on the right of the collection to open the settings for the collection\n    \n- Set your own values for Authentication and Variables per the steps below\n    \n- Test a generic GET request from the list to then confirm your authentication is working and your base_url and base_path is set correctly.\n    \n\n## Authentication\n\nAuthentication is done using a Joomla API Token. To get the token, go to your Super User profile in your Joomla 4 Installation and activate then copy the API key. In Postman, edit the Collection and then click on the Authorization tab.\n\n- Select Type = \"API Key\"\n    \n- For the Key field, enter \"X-Joomla-Token\"\n    \n- In the Value field, paste your Joomla API Token\n    \n- For the Add To field, leave the value as \"Header\"\n    \n- Click Update to save the settings or click on Variables tab to modify your Base Path variable.\n    \n\nIf you prefer a video about how to set up your Joomla API Token here is one:\n\n[Short video how to setup Joomla API Token](https://youtube.com/clip/UgkxfHFK1vhr1oCpJvhBWwC8Mvm0LBB2WZ7A?si=nVa8FHGBlBUNxIek)\n\nFull video is :\n\n<video src=\"https://youtube.com/embed/lT9qodsvfZg\" width=\"340\"></video>\n\nJoomla 4 tutorial: Using the Web Services API\n\n## URLs\n\nThe URLs are set via _base_url_ and _base_path_. You should set this variable within your collection.\n\n- Click the 3 dots on the collection.\n    \n- Select Edit.\n    \n- Click on the variables tab.\n    \n- Add (or update) the _base_url_ and _base_path_ variable, setting the Initial Value field to the URL for your Joomla for installation.\n    \n\n## Documentation\n\nThe Postman generated Api documentation of Joomla! 4 Webservices collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -28,49 +28,10 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"catid\":3,\"clicks\":0,\"custombannercode\":\"\",\"description\":\"Demo description\",\"metakey\":\"\",\"name\":\"Name\",\"params\":{\"alt\":\"\",\"height\":\"\",\"imageurl\":\"\",\"width\":\"\"}}"
+									"raw": "{\"catid\":3,\"clicks\":0,\"custombannercode\":\"\",\"description\":\"{{$randomLoremParagraph}}\",\"metakey\":\"{{$randomWords}}\",\"name\":\"{{$randomCatchPhrase}}\",\"params\":{\"alt\":\"{{$randomCatchPhrase}}\",\"height\":\"\",\"imageurl\":\"{{$randomAnimalsImage}}\",\"width\":\"\"}}"
 								},
 								"url": "{{base_url}}/{{base_path}}/banners",
 								"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/banners' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"catid\":3,\"clicks\":0,\"custombannercode\":\"\",\"description\":\"Text\",\"metakey\":\"\",\"name\":\"Name\",\"params\":{\"alt\":\"\",\"height\":\"\",\"imageurl\":\"\",\"width\":\"\"}}'"
-							},
-							"response": []
-						},
-						{
-							"name": "banners/{banner_id}",
-							"id": "d43f6209-9648-41e5-8c46-f0537bb18309",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/banners/:banner_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"banners",
-										":banner_id"
-									],
-									"variable": [
-										{
-											"key": "banner_id",
-											"value": "{{banner_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}'"
 							},
 							"response": []
 						},
@@ -115,6 +76,45 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "banners/{banner_id}",
+							"id": "d43f6209-9648-41e5-8c46-f0537bb18309",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/:banner_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										":banner_id"
+									],
+									"variable": [
+										{
+											"key": "banner_id",
+											"value": "{{banner_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"name\",\"catid\":3,\"description\":\"New Text\",\"name\":\"New Name\"}'"
 							},
 							"response": []
 						},
@@ -178,46 +178,6 @@
 							"response": []
 						},
 						{
-							"name": "banners/clients/{client_id}",
-							"id": "59fad71b-9ac0-4af6-b2d2-56c8619ba60e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/banners/clients/:client_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"banners",
-										"clients",
-										":client_id"
-									],
-									"variable": [
-										{
-											"key": "client_id",
-											"value": "{{client_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "banners/clients",
 							"id": "ff46e51a-4bcf-471b-bac5-9cf7ff4fa291",
 							"protocolProfileBehavior": {
@@ -259,6 +219,46 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "banners/clients/{client_id}",
+							"id": "59fad71b-9ac0-4af6-b2d2-56c8619ba60e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/clients/:client_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"clients",
+										":client_id"
+									],
+									"variable": [
+										{
+											"key": "client_id",
+											"value": "{{client_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/clients/{{client_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"contact\":\"new Name\",\"email\":\"newemail@example.org\",\"name\":\"Clients\"}'"
 							},
 							"response": []
 						},
@@ -323,46 +323,6 @@
 							"response": []
 						},
 						{
-							"name": "banners/categories/{category_id}",
-							"id": "80350c42-dd56-445d-801d-43dbf02b5751",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/banners/categories/:category_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"banners",
-										"categories",
-										":category_id"
-									],
-									"variable": [
-										{
-											"key": "category_id",
-											"value": "{{category_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "banners/categories",
 							"id": "1f3983c8-c8a8-4a51-9318-25563bd6b631",
 							"protocolProfileBehavior": {
@@ -409,6 +369,46 @@
 						},
 						{
 							"name": "banners/categories/{category_id}",
+							"id": "80350c42-dd56-445d-801d-43dbf02b5751",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"key": "category_id",
+											"value": "{{category_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}'"
+							},
+							"response": []
+						},
+						{
+							"name": "banners/categories/{category_id}",
 							"id": "5df305ea-bd1e-4983-badb-07cca41c24a9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -445,6 +445,37 @@
 					"name": "1.4 Banners Content History",
 					"item": [
 						{
+							"name": "banners/contenthistory/{banner_id}",
+							"id": "0dc7d827-92f3-4c00-8819-dd944fc90bf1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/banners/contenthistory/:banner_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"banners",
+										"contenthistory",
+										":banner_id"
+									],
+									"variable": [
+										{
+											"key": "banner_id",
+											"value": "{{banner_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/contenthistory/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
 							"name": "banners/contenthistory/keep/{contenthistory_id}",
 							"id": "5ff428fa-07ab-4637-8513-2767444471ff",
 							"protocolProfileBehavior": {
@@ -478,37 +509,6 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/banners/contenthistory/keep/{{contenthistory_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
-							},
-							"response": []
-						},
-						{
-							"name": "banners/contenthistory/{banner_id}",
-							"id": "0dc7d827-92f3-4c00-8819-dd944fc90bf1",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/banners/contenthistory/:banner_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"banners",
-										"contenthistory",
-										":banner_id"
-									],
-									"variable": [
-										{
-											"key": "banner_id",
-											"value": "{{banner_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/banners/contenthistory/{{banner_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
 						},
@@ -664,45 +664,6 @@
 							"response": []
 						},
 						{
-							"name": "contacts/{contact_id}",
-							"id": "2618abf3-f91a-4e39-a756-c226d8fcd2dd",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/contacts/:contact_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"contacts",
-										":contact_id"
-									],
-									"variable": [
-										{
-											"key": "contact_id",
-											"value": "{{contact_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/contacts/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "contacts",
 							"id": "18f4a2f7-abfd-46ff-a0e6-ba130ed63033",
 							"protocolProfileBehavior": {
@@ -743,6 +704,45 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/contacts/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "contacts/{contact_id}",
+							"id": "2618abf3-f91a-4e39-a756-c226d8fcd2dd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/contacts/:contact_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"contacts",
+										":contact_id"
+									],
+									"variable": [
+										{
+											"key": "contact_id",
+											"value": "{{contact_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/contacts/{{contact_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"contact\",\"catid\":4,\"name\":\"New Contact\"}'"
 							},
 							"response": []
 						},
@@ -852,47 +852,6 @@
 							"response": []
 						},
 						{
-							"name": "fields/contacts/contact/{field_id}",
-							"id": "47c0e1fc-e04e-4f34-af01-cc8b161db835",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/fields/contacts/contact/:field_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"fields",
-										"contacts",
-										"contact",
-										":field_id"
-									],
-									"variable": [
-										{
-											"key": "field_id",
-											"value": "{{field_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "fields/contacts/contact",
 							"id": "03730220-de62-4c82-b704-3d31728a3ebd",
 							"protocolProfileBehavior": {
@@ -935,6 +894,47 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "fields/contacts/contact/{field_id}",
+							"id": "47c0e1fc-e04e-4f34-af01-cc8b161db835",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/contacts/contact/:field_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"contacts",
+										"contact",
+										":field_id"
+									],
+									"variable": [
+										{
+											"key": "field_id",
+											"value": "{{field_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/contacts/contact/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact field\",\"name\":\"contact-field\",\"label\":\"contact field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
 							},
 							"response": []
 						},
@@ -1000,48 +1000,6 @@
 							"response": []
 						},
 						{
-							"name": "fields/groups/contacts/contact/{group_id}",
-							"id": "adbdf410-90b0-4851-8ee3-5122f8f6e899",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact/:group_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"fields",
-										"groups",
-										"contacts",
-										"contact",
-										":group_id"
-									],
-									"variable": [
-										{
-											"key": "group_id",
-											"value": "{{group_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "fields/groups/contacts/contact",
 							"id": "f1dd9889-7baa-48df-9c90-51f4bb1ccb91",
 							"protocolProfileBehavior": {
@@ -1085,6 +1043,48 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "fields/groups/contacts/contact/{group_id}",
+							"id": "adbdf410-90b0-4851-8ee3-5122f8f6e899",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/groups/contacts/contact/:group_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"groups",
+										"contacts",
+										"contact",
+										":group_id"
+									],
+									"variable": [
+										{
+											"key": "group_id",
+											"value": "{{group_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/contacts/contact/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact group\",\"note\":\"\",\"description\":\"new description\"}'"
 							},
 							"response": []
 						},
@@ -1151,47 +1151,6 @@
 							"response": []
 						},
 						{
-							"name": "fields/contacts/categories/{field_id}",
-							"id": "7ea696b6-7b3f-4e73-9cef-1836a405dbe1",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"title\":\"new contact category field\",\"name\":\"contact-category-field\",\"label\":\"contact category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/fields/contacts/categories/:field_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"fields",
-										"contacts",
-										"categories",
-										":field_id"
-									],
-									"variable": [
-										{
-											"key": "field_id",
-											"value": "{{field_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/contacts/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact category field\",\"name\":\"contact-category-field\",\"label\":\"contact category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "fields/contacts/categories",
 							"id": "ea1653be-adc0-42b5-a278-3752d564d378",
 							"protocolProfileBehavior": {
@@ -1234,6 +1193,47 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/contacts/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "fields/contacts/categories/{field_id}",
+							"id": "7ea696b6-7b3f-4e73-9cef-1836a405dbe1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"new contact category field\",\"name\":\"contact-category-field\",\"label\":\"contact category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/contacts/categories/:field_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"contacts",
+										"categories",
+										":field_id"
+									],
+									"variable": [
+										{
+											"key": "field_id",
+											"value": "{{field_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/contacts/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new contact category field\",\"name\":\"contact-category-field\",\"label\":\"contact category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
 							},
 							"response": []
 						},
@@ -1305,6 +1305,157 @@
 							"response": []
 						},
 						{
+							"name": "content/articles",
+							"id": "d187f66a-f866-4053-a792-6081d885c470",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}/{{base_path}}/content/articles",
+								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "content/articles with filters",
+							"id": "6fcf4062-9d40-4676-82ee-8c91441d1315",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/content/articles",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"content",
+										"articles"
+									],
+									"query": [
+										{
+											"key": "filter[author]",
+											"value": "{{articles_filter_author}}",
+											"description": "Filter articles by author",
+											"disabled": true
+										},
+										{
+											"key": "filter[category]",
+											"value": "{{articles_filter_category}}",
+											"description": "Filter articles by category",
+											"disabled": true
+										},
+										{
+											"key": "filter[state]",
+											"value": "{{articles_filter_state}}",
+											"description": "Filter articles by state",
+											"disabled": true
+										},
+										{
+											"key": "filter[featured]",
+											"value": "{{articles_filter_featured}}",
+											"description": "Filter featured articles",
+											"disabled": true
+										},
+										{
+											"key": "filter[tag]",
+											"value": "{{articles_filter_tag}}",
+											"description": "Filter articles by tag https://slides.woluweb.be/api/api.html#multivalue",
+											"disabled": true
+										},
+										{
+											"key": "filter[language]",
+											"value": "{{articles_filter_language}}",
+											"description": "FIlter articles by language",
+											"disabled": true
+										},
+										{
+											"key": "filter[search]",
+											"value": "{{articles_filter_search}}",
+											"description": "Filter articles by search phrase https://slides.woluweb.be/api/api.html#search",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Generated from a curl request:  \ncurl -X GET '{{base_url}}/{{base_path}}/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}'\n\nPresentation slides link: [https://slides.woluweb.be/api/api.html#filter-further](https://slides.woluweb.be/api/api.html#filter-further)"
+							},
+							"response": []
+						},
+						{
+							"name": "content/articles with ordering and direction",
+							"id": "902497de-5d46-42ab-aad0-4c150d107d2f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/content/articles",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"content",
+										"articles"
+									],
+									"query": [
+										{
+											"key": "list[ordering]",
+											"value": "{{articles_list_ordering}}",
+											"description": "Articles ordering  based on article field https://slides.woluweb.be/api/api.html#ordering-and-direction",
+											"disabled": true
+										},
+										{
+											"key": "list[direction]",
+											"value": "{{articles_list_direction}}",
+											"description": "Articles direction asc or desc https://slides.woluweb.be/api/api.html#ordering-and-direction",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Generated from a curl request:  \ncurl -X GET '{{base_url}}/{{base_path}}/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}'\n\nPresentation slides link: [https://slides.woluweb.be/api/api.html#filter-further](https://slides.woluweb.be/api/api.html#filter-further)"
+							},
+							"response": []
+						},
+						{
+							"name": "content/articles/{article_id}",
+							"id": "dae52fb7-d932-4299-8845-90495030df7c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/content/articles/:article_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"content",
+										"articles",
+										":article_id"
+									],
+									"variable": [
+										{
+											"key": "article_id",
+											"value": "{{article_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/content/articles/{{article_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
 							"name": "content/articles/{article_id}",
 							"id": "e84fcbfd-b483-458b-9ff9-cad1488a45cc",
 							"protocolProfileBehavior": {
@@ -1341,51 +1492,6 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/content/articles/{{article_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"catid\":64,\"title\":\"Updated article\"}'"
-							},
-							"response": []
-						},
-						{
-							"name": "content/articles",
-							"id": "d187f66a-f866-4053-a792-6081d885c470",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{base_url}}/{{base_path}}/content/articles",
-								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/content/articles' -H 'X-Joomla-Token: {{auth_apikey}}'"
-							},
-							"response": []
-						},
-						{
-							"name": "content/articles/{article_id}",
-							"id": "dae52fb7-d932-4299-8845-90495030df7c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/content/articles/:article_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"content",
-										"articles",
-										":article_id"
-									],
-									"variable": [
-										{
-											"key": "article_id",
-											"value": "{{article_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/content/articles/{{article_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
 							},
 							"response": []
 						},
@@ -1450,47 +1556,6 @@
 							"response": []
 						},
 						{
-							"name": "fields/content/articles/{field_id}",
-							"id": "fc04c9ee-71fa-422f-baf1-aa143d7960bd",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/fields/content/articles/:field_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"fields",
-										"content",
-										"articles",
-										":field_id"
-									],
-									"variable": [
-										{
-											"key": "field_id",
-											"value": "{{field_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "fields/content/articles",
 							"id": "d700d111-ae13-4688-864b-8b1018dc1c71",
 							"protocolProfileBehavior": {
@@ -1533,6 +1598,47 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "fields/content/articles/{field_id}",
+							"id": "fc04c9ee-71fa-422f-baf1-aa143d7960bd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/content/articles/:field_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"content",
+										"articles",
+										":field_id"
+									],
+									"variable": [
+										{
+											"key": "field_id",
+											"value": "{{field_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/content/articles/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article field\",\"name\":\"article-field\",\"label\":\"article field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
 							},
 							"response": []
 						},
@@ -1598,48 +1704,6 @@
 							"response": []
 						},
 						{
-							"name": "fields/groups/content/articles/{group_id}",
-							"id": "d6a09ddd-1a2b-4485-a11f-25ce77b3c2fe",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/fields/groups/content/articles/:group_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"fields",
-										"groups",
-										"content",
-										"articles",
-										":group_id"
-									],
-									"variable": [
-										{
-											"key": "group_id",
-											"value": "{{group_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "fields/groups/content/articles",
 							"id": "3da379dd-5966-417d-9d65-b94fdb86c34a",
 							"protocolProfileBehavior": {
@@ -1683,6 +1747,48 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "fields/groups/content/articles/{group_id}",
+							"id": "d6a09ddd-1a2b-4485-a11f-25ce77b3c2fe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/groups/content/articles/:group_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"groups",
+										"content",
+										"articles",
+										":group_id"
+									],
+									"variable": [
+										{
+											"key": "group_id",
+											"value": "{{group_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/content/articles/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new article group\",\"note\":\"\",\"description\":\"new description\"}'"
 							},
 							"response": []
 						},
@@ -1749,47 +1855,6 @@
 							"response": []
 						},
 						{
-							"name": "fields/content/categories/{field_id}",
-							"id": "9ea6aaef-483a-42bc-9bb3-629f4e4ae0a4",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"title\":\"new content category field\",\"name\":\"content-category-field\",\"label\":\"content category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/fields/content/categories/:field_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"fields",
-										"content",
-										"categories",
-										":field_id"
-									],
-									"variable": [
-										{
-											"key": "field_id",
-											"value": "{{field_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/content/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new content category field\",\"name\":\"content-category-field\",\"label\":\"content category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "fields/content/categories",
 							"id": "2844ce36-6071-4730-8180-89572ed11835",
 							"protocolProfileBehavior": {
@@ -1832,6 +1897,47 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/content/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "fields/content/categories/{field_id}",
+							"id": "9ea6aaef-483a-42bc-9bb3-629f4e4ae0a4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"new content category field\",\"name\":\"content-category-field\",\"label\":\"content category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/content/categories/:field_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"content",
+										"categories",
+										":field_id"
+									],
+									"variable": [
+										{
+											"key": "field_id",
+											"value": "{{field_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/content/categories/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new content category field\",\"name\":\"content-category-field\",\"label\":\"content category field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
 							},
 							"response": []
 						},
@@ -2117,56 +2223,6 @@
 									"response": []
 								},
 								{
-									"name": "languages/overrides/{app}/{lang_code}/{constant_id}",
-									"id": "f25dbd5f-8213-486b-b691-cadacb2f4a6b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PATCH",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\"key\":\"new_key\",\"override\":\"new text\"}"
-										},
-										"url": {
-											"raw": "{{base_url}}/{{base_path}}/languages/overrides/:app/:lang_code/:constant_id",
-											"host": [
-												"{{base_url}}"
-											],
-											"path": [
-												"{{base_path}}",
-												"languages",
-												"overrides",
-												":app",
-												":lang_code",
-												":constant_id"
-											],
-											"variable": [
-												{
-													"key": "app",
-													"value": "{{app}}"
-												},
-												{
-													"key": "lang_code",
-													"value": "{{lang_code}}"
-												},
-												{
-													"key": "constant_id",
-													"value": "{{constant_id}}"
-												}
-											]
-										},
-										"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"key\":\"new_key\",\"override\":\"new text\"}'"
-									},
-									"response": []
-								},
-								{
 									"name": "languages/overrides/{app}/{lang_code}",
 									"id": "c3439067-9c64-41a8-97b9-3a496998f0d1",
 									"protocolProfileBehavior": {
@@ -2240,6 +2296,56 @@
 											]
 										},
 										"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+									},
+									"response": []
+								},
+								{
+									"name": "languages/overrides/{app}/{lang_code}/{constant_id}",
+									"id": "f25dbd5f-8213-486b-b691-cadacb2f4a6b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"key\":\"new_key\",\"override\":\"new text\"}"
+										},
+										"url": {
+											"raw": "{{base_url}}/{{base_path}}/languages/overrides/:app/:lang_code/:constant_id",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"{{base_path}}",
+												"languages",
+												"overrides",
+												":app",
+												":lang_code",
+												":constant_id"
+											],
+											"variable": [
+												{
+													"key": "app",
+													"value": "{{app}}"
+												},
+												{
+													"key": "lang_code",
+													"value": "{{lang_code}}"
+												},
+												{
+													"key": "constant_id",
+													"value": "{{constant_id}}"
+												}
+											]
+										},
+										"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/languages/overrides/{{app}}/{{lang_code}}/{{constant_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"key\":\"new_key\",\"override\":\"new text\"}'"
 									},
 									"response": []
 								},
@@ -2387,50 +2493,6 @@
 							"response": []
 						},
 						{
-							"name": "menus/{app}/{menu_id}",
-							"id": "92216da6-f788-451e-a426-0a1b4fc4cf6f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"menutype\":\"menu\",\"title\":\"New Menu\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/menus/:app/:menu_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"menus",
-										":app",
-										":menu_id"
-									],
-									"variable": [
-										{
-											"key": "app",
-											"value": "{{app}}"
-										},
-										{
-											"key": "menu_id",
-											"value": "{{menu_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"menutype\":\"menu\",\"title\":\"New Menu\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "menus/{app}",
 							"id": "80e1307a-c9a6-4b83-a407-edcb1f6c113d",
 							"protocolProfileBehavior": {
@@ -2492,6 +2554,50 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "menus/{app}/{menu_id}",
+							"id": "92216da6-f788-451e-a426-0a1b4fc4cf6f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"menutype\":\"menu\",\"title\":\"New Menu\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/:menu_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										":menu_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "menu_id",
+											"value": "{{menu_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/{{menu_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"menutype\":\"menu\",\"title\":\"New Menu\"}'"
 							},
 							"response": []
 						},
@@ -2573,51 +2679,6 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/menus/{{app}}/items' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"alias\":\"\",\"associations\":{\"en-GB\":\"\",\"fr-FR\":\"\"},\"browserNav\":\"0\",\"component_id\":\"20\",\"home\":\"0\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"params\":{\"cancel_redirect_menuitem\":\"\",\"catid\":\"\",\"custom_cancel_redirect\":\"0\",\"enable_category\":\"0\",\"menu-anchor_css\":\"\",\"menu-anchor_title\":\"\",\"menu-meta_description\":\"\",\"menu-meta_keywords\":\"\",\"menu_image\":\"\",\"menu_image_css\":\"\",\"menu_show\":\"1\",\"menu_text\":\"1\",\"page_heading\":\"\",\"page_title\":\"\",\"pageclass_sfx\":\"\",\"redirect_menuitem\":\"\",\"robots\":\"\",\"show_page_heading\":\"\"},\"parent_id\":\"1\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"template_style_id\":\"0\",\"title\":\"title\",\"toggle_modules_assigned\":\"1\",\"toggle_modules_published\":\"1\",\"type\":\"component\"}'"
-							},
-							"response": []
-						},
-						{
-							"name": "menus/{app}/items/{menu_item_id}",
-							"id": "c2dde96d-d806-4291-97c8-9459f978d7f5",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/menus/:app/items/:menu_item_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"menus",
-										":app",
-										"items",
-										":menu_item_id"
-									],
-									"variable": [
-										{
-											"key": "app",
-											"value": "{{app}}"
-										},
-										{
-											"key": "menu_item_id",
-											"value": "{{menu_item_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}'"
 							},
 							"response": []
 						},
@@ -2722,6 +2783,51 @@
 						},
 						{
 							"name": "menus/{app}/items/{menu_item_id}",
+							"id": "c2dde96d-d806-4291-97c8-9459f978d7f5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/menus/:app/items/:menu_item_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"menus",
+										":app",
+										"items",
+										":menu_item_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "menu_item_id",
+											"value": "{{menu_item_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/menus/{{app}}/items/{{menu_item_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"component_id\":\"20\",\"language\":\"*\",\"link\":\"index.php?option=com_content&view=form&layout=edit\",\"menutype\":\"mainmenu\",\"note\":\"\",\"title\":\"new title\",\"type\":\"component\"}'"
+							},
+							"response": []
+						},
+						{
+							"name": "menus/{app}/items/{menu_item_id}",
 							"id": "c1f965a6-4235-47aa-afed-0b5032c5651f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2792,45 +2898,6 @@
 							"response": []
 						},
 						{
-							"name": "messages/{message_id}",
-							"id": "b050a702-aa6e-42df-9626-7d7ec28a5c7b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/messages/:message_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"messages",
-										":message_id"
-									],
-									"variable": [
-										{
-											"key": "message_id",
-											"value": "{{message_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}'"
-							},
-							"response": []
-						},
-						{
 							"name": "messages",
 							"id": "b4ba0d4c-ec38-452b-8142-fa635a133765",
 							"protocolProfileBehavior": {
@@ -2871,6 +2938,45 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "messages/{message_id}",
+							"id": "b050a702-aa6e-42df-9626-7d7ec28a5c7b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/messages/:message_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"messages",
+										":message_id"
+									],
+									"variable": [
+										{
+											"key": "message_id",
+											"value": "{{message_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/messages/{{message_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"message\":\"<p>new text</p>\",\"subject\":\"new text\",\"user_id_from\":773,\"user_id_to\":772}'"
 							},
 							"response": []
 						},
@@ -2952,50 +3058,6 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X POST '{{base_url}}/{{base_path}}/modules/{{app}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"assigned\":[\"101\",\"105\"],\"assignment\":\"0\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"params\":{\"bootstrap_size\":\"0\",\"cache\":\"1\",\"cache_time\":\"900\",\"cachemode\":\"static\",\"count\":\"10\",\"header_class\":\"\",\"header_tag\":\"h3\",\"layout\":\"_:default\",\"module_tag\":\"div\",\"moduleclass_sfx\":\"\",\"style\":\"0\"},\"position\":\"\",\"publish_down\":\"\",\"publish_up\":\"\",\"published\":\"1\",\"showtitle\":\"1\",\"title\":\"Title\"}'"
-							},
-							"response": []
-						},
-						{
-							"name": "modules/{app}/{module_id}",
-							"id": "cc95a920-a078-44c8-b894-ab45c35211e8",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/modules/:app/:module_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"modules",
-										":app",
-										":module_id"
-									],
-									"variable": [
-										{
-											"key": "app",
-											"value": "{{app}}"
-										},
-										{
-											"key": "module_id",
-											"value": "{{module_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}'"
 							},
 							"response": []
 						},
@@ -3097,6 +3159,50 @@
 						},
 						{
 							"name": "modules/{app}/{module_id}",
+							"id": "cc95a920-a078-44c8-b894-ab45c35211e8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/modules/:app/:module_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"modules",
+										":app",
+										":module_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "module_id",
+											"value": "{{module_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/modules/{{app}}/{{module_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":\"1\",\"client_id\":\"0\",\"language\":\"*\",\"module\":\"mod_articles_archive\",\"note\":\"\",\"ordering\":\"1\",\"title\":\"New Title\"}'"
+							},
+							"response": []
+						},
+						{
+							"name": "modules/{app}/{module_id}",
 							"id": "67d057d4-adf2-466a-a625-8f9ff4a5525a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3166,46 +3272,6 @@
 							"response": []
 						},
 						{
-							"name": "newsfeeds/feeds/{feed_id}",
-							"id": "d57cb2ec-e5e5-49cc-aede-13981ffac04b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds/:feed_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"newsfeeds",
-										"feeds",
-										":feed_id"
-									],
-									"variable": [
-										{
-											"key": "feed_id",
-											"value": "{{feed_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "newsfeeds/feeds",
 							"id": "9ac783ad-8124-49cf-8c4e-439ff457d272",
 							"protocolProfileBehavior": {
@@ -3247,6 +3313,46 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "newsfeeds/feeds/{feed_id}",
+							"id": "d57cb2ec-e5e5-49cc-aede-13981ffac04b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/newsfeeds/feeds/:feed_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"newsfeeds",
+										"feeds",
+										":feed_id"
+									],
+									"variable": [
+										{
+											"key": "feed_id",
+											"value": "{{feed_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/newsfeeds/feeds/{{feed_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"test2\",\"catid\":5,\"description\":\"\",\"link\":\"http://samoylov/joomla/gsoc19_webservices/index.php\",\"metadesc\":\"\",\"metakey\":\"\",\"name\":\"Test\"}'"
 							},
 							"response": []
 						},
@@ -3511,45 +3617,6 @@
 							"response": []
 						},
 						{
-							"name": "redirects/{redirect_id}",
-							"id": "9220a4a3-3e01-4ccb-ae4c-785ab74cae1b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/redirects/:redirect_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"redirects",
-										":redirect_id"
-									],
-									"variable": [
-										{
-											"key": "redirect_id",
-											"value": "{{redirect_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "redirects",
 							"id": "32022db6-80b9-484a-a1fe-810780bda60f",
 							"protocolProfileBehavior": {
@@ -3590,6 +3657,45 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "redirects/{redirect_id}",
+							"id": "9220a4a3-3e01-4ccb-ae4c-785ab74cae1b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/redirects/:redirect_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"redirects",
+										":redirect_id"
+									],
+									"variable": [
+										{
+											"key": "redirect_id",
+											"value": "{{redirect_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/redirects/{{redirect_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"new_url\":\"/content/art/4\",\"old_url\":\"/content/art/132\"}'"
 							},
 							"response": []
 						},
@@ -3659,45 +3765,6 @@
 							"response": []
 						},
 						{
-							"name": "tags/{tag_id}",
-							"id": "ff50d79c-db37-434b-9a52-56cdb74e2db3",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"alias\":\"test\",\"title\":\"new title\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/tags/:tag_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"tags",
-										":tag_id"
-									],
-									"variable": [
-										{
-											"key": "tag_id",
-											"value": "{{tag_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"test\",\"title\":\"new title\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "tags",
 							"id": "32b71aa8-642d-49e0-8e3a-34603ea70710",
 							"protocolProfileBehavior": {
@@ -3738,6 +3805,45 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "tags/{tag_id}",
+							"id": "ff50d79c-db37-434b-9a52-56cdb74e2db3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"alias\":\"test\",\"title\":\"new title\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/tags/:tag_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"tags",
+										":tag_id"
+									],
+									"variable": [
+										{
+											"key": "tag_id",
+											"value": "{{tag_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/tags/{{tag_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"test\",\"title\":\"new title\"}'"
 							},
 							"response": []
 						},
@@ -3824,51 +3930,6 @@
 							"response": []
 						},
 						{
-							"name": "templates/styles/{app}/{template_style_id}",
-							"id": "8abed616-a037-4987-88cf-d844ab0f5f0f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/templates/styles/:app/:template_style_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"templates",
-										"styles",
-										":app",
-										":template_style_id"
-									],
-									"variable": [
-										{
-											"key": "app",
-											"value": "{{app}}"
-										},
-										{
-											"key": "template_style_id",
-											"value": "{{template_style_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "templates/styles/{app}",
 							"id": "1492712e-f269-4a36-88e0-c0d901392b00",
 							"protocolProfileBehavior": {
@@ -3932,6 +3993,51 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "templates/styles/{app}/{template_style_id}",
+							"id": "8abed616-a037-4987-88cf-d844ab0f5f0f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/templates/styles/:app/:template_style_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"templates",
+										"styles",
+										":app",
+										":template_style_id"
+									],
+									"variable": [
+										{
+											"key": "app",
+											"value": "{{app}}"
+										},
+										{
+											"key": "template_style_id",
+											"value": "{{template_style_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/templates/styles/{{app}}/{{template_style_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"template\":\"cassiopeia\",\"title\":\"new cassiopeia - Default\"}'"
 							},
 							"response": []
 						},
@@ -4007,45 +4113,6 @@
 							"response": []
 						},
 						{
-							"name": "users/{user_id}",
-							"id": "6838b237-b05a-4acf-b29c-01da02429608",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/users/:user_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"users",
-										":user_id"
-									],
-									"variable": [
-										{
-											"key": "user_id",
-											"value": "{{user_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "users",
 							"id": "914a8a01-83c2-473a-b138-78a056388baa",
 							"protocolProfileBehavior": {
@@ -4086,6 +4153,45 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "users/{user_id}",
+							"id": "6838b237-b05a-4acf-b29c-01da02429608",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/users/:user_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"users",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "user_id",
+											"value": "{{user_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/users/{{user_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"email\":\"new@example.org\",\"groups\":[\"2\"],\"name\":\"name\",\"username\":\"username\"}'"
 							},
 							"response": []
 						},
@@ -4149,46 +4255,6 @@
 							"response": []
 						},
 						{
-							"name": "fields/users/{field_id}",
-							"id": "c52063a9-588d-4140-bd94-b38a921e6625",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/fields/users/:field_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"fields",
-										"users",
-										":field_id"
-									],
-									"variable": [
-										{
-											"key": "field_id",
-											"value": "{{field_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/users/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "fields/users",
 							"id": "8f561da0-ed66-4545-838f-c4d5c6cb0bb1",
 							"protocolProfileBehavior": {
@@ -4230,6 +4296,46 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/users/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "fields/users/{field_id}",
+							"id": "c52063a9-588d-4140-bd94-b38a921e6625",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/users/:field_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"users",
+										":field_id"
+									],
+									"variable": [
+										{
+											"key": "field_id",
+											"value": "{{field_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/users/{{field_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new user field\",\"name\":\"user-field\",\"label\":\"user field\",\"default_value\":\"\",\"type\":\"text\",\"note\":\"\",\"description\":\"Some New Text\"}'"
 							},
 							"response": []
 						},
@@ -4294,47 +4400,6 @@
 							"response": []
 						},
 						{
-							"name": "fields/groups/users/{group_id}",
-							"id": "4fb3eae6-387f-47d7-87bd-35b864d0f79e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"title\":\"new user group\",\"note\":\"\",\"description\":\"new description\"}"
-								},
-								"url": {
-									"raw": "{{base_url}}/{{base_path}}/fields/groups/users/:group_id",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"{{base_path}}",
-										"fields",
-										"groups",
-										"users",
-										":group_id"
-									],
-									"variable": [
-										{
-											"key": "group_id",
-											"value": "{{group_id}}"
-										}
-									]
-								},
-								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/users/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new user group\",\"note\":\"\",\"description\":\"new description\"}'"
-							},
-							"response": []
-						},
-						{
 							"name": "fields/groups/users",
 							"id": "310eb6bd-a53c-4854-b52f-3bb6c9dc9ce9",
 							"protocolProfileBehavior": {
@@ -4377,6 +4442,47 @@
 									]
 								},
 								"description": "Generated from a curl request: \ncurl -X GET '{{base_url}}/{{base_path}}/fields/groups/users/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "fields/groups/users/{group_id}",
+							"id": "4fb3eae6-387f-47d7-87bd-35b864d0f79e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"new user group\",\"note\":\"\",\"description\":\"new description\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/fields/groups/users/:group_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"fields",
+										"groups",
+										"users",
+										":group_id"
+									],
+									"variable": [
+										{
+											"key": "group_id",
+											"value": "{{group_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request: \ncurl -X PATCH '{{base_url}}/{{base_path}}/fields/groups/users/{{group_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"title\":\"new user group\",\"note\":\"\",\"description\":\"new description\"}'"
 							},
 							"response": []
 						},
@@ -4430,23 +4536,30 @@
 		{
 			"listen": "prerequest",
 			"script": {
+				"id": "9d055d91-96e1-407d-980d-744c230091a4",
 				"type": "text/javascript",
 				"exec": [
 					""
-				],
-				"id": "1cd9d059-aa9d-4e64-b3ba-19d53b68a910"
+				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
+				"id": "fd86b657-2cae-4e20-988e-ef8fff0fa7fc",
 				"type": "text/javascript",
 				"exec": [
-					"pm.test(\"Successful 2xx request\", () => {",
+					"let currentLocation = pm.execution.location[1]",
+					"pm.test(`Successful 2xx request for ${currentLocation}`, () => {",
 					"  pm.expect(pm.response.code).to.be.oneOf([200,201,202,203,204,205,206,207,208,226]);",
+					"});",
+					"",
+					"pm.test(`Check response format ${currentLocation}`, () => {",
+					"    const jsonData = pm.response.json();",
+					"    pm.expect(pm.response.headers).contains('Content-Type', 'application/vnd.api+json');",
+					"    pm.expect(jsonData).to.be.an.object;",
 					"});"
-				],
-				"id": "00948c8b-75f9-44f2-8804-2d09f22561e2"
+				]
 			}
 		}
 	],
@@ -4558,6 +4671,26 @@
 		{
 			"key": "user_id",
 			"value": "{user_id}"
+		},
+		{
+			"key": "articles_filter_author",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "articles_filter_category",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "articles_filter_state",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "articles_filter_featured",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
