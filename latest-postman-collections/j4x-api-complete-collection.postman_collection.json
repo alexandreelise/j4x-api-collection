@@ -4536,7 +4536,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3d9aa2c0-3575-49c4-8b5f-2bad990bd7de",
+				"id": "ce5615ed-5d2a-434f-89ff-91bd73ed9eda",
 				"type": "text/javascript",
 				"exec": [
 					"// If no Joomla API Token provided do not continue",
@@ -4546,14 +4546,17 @@
 					"",
 					"let currentLocation = pm.execution.location[1];",
 					"",
-					"pm.test(`Pre-request setting default headers for ${currentLocation}`)"
+					"pm.test(`Pre-request setting default headers for ${currentLocation}`, () => {",
+					"    let method = pm.request.method",
+					"",
+					"})"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "35c87613-cca9-40ab-b817-63c48ce82908",
+				"id": "e1d271b0-9a35-4bea-b093-a60126f656c8",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1];",
