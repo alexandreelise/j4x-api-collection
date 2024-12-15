@@ -4536,7 +4536,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f19e99c9-3049-4caa-865c-928425a72ca9",
+				"id": "1fdc9175-1d4a-4859-aaa4-32c47d387aa7",
 				"type": "text/javascript",
 				"exec": [
 					"// If no Joomla API }Token provided do not continue",
@@ -4549,8 +4549,13 @@
 					"pm.test(`Pre-request setting default headers for ${currentLocation}`, () => {",
 					"    let method = pm.request.method;",
 					"",
+					"    if(!pm.request.headers.has('Accept', 'application/vnd.api+json')) {",
+					"        pm.request.headers.append('Accept', 'application/vnd.api+json');",
+					"    }",
 					"    if(['POST', 'PATCH', 'PUT'].includes(method)) {",
-					"      pm.request.headers.has('')",
+					"      if(!pm.request.headers.has('Content-Type', 'application/json')) {",
+					"        pm.request.headers.append('Content-Type', 'application/json');",
+					"      }",
 					"    }",
 					"",
 					"});"
@@ -4560,7 +4565,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "69b26666-440c-42f9-8c22-b60af3a4faf0",
+				"id": "35ecc4d9-fd18-43b8-a4d9-286ec7613e69",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1];",
