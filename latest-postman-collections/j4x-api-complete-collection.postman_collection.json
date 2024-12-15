@@ -4536,7 +4536,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6d769d5a-149c-4f2e-a331-ed5dbd08cd16",
+				"id": "8098a1d9-c3b3-4c93-9257-625a0680960e",
 				"type": "text/javascript",
 				"exec": [
 					"// If no Joomla API Token provided do not continue",
@@ -4549,7 +4549,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4f83ad43-334e-4f7a-aaa7-baebee3a2042",
+				"id": "18357cdb-c6ba-4de6-bc90-6f9bdd9b0755",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1]",
@@ -4732,8 +4732,13 @@
 			"type": "string"
 		},
 		{
-			"key": "accept_header_value",
-			"value": "",
+			"key": "default_accept_http_header_value",
+			"value": "application/vnd.api+json",
+			"type": "string"
+		},
+		{
+			"key": "default_content_type_http_header_value",
+			"value": "application/json",
 			"type": "string"
 		}
 	]
