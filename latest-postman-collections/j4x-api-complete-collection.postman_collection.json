@@ -4536,12 +4536,12 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3b4f17e9-95ee-4384-bbfc-fbf6d625e396",
+				"id": "be3efbcc-fc24-41c0-bda8-c87ab4f3d659",
 				"type": "text/javascript",
 				"exec": [
 					"// If no Joomla API Token provided do not continue",
 					"if (!pm.variables.get('auth_apikey')) {",
-					"    postman.setNextRequest(null);",
+					"    pm.execution.setNextRequest(null);",
 					"}",
 					"",
 					"let currentLocation = pm.execution.location[1];",
@@ -4558,7 +4558,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f1016722-0aa4-4ab4-ba55-2e9fd936e065",
+				"id": "1a80e270-9c37-47a6-819b-271cc7a9cede",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1];",
