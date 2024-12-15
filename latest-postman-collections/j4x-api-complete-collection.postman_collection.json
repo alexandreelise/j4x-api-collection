@@ -4536,10 +4536,10 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ccad1e52-5316-4553-b6a7-d8b4f89ac341",
+				"id": "f19e99c9-3049-4caa-865c-928425a72ca9",
 				"type": "text/javascript",
 				"exec": [
-					"// If no Joomla API Token provided do not continue",
+					"// If no Joomla API }Token provided do not continue",
 					"if (!pm.variables.get('auth_apikey')) {",
 					"    pm.execution.setNextRequest(null);",
 					"}",
@@ -4549,7 +4549,9 @@
 					"pm.test(`Pre-request setting default headers for ${currentLocation}`, () => {",
 					"    let method = pm.request.method;",
 					"",
-					"    if(['HEAD', 'GET'])",
+					"    if(['POST', 'PATCH', 'PUT'].includes(method)) {",
+					"      pm.request.headers.has('')",
+					"    }",
 					"",
 					"});"
 				]
@@ -4558,7 +4560,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "dfbc5934-c573-4079-a607-d0feb8928342",
+				"id": "69b26666-440c-42f9-8c22-b60af3a4faf0",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1];",
