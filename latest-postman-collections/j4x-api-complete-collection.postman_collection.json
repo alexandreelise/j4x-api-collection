@@ -4536,7 +4536,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "062443f3-af7e-4127-8db2-528fbd152c50",
+				"id": "f961820a-1669-40a5-9e68-e7c816ca514b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -4546,7 +4546,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8762f1be-b699-4659-be0f-2d342283b4f3",
+				"id": "a35d339f-d872-419b-869c-d94264ed4f6a",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1]",
@@ -4554,11 +4554,17 @@
 					"  pm.expect(pm.response.code).to.be.oneOf([200,201,202,203,204,205,206,207,208,226]);",
 					"});",
 					"",
-					"pm.test(`Check response format ${currentLocation}`, () => {",
+					"pm.test(\"Content-Type is present for ${currentLocation}\", () => {",
+					"    pm.response.to.have.header(\"Content-Type\");",
+					"});",
+					"",
+					"pm.test(`Check response format for ${currentLocation}`, () => {",
 					"    const jsonData = pm.response.json();",
-					"    pm.expect(pm.response.headers).contains('Content-Type', 'application/vnd.api+json');",
-					"    pm.expect(jsonData).to.be.an.object;",
-					"});"
+					"    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/vnd.api+json');",
+					"",
+					"    pm.expect(jsonData).to.be.an('object');",
+					"});",
+					""
 				]
 			}
 		}
