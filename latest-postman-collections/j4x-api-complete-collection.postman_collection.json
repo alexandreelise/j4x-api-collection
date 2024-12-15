@@ -4536,7 +4536,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "96b818c6-90c1-4e9a-aca4-422152992de1",
+				"id": "8f1e4c3c-940c-4ea6-adea-ddce82a0f654",
 				"type": "text/javascript",
 				"exec": [
 					"// If no Joomla API }Token provided do not continue",
@@ -4554,7 +4554,9 @@
 					"    const defaultHttpAcceptHeader = pm.variables.get('default_http_accept_header_value') || 'application/vnd.api+json';",
 					"    const defaultHttpContentTypeHeader = pm.variables.get('default_http_accept_header_value') || 'application/json';",
 					"",
-					"    ",
+					"    if(!allowedHttpAcceptHeader.includes(defaultHttpAcceptHeader) || !allowedHttpContentTypeHeader.includes(defaultHttpContentTypeHeader)) {",
+					"        pm.execution.setNextRequest(null);",
+					"    }",
 					"",
 					"    if(!pm.request.headers.has('Accept', defaultHttpAcceptHeader)) {",
 					"        pm.request.headers.append('Accept', defaultHttpAcceptHeader);",
@@ -4572,7 +4574,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e6fb4cf6-6aef-4d70-bfa0-1237a36b1b72",
+				"id": "3c4aac7f-c962-43c9-a246-199e4ef8094b",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1];",
