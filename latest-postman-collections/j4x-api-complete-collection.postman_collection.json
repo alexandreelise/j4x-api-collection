@@ -4536,7 +4536,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ba9ed849-c7d1-4030-8f8d-56b461add5c0",
+				"id": "96b818c6-90c1-4e9a-aca4-422152992de1",
 				"type": "text/javascript",
 				"exec": [
 					"// If no Joomla API }Token provided do not continue",
@@ -4548,15 +4548,20 @@
 					"",
 					"pm.test(`Pre-request setting default headers for ${currentLocation}`, () => {",
 					"    let method = pm.request.method;",
+					"    const allowedHttpAcceptHeader = ['application/vnd.api+json'];",
+					"    const allowedHttpContentTypeHeader = ['application/json'];",
+					"",
 					"    const defaultHttpAcceptHeader = pm.variables.get('default_http_accept_header_value') || 'application/vnd.api+json';",
 					"    const defaultHttpContentTypeHeader = pm.variables.get('default_http_accept_header_value') || 'application/json';",
+					"",
+					"    ",
 					"",
 					"    if(!pm.request.headers.has('Accept', defaultHttpAcceptHeader)) {",
 					"        pm.request.headers.append('Accept', defaultHttpAcceptHeader);",
 					"    }",
 					"    if(['POST', 'PATCH', 'PUT'].includes(method)) {",
-					"      if(!pm.request.headers.has('Content-Type', def)) {",
-					"        pm.request.headers.append('Content-Type', 'application/json');",
+					"      if(!pm.request.headers.has('Content-Type', defaultHttpContentTypeHeader)) {",
+					"        pm.request.headers.append('Content-Type', defaultHttpContentTypeHeader);",
 					"      }",
 					"    }",
 					"",
@@ -4567,7 +4572,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "18cd4a24-aa33-47be-9d79-7fd1eca7482c",
+				"id": "e6fb4cf6-6aef-4d70-bfa0-1237a36b1b72",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1];",
