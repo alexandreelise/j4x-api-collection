@@ -4536,7 +4536,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6d83569b-0b0b-4e87-aa3a-3f15dea32459",
+				"id": "062443f3-af7e-4127-8db2-528fbd152c50",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -4546,7 +4546,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "16098967-ea48-48ba-815a-875868213fbc",
+				"id": "8762f1be-b699-4659-be0f-2d342283b4f3",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1]",
@@ -4694,6 +4694,11 @@
 		},
 		{
 			"key": "articles_filter_tag",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "articles_filter_language",
 			"value": "",
 			"type": "string"
 		},
