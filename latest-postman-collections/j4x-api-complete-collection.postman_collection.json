@@ -4536,15 +4536,18 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d3210975-afbf-45c7-a3ac-b8638e338d6f",
+				"id": "ebd9616b-5944-4d46-904c-f42030414b0f",
 				"type": "text/javascript",
 				"exec": [
-					"// If no Joomla API }Token provided do not continue",
-					"if (!pm.variables.get('auth_apikey')) {",
-					"    pm.execution.setNextRequest(null);",
-					"}",
-					"",
 					"let currentLocation = pm.execution.location[1];",
+					"",
+					"// If no Joomla API }Token provided do not continue",
+					"pm.test(`Pre-request setting default headers for ${currentLocation}`, () => {",
+					"    if (!pm.variables.get('auth_apikey')) {",
+					"      pm.expect.fail('This failed because no Joomla API Token provided');",
+					"    }",
+					"});",
+					"",
 					"",
 					"pm.test(`Pre-request setting default headers for ${currentLocation}`, () => {",
 					"    let method = pm.request.method;",
@@ -4560,7 +4563,7 @@
 					"",
 					"    // If not in allowed list stop here",
 					"    if(!allowedHttpAcceptHeader.includes(defaultHttpAcceptHeader) || !allowedHttpContentTypeHeader.includes(defaultHttpContentTypeHeader)) {",
-					"        pm.execution.setNextRequest(null);",
+					"        pm.expect.fail('This failed because provided Accept header or Content-Type header is not allowed');",
 					"    }",
 					"",
 					"    if(!pm.request.headers.has('Accept', defaultHttpAcceptHeader)) {",
@@ -4579,7 +4582,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "879955f1-e11b-4d82-a7a7-234a74c8ca39",
+				"id": "d9821344-d311-4270-aded-3ba69574663f",
 				"type": "text/javascript",
 				"exec": [
 					"let currentLocation = pm.execution.location[1];",
