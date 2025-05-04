@@ -777,7 +777,7 @@
 									"variable": [
 										{
 											"key": "contact_id",
-											"value": "{{contact_id}}"
+											"value": "{{last_created_contacts_contacts_id}}"
 										}
 									]
 								},
@@ -1856,6 +1856,154 @@
 						}
 					],
 					"id": "41bb27b0-02bf-4120-a8e5-1015eecdaa43"
+				},
+				{
+					"name": "3.10 Categories",
+					"item": [
+						{
+							"name": "contacts/categories",
+							"id": "31c9d1c1-04b2-4b6b-983f-fb05e39c0c12",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"access\":1,\"alias\":\"{{$randomUUID}}\",\"extension\":\"com_contacts\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"{{$randomJobTitle}}\",\"params\":{\"workflow_id\":1}}"
+								},
+								"url": "{{base_url}}/{{base_path}}/contacts/categories",
+								"description": "Generated from a curl request:  \ncurl -X POST '{{base_url}}/{{base_path}}/contacts/categories' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"cat\",\"extension\":\"com_contacts\",\"language\":\"\\*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"Title\",\"params\":{\"workflow_id\":1}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "contacts/categories",
+							"id": "fe892595-1491-4719-8fde-e3808c30be89",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}/{{base_path}}/contacts/categories",
+								"description": "Generated from a curl request:  \ncurl -X GET '{{base_url}}/{{base_path}}/contacts/categories' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "contacts/categories/{category_id}",
+							"id": "1dba94bb-a3f0-4d6f-9359-badd25ac0df7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/contacts/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"contacts",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"id": "dd44e8cc-09c0-46d0-b0e6-cae931c099fe",
+											"key": "category_id",
+											"value": "{{last_created_contacts_contacts_categories_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request:  \ncurl -X GET '{{base_url}}/{{base_path}}/contacts/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "contacts/categories/{category_id}",
+							"id": "dde4ca89-c231-474e-8bd6-d2eeeb1ed4e1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"alias\":\"{{$randomUUID}}\",\"note\":\"{{$randomLoremSentence}}\",\"parent_id\":1,\"title\":\"{{$randomProductName}}\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/contacts/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"contacts",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"id": "ad6af33f-4ef3-41c8-a973-28eca9ffdc54",
+											"key": "category_id",
+											"value": "{{last_created_contacts_contacts_categories_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request:  \ncurl -X PATCH '{{base_url}}/{{base_path}}/contacts/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}'"
+							},
+							"response": []
+						},
+						{
+							"name": "contacts/categories/{category_id}",
+							"id": "a1a61e73-38c3-4117-adb6-a8caca826640",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/contacts/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"contacts",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"id": "fcd9efd1-1723-4979-b8c6-bfe5a9e1ec34",
+											"key": "category_id",
+											"value": "{{last_created_contacts_contacts_categories_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request:  \ncurl -X DELETE '{{base_url}}/{{base_path}}/contacts/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						}
+					],
+					"id": "7e09ff3d-a14a-4b60-8ac3-d8d5d97ea0eb"
 				}
 			],
 			"id": "939c8a1a-b6d2-4514-9cce-a89d0c35a000"
@@ -2032,7 +2180,7 @@
 									"variable": [
 										{
 											"key": "article_id",
-											"value": "{{article_id}}"
+											"value": "{{last_created_content_content_articles_id}}"
 										}
 									]
 								},
@@ -2072,7 +2220,7 @@
 									"variable": [
 										{
 											"key": "article_id",
-											"value": "{{article_id}}"
+											"value": "{{last_created_content_content_articles_id}}"
 										}
 									]
 								},
@@ -2560,6 +2708,154 @@
 						}
 					],
 					"id": "7aecf9cc-60d8-4406-a03a-19a0dbd07d89"
+				},
+				{
+					"name": "4.5 Categories",
+					"item": [
+						{
+							"name": "content/categories",
+							"id": "8b0ffa76-9279-4016-9926-485a8aabd09f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"access\":1,\"alias\":\"{{$randomUUID}}\",\"extension\":\"com_content\",\"language\":\"*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"{{$randomJobTitle}}\",\"params\":{\"workflow_id\":1}}"
+								},
+								"url": "{{base_url}}/{{base_path}}/content/categories",
+								"description": "Generated from a curl request:  \ncurl -X POST '{{base_url}}/{{base_path}}/content/categories' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"access\":1,\"alias\":\"cat\",\"extension\":\"com_content\",\"language\":\"\\*\",\"note\":\"\",\"parent_id\":1,\"published\":1,\"title\":\"Title\",\"params\":{\"workflow_id\":1}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "content/categories",
+							"id": "1fcc781a-d5a5-4c8a-b847-e3ebf0b28dbe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}/{{base_path}}/content/categories",
+								"description": "Generated from a curl request:  \ncurl -X GET '{{base_url}}/{{base_path}}/content/categories' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "content/categories/{category_id}",
+							"id": "9f67dc65-0cb6-4ab4-883c-d66b7f53a944",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/content/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"content",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"id": "04c8ee0a-16fe-4f00-8d10-205b47caf52c",
+											"key": "category_id",
+											"value": "{{last_created_content_content_categories_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request:  \ncurl -X GET '{{base_url}}/{{base_path}}/content/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						},
+						{
+							"name": "content/categories/{category_id}",
+							"id": "b6f707b1-8cde-4523-914b-b588c91e1ea8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"alias\":\"{{$randomUUID}}\",\"note\":\"{{$randomLoremSentence}}\",\"parent_id\":1,\"title\":\"{{$randomProductName}}\"}"
+								},
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/content/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"content",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"id": "4daf728f-7c66-4793-b6f7-63b7a6fc5e65",
+											"key": "category_id",
+											"value": "{{last_created_content_content_categories_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request:  \ncurl -X PATCH '{{base_url}}/{{base_path}}/content/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}' -H 'Content-Type: application/json' -d '{\"alias\":\"cat\",\"note\":\"Some Text\",\"parent_id\":1,\"title\":\"New Title\"}'"
+							},
+							"response": []
+						},
+						{
+							"name": "content/categories/{category_id}",
+							"id": "7cb41dc3-b093-491c-a5c9-e77e40ba817a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{base_path}}/content/categories/:category_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{base_path}}",
+										"content",
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"id": "b41d7cde-5737-4312-9a30-f89588febcf8",
+											"key": "category_id",
+											"value": "{{last_created_content_content_categories_id}}"
+										}
+									]
+								},
+								"description": "Generated from a curl request:  \ncurl -X DELETE '{{base_url}}/{{base_path}}/content/categories/{{category_id}}' -H 'X-Joomla-Token: {{auth_apikey}}'"
+							},
+							"response": []
+						}
+					],
+					"id": "05e26cbf-ce20-4234-a392-ce2610580f2c"
 				}
 			],
 			"id": "898c62b6-a26d-48fb-b1cc-74b593eaa4b4"
@@ -6455,258 +6751,273 @@
 	],
 	"variable": [
 		{
-			"id": "95469fc2-7adf-448e-a40d-71d25f525b93",
+			"id": "33b614d8-b7b6-4401-9d0a-9bbe8d7c6b9e",
 			"key": "base_url",
 			"value": "https://example.org"
 		},
 		{
-			"id": "06a1da16-f55e-4b7f-980a-24aa2f343cb7",
+			"id": "f0ac14e9-cb16-4e0d-8c46-091bbbbc0e63",
 			"key": "base_path",
 			"value": "api/index.php/v1"
 		},
 		{
-			"id": "3f340d9f-1050-4817-88a1-2d4c28541ac2",
+			"id": "c31f356b-da1f-4bb6-97b7-15aa207adc5c",
 			"key": "auth_apikey",
 			"value": "Paste your Joomla API Token here."
 		},
 		{
-			"id": "4e4f92b7-c53d-4040-ab87-0e10ccb5fbc7",
+			"id": "e9d439e1-10c3-403a-8aa7-32528fce0261",
 			"key": "banner_id",
 			"value": "{banner_id}"
 		},
 		{
-			"id": "8441cd4d-67dd-4ca1-83e4-be7b6f426d78",
+			"id": "50dc84b5-03be-4adc-aa34-4aa3776cad73",
 			"key": "client_id",
 			"value": "{client_id}"
 		},
 		{
-			"id": "984593f5-7b0c-4866-998e-88deb81b8ab3",
+			"id": "6fde1c27-32f5-41d7-86f8-d67fab06069e",
 			"key": "category_id",
 			"value": "{category_id}"
 		},
 		{
-			"id": "6e848237-075a-431d-91ad-8cab52a0a395",
+			"id": "d2d68113-e50e-47a8-b54f-6ae45924930d",
 			"key": "contenthistory_id",
 			"value": "{contenthistory_id}"
 		},
 		{
-			"id": "761ef422-1de0-40ef-b766-c4822b0123cc",
+			"id": "18145a6e-1d49-4eb1-8976-32a5648eca06",
 			"key": "component_name",
 			"value": "{component_name}"
 		},
 		{
-			"id": "cceaf5a2-5ff1-422c-bfa2-52a1e85b95fb",
+			"id": "b757bac4-c49c-42cc-b02e-5cbd7dca1b0e",
 			"key": "contact_id",
 			"value": "{contact_id}"
 		},
 		{
-			"id": "d1ea5412-eaf4-46f3-a42c-7cfd304242d8",
+			"id": "93d37a34-3759-48b6-b90b-835aaee9c40a",
 			"key": "field_id",
 			"value": "{field_id}"
 		},
 		{
-			"id": "c740bd06-e70a-4547-9889-598feb34880d",
+			"id": "7e450258-2c22-4d96-960d-c5c3bf30cca6",
 			"key": "group_id",
 			"value": "{group_id}"
 		},
 		{
-			"id": "2f094905-75f2-4c17-8249-32f9b8306cc4",
+			"id": "421e9db1-3132-498a-8175-6608c3529fa0",
 			"key": "article_id",
 			"value": "{article_id}"
 		},
 		{
-			"id": "07def10a-b301-4586-946f-813c09dd687e",
+			"id": "1e49a880-dcd0-4a8e-8df5-882bdf1888bb",
 			"key": "language_id",
 			"value": "{language_id}"
 		},
 		{
-			"id": "afd63931-d552-4f18-801d-a61a1712b89d",
+			"id": "105f93ff-4aca-4df9-891a-8c71ef1076dc",
 			"key": "app",
 			"value": "(site|administrator)"
 		},
 		{
-			"id": "4c0a7b19-d7ae-4904-a2a4-ffbdd5ed357a",
+			"id": "aa078f7b-3f19-4431-bcae-688717fd928e",
 			"key": "lang_code",
 			"value": "{lang_code}"
 		},
 		{
-			"id": "b98cef9f-8a03-42fd-814e-eb20817a6703",
+			"id": "052bcaf8-eef9-4bd0-b81c-2f8c8c230a28",
 			"key": "constant_id",
 			"value": "{constant_id}"
 		},
 		{
-			"id": "44aa60b8-1991-4ff1-aa87-c841deac10eb",
+			"id": "2009cf24-2f14-4fdd-97f5-b88b185d56ca",
 			"key": "menu_id",
 			"value": "{menu_id}"
 		},
 		{
-			"id": "aab1ba0a-a762-40d9-a6bd-1176c6667588",
+			"id": "662cd111-f8aa-4b72-bdd3-c443383a25fd",
 			"key": "menu_item_id",
 			"value": "{menu_item_id}"
 		},
 		{
-			"id": "b43d5756-6296-4dcb-a3e3-f892f21675ad",
+			"id": "21dfaf41-9aa2-4bef-897a-4cce41186b5a",
 			"key": "message_id",
 			"value": "{message_id}"
 		},
 		{
-			"id": "3f5261e5-7f03-47d3-8315-d954889b4260",
+			"id": "411071ea-1a41-455b-a55e-615628ed1e99",
 			"key": "module_id",
 			"value": "{module_id}"
 		},
 		{
-			"id": "17c0e284-0502-4277-b1af-4c531efcfbf4",
+			"id": "35602bbe-8c04-40b2-9963-152350be0e9a",
 			"key": "feed_id",
 			"value": "{feed_id}"
 		},
 		{
-			"id": "116e8d8b-7c4c-4306-a7d1-5b96e2bfbfbc",
+			"id": "45ed027d-d198-463c-ac87-27a87cb9a11b",
 			"key": "request_id",
 			"value": "{request_id}"
 		},
 		{
-			"id": "e1aa5de5-a550-4137-98cd-9cd641b21f04",
+			"id": "7e7bc738-41dd-4788-8732-cc1a716aaf70",
 			"key": "consent_id",
 			"value": "{consent_id}"
 		},
 		{
-			"id": "b1445ef8-7dee-4b8f-9f46-9acbba62b1af",
+			"id": "832ef1ac-54f0-4abf-92bf-feae974e04ce",
 			"key": "redirect_id",
 			"value": "{redirect_id}"
 		},
 		{
-			"id": "3df27cc3-1d1c-4602-8b9c-02f6b1a6b3a4",
+			"id": "31fdfe3d-ac91-46c7-ac38-44de73863d89",
 			"key": "tag_id",
 			"value": "{tag_id}"
 		},
 		{
-			"id": "962637bd-fc42-486f-abf3-9b8aeb9434b9",
+			"id": "583dd6d1-0bde-4c98-9721-2144144dcb6f",
 			"key": "template_style_id",
 			"value": "{template_style_id}"
 		},
 		{
-			"id": "2a12bc0c-dcc7-4ada-9317-74fd1787ae09",
+			"id": "242ac044-7def-44b0-bc86-fb80e2fc4e91",
 			"key": "user_id",
 			"value": "{user_id}"
 		},
 		{
-			"id": "6d4e9fea-155f-457d-9550-65f5bebd681f",
+			"id": "a91b8025-1eae-4648-94a3-d2774de85631",
 			"key": "articles_filter_author",
 			"value": ""
 		},
 		{
-			"id": "edde5c01-b2e9-4f3d-8214-ec7f7220447b",
+			"id": "ecad8ae7-5e53-4449-85c5-8c63a442446c",
 			"key": "articles_filter_category",
 			"value": "2"
 		},
 		{
-			"id": "c994b767-ae7d-476a-bfcf-f5c60d1a7928",
+			"id": "ee24fc64-8bfb-45a9-98ba-141fc10eed94",
 			"key": "articles_filter_state",
 			"value": "1"
 		},
 		{
-			"id": "852c8243-5ce4-4cbf-ba0c-7c8d7b7c6dfe",
+			"id": "43b59bc6-e76b-4056-a265-9e4994034e66",
 			"key": "articles_filter_featured",
 			"value": "0"
 		},
 		{
-			"id": "4bdafc66-803f-49e1-bfba-3698b444a642",
+			"id": "c63d06f2-d59f-4349-8768-dc6d0814d9e3",
 			"key": "articles_filter_tag",
 			"value": ""
 		},
 		{
-			"id": "c3903dae-6980-4b17-b1ac-2a82e66c9705",
+			"id": "cfdca519-a7ce-4498-835e-a9a0d88a1ecf",
 			"key": "articles_filter_language",
 			"value": ""
 		},
 		{
-			"id": "ee940a1d-4684-4652-952c-d55821eaad46",
+			"id": "af444a9c-a708-4a2b-a22d-90acb05ca44f",
 			"key": "articles_filter_search",
 			"value": ""
 		},
 		{
-			"id": "89e25b73-81b6-434f-95d9-a8dc191acf78",
+			"id": "1a1fff28-549f-412d-813c-4e060f838d03",
 			"key": "articles_list_ordering",
 			"value": "modified"
 		},
 		{
-			"id": "4cfa921e-89ee-4865-b148-d57b13709e56",
+			"id": "a5bc4221-0792-4612-a3c9-92c08cdb677e",
 			"key": "articles_list_direction",
 			"value": "desc"
 		},
 		{
-			"id": "1edb894d-12df-4cbf-9591-db0d6a4f9d30",
+			"id": "e742ed93-ce4b-411c-8cdf-9255688d6bbc",
 			"key": "computed_current_location",
 			"value": ""
 		},
 		{
-			"id": "e86e3e36-8358-4e79-94f5-8f31d56ac93d",
+			"id": "709d7739-f720-4361-bf83-34527aad72a1",
 			"key": "last_created_guided_tours_tours_id",
 			"value": ""
 		},
 		{
-			"id": "3b6a4325-af67-4eae-90d3-329659653ad0",
+			"id": "25a25478-8586-41cf-81e0-24a5cfc181dd",
 			"key": "last_created_guided_tours_steps_id",
 			"value": ""
 		},
 		{
-			"id": "fb4f15aa-3fc0-462b-a7e7-d06989300730",
+			"id": "b5c5112d-5bd4-4ac3-b607-4b526be4f2c0",
 			"key": "last_created_banners_banners_id",
 			"value": ""
 		},
 		{
-			"id": "7f57ad44-bca3-4746-ad61-2f73dba2659d",
+			"id": "676e2f2a-6f5b-4763-b9a3-6ee0339d08e8",
 			"key": "last_created_banners_banners_clients_id",
 			"value": ""
 		},
 		{
-			"id": "4cfa17b7-2e7d-4577-abd8-3068a235bbc6",
+			"id": "0002864e-e3f3-412d-9c77-ee1735a63a31",
 			"key": "last_created_banners_banners_categories_id",
 			"value": ""
 		},
 		{
-			"id": "f76c73f4-05b8-4e20-8b50-067c69750a99",
+			"id": "1060c51b-78e0-4913-b08e-93d873923e8a",
 			"key": "last_created_contacts_contacts_id",
 			"value": ""
 		},
 		{
-			"id": "72e34d18-d87d-4823-bdb2-ff9c07c3d4b5",
+			"id": "9000ee03-e1f8-40ab-97dc-8363c440066c",
 			"key": "media_adapter_id",
 			"value": ""
 		},
 		{
-			"id": "e70f59b1-3e86-4d6c-9667-7a79da4d1a81",
+			"id": "d834f3e8-a784-4cda-a30d-8b3ec75409c8",
 			"key": "media_files_path",
 			"value": ""
 		},
 		{
-			"id": "b61a9c75-3dca-4191-9145-977f78d65ccf",
+			"id": "7a1b4881-fb9f-4961-ba36-6d169fe2ef23",
 			"key": "post_media_files_body",
 			"value": ""
 		},
 		{
-			"id": "96a5e0bb-4ad5-47bb-a3ed-c51d6903d617",
+			"id": "c702a472-68ad-41cd-b544-e6161b184605",
 			"key": "plugin_id",
 			"value": ""
 		},
 		{
-			"id": "ac588970-96ff-4b23-a647-affc7c279978",
+			"id": "e371eba7-dd16-4efc-8017-946e31020e47",
 			"key": "plugins_filter_element",
 			"value": ""
 		},
 		{
-			"id": "34c8ed13-276a-4c7a-8afd-dca0198be5bf",
+			"id": "c563aa78-5c01-47b5-8ff3-3ff627d0cfde",
 			"key": "plugins_filter_status",
 			"value": ""
 		},
 		{
-			"id": "bca6e150-96b6-4614-baeb-8811ac6615a8",
+			"id": "90dfa3de-5315-4034-a19a-0f71a274830c",
 			"key": "plugins_filter_search",
 			"value": ""
 		},
 		{
-			"id": "a3e5b2cf-de7b-4484-9a7c-1a41f0b925ab",
+			"id": "ced2c57b-fa1d-44b5-96cc-f924d04daa41",
 			"key": "plugins_filter_type",
+			"value": ""
+		},
+		{
+			"id": "d568896e-9be5-473a-95f2-ea3f212d0947",
+			"key": "last_created_content_content_categories_id",
+			"value": ""
+		},
+		{
+			"id": "5c6fe339-f37b-40fa-a3b0-3ee62cd793cf",
+			"key": "last_created_content_content_articles_id",
+			"value": ""
+		},
+		{
+			"id": "166e8ddf-d087-43d0-9907-4f6dd5e1a73c",
+			"key": "last_created_contacts_contacts_categories_id",
 			"value": ""
 		}
 	]
